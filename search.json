@@ -1,0 +1,295 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bass Real Analysis Solutions",
+    "section": "",
+    "text": "Bass Real Analysis Solutions\nThis website contains my solutions to selected exercises from Richard Bass’s Real Analysis for Graduate Students.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#about-this-project",
+    "href": "index.html#about-this-project",
+    "title": "Bass Real Analysis Solutions",
+    "section": "About this project",
+    "text": "About this project\nThe goal of this project is to provide clear and rigorous solutions to graduate-level real analysis exercises.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#author",
+    "href": "index.html#author",
+    "title": "Bass Real Analysis Solutions",
+    "section": "Author",
+    "text": "Author\nJae-Yun Lee\n\nB.S. in Mathematical Sciences, KAIST\nM.S. and Ph.D. Track in Economics, KAIST\n\nFor more information, see the About page.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Jae-Yun Lee\nI am an independent researcher and musician from South Korea.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About</span>"
+    ]
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n\nB.S. in Mathematical Sciences, KAIST\nM.S. and Ph.D. Track in Economics, Department of Management Engineering, KAIST",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About</span>"
+    ]
+  },
+  {
+    "objectID": "about.html#research",
+    "href": "about.html#research",
+    "title": "About",
+    "section": "Research",
+    "text": "Research\nSelected publication:\n\nJae-Yun Lee, Jiwoong Shin, and Jungju Yu\n“Communicating Attribute Importance under Competition”\nMarketing Science, 45(3), 534–555, 2026.",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About</span>"
+    ]
+  },
+  {
+    "objectID": "about.html#music",
+    "href": "about.html#music",
+    "title": "About",
+    "section": "Music",
+    "text": "Music\nOutside academia, I work as an independent musician under the name Jayhat.\nMy work combines hip-hop, R&B, and classical music, with a particular interest in orchestral composition and piano performance.\n\nInstagram: (jayhat3210?)",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-1.html",
+    "href": "chapter-2/exercise-2-1.html",
+    "title": "Exercise 2.1",
+    "section": "",
+    "text": "Problem\nParaphrase the problem here.",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Exercise 2.1</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-1.html#solution",
+    "href": "chapter-2/exercise-2-1.html#solution",
+    "title": "Exercise 2.1",
+    "section": "Solution",
+    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Exercise 2.1</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-2.html",
+    "href": "chapter-2/exercise-2-2.html",
+    "title": "Exercise 2.2",
+    "section": "",
+    "text": "Problem\nParaphrase the problem here.",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Exercise 2.2</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-2.html#solution",
+    "href": "chapter-2/exercise-2-2.html#solution",
+    "title": "Exercise 2.2",
+    "section": "Solution",
+    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Exercise 2.2</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-3.html",
+    "href": "chapter-2/exercise-2-3.html",
+    "title": "Exercise 2.3",
+    "section": "",
+    "text": "Problem\nParaphrase the problem here.",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exercise 2.3</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-3.html#solution",
+    "href": "chapter-2/exercise-2-3.html#solution",
+    "title": "Exercise 2.3",
+    "section": "Solution",
+    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exercise 2.3</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-1.html",
+    "href": "chapter-3/exercise-3-1.html",
+    "title": "Exercise 3.1",
+    "section": "",
+    "text": "Problem\nParaphrase the problem here.",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise 3.1</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-1.html#solution",
+    "href": "chapter-3/exercise-3-1.html#solution",
+    "title": "Exercise 3.1",
+    "section": "Solution",
+    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise 3.1</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-2.html",
+    "href": "chapter-3/exercise-3-2.html",
+    "title": "Exercise 3.2",
+    "section": "",
+    "text": "Problem\nParaphrase the problem here.",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise 3.2</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-2.html#solution",
+    "href": "chapter-3/exercise-3-2.html#solution",
+    "title": "Exercise 3.2",
+    "section": "Solution",
+    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise 3.2</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-3.html",
+    "href": "chapter-3/exercise-3-3.html",
+    "title": "Exercise 3.3",
+    "section": "",
+    "text": "Problem\nParaphrase the problem here.",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise 3.3</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-3.html#solution",
+    "href": "chapter-3/exercise-3-3.html#solution",
+    "title": "Exercise 3.3",
+    "section": "Solution",
+    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise 3.3</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-4/exercise-4-1.html",
+    "href": "chapter-4/exercise-4-1.html",
+    "title": "Exercise 4.1",
+    "section": "",
+    "text": "Problem\nParaphrase the problem here.",
+    "crumbs": [
+      "Home",
+      "Chapter 4",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise 4.1</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-4/exercise-4-1.html#solution",
+    "href": "chapter-4/exercise-4-1.html#solution",
+    "title": "Exercise 4.1",
+    "section": "Solution",
+    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "crumbs": [
+      "Home",
+      "Chapter 4",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise 4.1</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-4/exercise-4-2.html",
+    "href": "chapter-4/exercise-4-2.html",
+    "title": "Exercise 4.2",
+    "section": "",
+    "text": "Problem\nParaphrase the problem here.",
+    "crumbs": [
+      "Home",
+      "Chapter 4",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exercise 4.2</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-4/exercise-4-2.html#solution",
+    "href": "chapter-4/exercise-4-2.html#solution",
+    "title": "Exercise 4.2",
+    "section": "Solution",
+    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "crumbs": [
+      "Home",
+      "Chapter 4",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exercise 4.2</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-4/exercise-4-3.html",
+    "href": "chapter-4/exercise-4-3.html",
+    "title": "Exercise 4.3",
+    "section": "",
+    "text": "Problem\nParaphrase the problem here.",
+    "crumbs": [
+      "Home",
+      "Chapter 4",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Exercise 4.3</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-4/exercise-4-3.html#solution",
+    "href": "chapter-4/exercise-4-3.html#solution",
+    "title": "Exercise 4.3",
+    "section": "Solution",
+    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "crumbs": [
+      "Home",
+      "Chapter 4",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Exercise 4.3</span>"
+    ]
+  }
+]

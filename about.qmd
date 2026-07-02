@@ -1,0 +1,31 @@
+---
+title: "About"
+---
+
+# Jae-Yun Lee
+
+I am an independent researcher and musician from South Korea.
+
+## Education
+
+- B.S. in Mathematical Sciences, KAIST
+- M.S. and Ph.D. Track in Economics, Department of Management Engineering, KAIST
+
+## Research
+
+Selected publication:
+
+> Jae-Yun Lee, Jiwoong Shin, and Jungju Yu 
+>
+> ["Communicating Attribute Importance Under Competition"](https://pubsonline.informs.org/doi/abs/10.1287/mksc.2024.1124)
+>
+> *Marketing Science*, 45(3), 534–555, 2026.
+
+
+## Music
+
+Outside academia, I work as an independent musician under the name **Jayhat**.
+
+My work combines hip-hop, R&B, and classical music, with a particular interest in orchestral composition and piano performance.
+
+- Instagram: [@jayhat3210](https://www.instagram.com/jayhat3210)
