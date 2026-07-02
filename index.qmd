@@ -1,0 +1,20 @@
+---
+title: "Home"
+---
+
+# Bass Real Analysis Solutions
+
+This website contains my solutions to selected exercises from Richard Bass's *Real Analysis for Graduate Students*.
+
+## About this project
+
+The goal of this project is to provide clear and rigorous solutions to graduate-level real analysis exercises.
+
+## Author
+
+Jae-Yun Lee
+
+- B.S. in Mathematical Sciences, KAIST
+- M.S. and Ph.D. Track in Economics, KAIST
+
+For more information, see the About page.

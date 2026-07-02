@@ -1,0 +1,62 @@
+{
+  "index.qmd": {
+    "index.html": "f3b38158"
+  },
+  "intro.qmd": {
+    "intro.html": "1af53e2e"
+  },
+  "summary.qmd": {
+    "summary.html": "28c1e7c3"
+  },
+  "references.qmd": {
+    "references.html": "de272e20"
+  },
+  "exercise-1-1.qmd": {
+    "exercise-1-1.html": "796b65ad"
+  },
+  "chapter-1/index.qmd": {
+    "index.html": "2279bf04"
+  },
+  "chapter-1/exercise-1-1.qmd": {
+    "exercise-1-1.html": "fe82c2e9"
+  },
+  "chapter-2/index.qmd": {
+    "index.html": "bb716e35"
+  },
+  "chapter-2/exercise-2-1.qmd": {
+    "exercise-2-1.html": "ad1bdfdc"
+  },
+  "about.qmd": {
+    "about.html": "d0ff6294"
+  },
+  "chapter-1/exercise-1-2.qmd": {
+    "exercise-1-2.html": "62f8b3d8"
+  },
+  "chapter-1/exercise-1-3.qmd": {
+    "exercise-1-3.html": "c81ca7b0"
+  },
+  "chapter-2/exercise-2-2.qmd": {
+    "exercise-2-2.html": "d95502f7"
+  },
+  "chapter-2/exercise-2-3.qmd": {
+    "exercise-2-3.html": "4886138c"
+  },
+  "chapter-3/exercise-3-1.qmd": {
+    "exercise-3-1.html": "1d1fc45f"
+  },
+  "chapter-3/exercise-3-2.qmd": {
+    "exercise-3-2.html": "876da6e1"
+  },
+  "chapter-3/exercise-3-3.qmd": {
+    "exercise-3-3.html": "e372795b"
+  },
+  "chapter-4/exercise-4-1.qmd": {
+    "exercise-4-1.html": "ba028d5e"
+  },
+  "chapter-4/exercise-4-2.qmd": {
+    "exercise-4-2.html": "5b185777"
+  },
+  "chapter-4/exercise-4-3.qmd": {
+    "exercise-4-3.html": "1360bcac"
+  }
+}

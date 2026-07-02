@@ -1,0 +1,46 @@
+project:
+  type: book
+
+book:
+  title: "Bass Real Analysis Solutions"
+  author: "Jae-Yun Lee"
+  date: "2026. 7. 2."
+
+  navbar:
+    left:
+      - text: "Home"
+        href: index.html
+      - text: "About"
+        href: about.html
+
+
+  chapters:
+    - index.qmd
+    - about.qmd
+    - part: "Chapter 2"
+      chapters:
+        - chapter-2/exercise-2-1.qmd
+        - chapter-2/exercise-2-2.qmd
+        - chapter-2/exercise-2-3.qmd
+    - part: "Chapter 3"
+      chapters:
+        - chapter-3/exercise-3-1.qmd
+        - chapter-3/exercise-3-2.qmd
+        - chapter-3/exercise-3-3.qmd
+    - part: "Chapter 4"
+      chapters:
+        - chapter-4/exercise-4-1.qmd
+        - chapter-4/exercise-4-2.qmd
+        - chapter-4/exercise-4-3.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    number-sections: false
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
