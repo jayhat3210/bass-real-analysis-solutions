@@ -1,0 +1,38 @@
+---
+title: "Exercise 2.5"
+---
+
+
+## Solution
+
+We show that $\mathcal B$ is a $\sigma$-algebra.
+
+(1) $\emptyset \in \mathcal{B}$
+
+    Since $\emptyset \in \mathcal{A}$, we have $f^{-1}(\emptyset) \in \mathcal{B}$. And we can say that $f^{-1}(\emptyset)=\emptyset$. 
+
+    To prove this, suppose not. Then there exists $x \in X$, such that $x \in f^{-1}(\emptyset)$. That is, $f(x) \in \emptyset$. But it is a contradiction.
+
+(2) $X \in \mathcal{B}$
+
+    Since $Y \in \mathcal{A}$, we have $f^{-1}(Y) \in \mathcal{B}$. And we can say that $f^{-1}(Y)=X$.  
+
+    To prove this, suppose not. Then there exists $x \in X$, such that $x \notin f^{-1}(Y)$. That is, $f(x) \notin Y$.
+    But it is a contradiction.
+
+(3) If $B \in \mathcal{B}$, then $B^c \in \mathcal{B}$
+
+    Consider $B\in \mathcal{B}$. Then there exists $A \in \mathcal{A}$, such that $f^{-1}(A)=B$. Since
+
+    $$f^{-1}(A^c) = X\setminus f^{-1}(A) = B^c, $$
+
+    and $A^c \in \mathcal{A}$, we can conclude that $B^c \in \mathcal{B}$.
+
+
+(4) If $B_1, B_2, \ldots \in \mathcal{B}$, then $\bigcup_i B_i \in \mathcal{B}$
+
+    Consider $B_1, B_2, \ldots \in \mathcal{B}$ and corresponding $A_1, A_2, \ldots \in \mathcal{A}$. Since
+    
+    $$ \bigcup_i B_i = \bigcup_i f^{-1}(A_i) =  f^{-1}\Big(\bigcup_i A_i \Big), $$
+    
+    and $\bigcup_i A_i \in \mathcal{A}$, we can conclude that $\bigcup_i B_i \in \mathcal{B}$.

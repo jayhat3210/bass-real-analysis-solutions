@@ -1,0 +1,26 @@
+---
+title: "Exercise 2.6"
+---
+
+
+## Solution
+
+Suppose, for contradiction, that $\mathcal{A}$ is finite. 
+
+Since $X \neq \emptyset$ and $X \in \mathcal{A}$, the assumed property implies that 
+$X$ can be written as a disjoint union of two nonempty sets in $\mathcal A$.
+
+Choose one of them and call it $A_1$.
+Now apply the same property to $A_1$. Then $A_1$ can be written as a disjoint union of two nonempty sets in $\mathcal A$. 
+
+Choose one of them and call it $A_2$. Since the other piece is also nonempty, we have
+$$ A_2 \subsetneq A_1.$$
+
+Repeating this argument, we obtain a strictly decreasing sequence
+$$ X \supsetneq A_1 \supsetneq A_2 \supsetneq A_3 \supsetneq \cdots $$
+of sets in $\mathcal A$.
+
+This is impossible if $\mathcal A$ is finite. Hence $\mathcal A$ is infinite.
+
+By Exercise 2.8, every infinite $\sigma$-algebra is uncountable. 
+Therefore, $\mathcal A$ is uncountable.

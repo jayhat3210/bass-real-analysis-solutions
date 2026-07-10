@@ -2,24 +2,11 @@
 title: "Exercise 2.1"
 ---
 
-## Problem
-
-Paraphrase the problem here.
 
 ## Solution
 
-Suppose that
+Consider $X = \{1, 2, 3\}$ and $\mathcal{M} = \{ \emptyset, \{1\}, \{2\}, \{3\}, X\}$.
+It is straightforward to verify that $\mathcal{M}$ is a monotone class. However, $\mathcal{M}$ is not a $\sigma$-algebra, since
 
-$$
-A_n \uparrow A.
-$$
+$$\{1\} \cup \{2\} = \{1,2\} \notin \mathcal{M}.$$
 
-Then
-
-$$
-\mu(A)
-=
-\lim_{n\to\infty}\mu(A_n).
-$$
-
-Hence the result follows.

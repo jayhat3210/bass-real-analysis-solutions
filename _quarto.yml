@@ -22,6 +22,12 @@ book:
         - chapter-2/exercise-2-1.qmd
         - chapter-2/exercise-2-2.qmd
         - chapter-2/exercise-2-3.qmd
+        - chapter-2/exercise-2-4.qmd
+        - chapter-2/exercise-2-5.qmd
+        - chapter-2/exercise-2-6.qmd
+        - chapter-2/exercise-2-7.qmd
+        - chapter-2/exercise-2-8.qmd
+        - chapter-2/exercise-2-9.qmd
     - part: "Chapter 3"
       chapters:
         - chapter-3/exercise-3-1.qmd

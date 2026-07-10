@@ -1,0 +1,71 @@
+---
+title: "Exercise 2.9"
+---
+
+
+## Solution
+
+(1) Let $x \in \liminf_i A_i$. Then there exists $j \in \mathbb{N}$ such that
+    $$ x \in \bigcap_{i=j}^{\infty}A_i.$$
+    Thus $x \in A_i$ for every $i \geq j$, 
+    and hence $x \in A_i$ for all but finitely many $i$.
+
+    Conversely, let $x \in A_i$ for all but finitely many $i$. Then there exists $i^*$ such that
+    $x \in A_i$ for every $i \geq i^*$. Hence,
+    $$ x \in \bigcap_{i=i^*}^{\infty} A_i \subset \liminf_i A_i.$$
+
+    Therefore, 
+    $$ \liminf_i A_i = \{ x : x \in A_i ~\text{for all but finitely many } i\}.$$
+
+    Let $x \in \limsup_i A_i$. Then for every $j \in \mathbb{N}$, we have
+    $$ x \in \bigcup_{i=j}^{\infty}A_i. $$
+    But if $x \in A_i$ for only finitely many $i$, 
+    then there exists $i^*$ such that $x \notin A_i$ for every $i \geq i^*$.
+    It follows that
+    $$x \notin \bigcup_{i=i^*}^{\infty}A_i, $$
+    which is a contradiction. Therefore, $x \in A_i$ for infinitely many $i$.
+
+    Conversely, let $x \in A_i$ for infinitely many $i$. Then for evert $j$, we have
+    $$x \in \bigcup_{i=j}^{\infty}A_i.$$
+    Hence, we have
+    $$ x \in \bigcap_{j=1}^{\infty} \bigcup_{i=j}^{\infty}A_i.$$
+
+    Therefore,
+    $$ \limsup_i A_i = \{ x : x \in A_i ~\text{for infinitely many } i\}.$$
+
+(2) Define
+    $$ A_n = \Big( -\frac{1}{n}, 1 \Big] \text{ if $n$ is odd,} \quad A_n = \Big( -1, \frac{1}{n} \Big] \text{ if $n$ is even}.$$
+    For every $n$, we have
+    $$\bigcup_{i=n}^{\infty} A_i = (A_n \cup A_{n+1}) \cup (A_{n+2} \cup A_{n+3}) \cup \cdots = (-1,1] \cup (-1,1] \cup \cdots = (-1,1].$$
+    Therefore,
+    $$\limsup_i A_i = \bigcap_{j=1}^{\infty}\bigcup_{i=j}^{\infty}A_i = (-1,1].$$
+    If $n$ is odd, we have
+    \begin{align*}
+        \bigcap_{i=n}^{\infty}A_i &= (A_n \cap A_{n+1}) \cap (A_{n+2} \cap A_{n+3}) \cap \cdots \\
+        &=\Big(-\frac{1}{n},\frac{1}{n+1} \Big] \cap \Big(-\frac{1}{n+2},\frac{1}{n+3} \Big] \cap \cdots = \{0\}.
+    \end{align*}
+    And if $n$ is even, we have
+    $$\bigcap_{i=n}^{\infty}A_i = \Big(-\frac{1}{n+1},\frac{1}{n} \Big] \cap \Big(-\frac{1}{n+3},\frac{1}{n+2} \Big] \cap \cdots = \{0\}.$$
+    Therefore,
+    $$\liminf_i A_i = \bigcup_{j=1}^{\infty}\bigcap_{i=j}^{\infty}A_i = \{0\}.$$
+
+(3) For the first case, we have
+    \begin{align*}
+        \chi_{(\liminf A_i)}(x) = 1 &\iff x \in \liminf_i A_i \iff x \in A_i \text{ for all but finitely many $i$ } \\
+        &\iff \chi_{A_i}(x) = 1 \text{ for all but finitely many $i$ } \\[5pt]
+        &\iff \text{there exists } i^* ~s.t.~ \chi_{A_i}(x) = 1 \text{ for every } i\geq i^* \\[5pt]
+        &\iff \liminf_i \chi_{A_i}(x) = 1.
+    \end{align*}
+    Since the two functions take values only in $\{0,1\}$, the equivalence above implies that they are equal for every $x$.
+    Therefore, 
+    $$ \chi_{(\liminf A_i)}(x) = \liminf_i \chi_{A_i}(x).$$
+
+    For the second case, we have
+    \begin{align*}
+        \chi_{(\limsup A_i)}(x) = 1 &\iff x \in \limsup_i A_i \iff x \in A_i \text{ for infinitely many $i$ } \\
+        &\iff \chi_{A_i}(x) = 1 \text{ for infinitely many $i$ } \\[6pt]
+        &\iff \sup_{i \geq i^*} \chi_{A_i}(x) = 1 \text{ for every } i^*\\
+        &\iff \limsup_i \chi_{A_i}(x) = 1.
+    \end{align*}
+    Therefore, 
+    $$ \chi_{(\limsup A_i)}(x) = \limsup_i \chi_{A_i}(x).$$

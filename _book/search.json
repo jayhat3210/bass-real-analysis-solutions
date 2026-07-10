@@ -11,129 +11,25 @@
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Hello everyone!",
-    "section": "",
-    "text": "2 Welcome\nThis website contains my solutions to selected exercises from Richard Bass’s Real Analysis for Graduate Students v5.0.",
+    "objectID": "index.html#about-this-project",
+    "href": "index.html#about-this-project",
+    "title": "Bass Real Analysis Solutions",
+    "section": "About this project",
+    "text": "About this project\nThe goal of this project is to provide clear and rigorous solutions to graduate-level real analysis exercises.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello everyone!</span>"
+      "Home",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "3  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.",
+    "objectID": "index.html#author",
+    "href": "index.html#author",
+    "title": "Bass Real Analysis Solutions",
+    "section": "Author",
+    "text": "Author\nJae-Yun Lee\n\nB.S. in Mathematical Sciences, KAIST\nM.S. and Ph.D. Track in Economics, KAIST\n\nFor more information, see the About page.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Summary</span>"
-    ]
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. (USA) 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
-    "crumbs": [
-      "References"
-    ]
-  },
-  {
-    "objectID": "exercise-1-1.html",
-    "href": "exercise-1-1.html",
-    "title": "2  Exercise 1.1",
-    "section": "",
-    "text": "2.1 Problem\nParaphrase the problem here.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Exercise 1.1</span>"
-    ]
-  },
-  {
-    "objectID": "exercise-1-1.html#problem",
-    "href": "exercise-1-1.html#problem",
-    "title": "2  Exercise 1.1",
-    "section": "3.1 Problem",
-    "text": "3.1 Problem\nParaphrase the problem here.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Exercise 1.1</span>"
-    ]
-  },
-  {
-    "objectID": "exercise-1-1.html#solution",
-    "href": "exercise-1-1.html#solution",
-    "title": "2  Exercise 1.1",
-    "section": "2.2 Solution",
-    "text": "2.2 Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Exercise 1.1</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-1/index.html",
-    "href": "chapter-1/index.html",
-    "title": "1  Chapter 1",
-    "section": "",
-    "text": "2 Chapter 1\nSolutions to exercises from Chapter 1.",
-    "crumbs": [
-      "Chapter 1",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-1/exercise-1-1.html",
-    "href": "chapter-1/exercise-1-1.html",
-    "title": "1  Exercise 1.1",
-    "section": "",
-    "text": "1.1 Problem\nParaphrase the problem here.",
-    "crumbs": [
-      "Chapter 1",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Exercise 1.1</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-1/exercise-1-1.html#solution",
-    "href": "chapter-1/exercise-1-1.html#solution",
-    "title": "1  Exercise 1.1",
-    "section": "1.2 Solution",
-    "text": "1.2 Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
-    "crumbs": [
-      "Chapter 1",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Exercise 1.1</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-2/index.html",
-    "href": "chapter-2/index.html",
-    "title": "3  Chapter 2",
-    "section": "",
-    "text": "4 Chapter 2\nSolutions to exercises from Chapter 2.",
-    "crumbs": [
-      "Chapter 2",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 2</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-2/exercise-2-1.html",
-    "href": "chapter-2/exercise-2-1.html",
-    "title": "2  Exercise 2.1",
-    "section": "",
-    "text": "2.1 Problem\nParaphrase the problem here.",
-    "crumbs": [
-      "Chapter 2",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Exercise 2.1</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-2/exercise-2-1.html#solution",
-    "href": "chapter-2/exercise-2-1.html#solution",
-    "title": "2  Exercise 2.1",
-    "section": "2.2 Solution",
-    "text": "2.2 Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
-    "crumbs": [
-      "Chapter 2",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Exercise 2.1</span>"
+      "Home",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
     ]
   },
   {
@@ -181,83 +77,27 @@
     ]
   },
   {
-    "objectID": "about.html#links",
-    "href": "about.html#links",
-    "title": "1  About",
-    "section": "2.4 Links",
-    "text": "2.4 Links\n\nInstagram: (jayhat3210?)",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#about-this-project",
-    "href": "index.html#about-this-project",
-    "title": "Bass Real Analysis Solutions",
-    "section": "About this project",
-    "text": "About this project\nThe goal of this project is to provide clear and rigorous solutions to graduate-level real analysis exercises.",
-    "crumbs": [
-      "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#author",
-    "href": "index.html#author",
-    "title": "Bass Real Analysis Solutions",
-    "section": "Author",
-    "text": "Author\nJae-Yun Lee\n\nB.S. in Mathematical Sciences, KAIST\nM.S. and Ph.D. Track in Economics, KAIST\n\nFor more information, see the About page.",
-    "crumbs": [
-      "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-1/exercise-1-2.html",
-    "href": "chapter-1/exercise-1-2.html",
-    "title": "Exercise 1.2",
+    "objectID": "chapter-2/exercise-2-1.html",
+    "href": "chapter-2/exercise-2-1.html",
+    "title": "Exercise 2.1",
     "section": "",
-    "text": "Problem\nParaphrase the problem here.",
+    "text": "Solution\nConsider \\(X = \\{1, 2, 3\\}\\) and \\(\\mathcal{M} = \\{ \\emptyset, \\{1\\}, \\{2\\}, \\{3\\}, X\\}\\). It is straightforward to verify that \\(\\mathcal{M}\\) is a monotone class. However, \\(\\mathcal{M}\\) is not a \\(\\sigma\\)-algebra, since\n\\[\\{1\\} \\cup \\{2\\} = \\{1,2\\} \\notin \\mathcal{M}.\\]",
     "crumbs": [
       "Home",
-      "Chapter 1",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Exercise 1.2</span>"
+      "Chapter 2",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Exercise 2.1</span>"
     ]
   },
   {
-    "objectID": "chapter-1/exercise-1-2.html#solution",
-    "href": "chapter-1/exercise-1-2.html#solution",
-    "title": "Exercise 1.2",
+    "objectID": "chapter-2/exercise-2-1.html#solution",
+    "href": "chapter-2/exercise-2-1.html#solution",
+    "title": "Exercise 2.1",
     "section": "Solution",
-    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "text": "Solution\nConsider \\(X = \\{1, 2, 3\\}\\) and \\(\\mathcal{M} = \\{ \\emptyset, \\{1\\}, \\{2\\}, \\{3\\}, X\\}\\). Then we can check that \\(\\mathcal{M}\\) is a monotone class. However, \\(\\mathcal{M}\\) is not a \\(\\sigma\\)-algebra, since\n\\[\\{1\\} \\cup \\{2\\} = \\{1,2\\} \\notin \\mathcal{M}.\\]",
     "crumbs": [
       "Home",
-      "Chapter 1",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Exercise 1.2</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-1/exercise-1-3.html",
-    "href": "chapter-1/exercise-1-3.html",
-    "title": "Exercise 1.3",
-    "section": "",
-    "text": "Problem\nParaphrase the problem here.",
-    "crumbs": [
-      "Home",
-      "Chapter 1",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exercise 1.3</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-1/exercise-1-3.html#solution",
-    "href": "chapter-1/exercise-1-3.html#solution",
-    "title": "Exercise 1.3",
-    "section": "Solution",
-    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
-    "crumbs": [
-      "Home",
-      "Chapter 1",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exercise 1.3</span>"
+      "Chapter 2",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Exercise 2.1</span>"
     ]
   },
   {
@@ -265,11 +105,11 @@
     "href": "chapter-2/exercise-2-2.html",
     "title": "Exercise 2.2",
     "section": "",
-    "text": "Problem\nParaphrase the problem here.",
+    "text": "Solution\nConsider \\(X=\\{1,2,3,4\\}\\), and \\[\\mathcal{A}_1 = \\{\\emptyset, \\{1\\},\\{2,3,4\\},X\\}, \\quad \\mathcal{A}_2 = \\{\\emptyset, \\{1,2,3\\},\\{4\\},X\\}. \\]\nIt is straightforward to verify that \\(\\mathcal{A}_1\\) and \\(\\mathcal{A}_2\\) are \\(\\sigma\\)-algebras. However, \\(\\mathcal{A}_1\\cup\\mathcal{A}_2\\) is not a \\(\\sigma\\)-algebra, since\n\\[ \\{1\\} \\cup \\{4\\} = \\{1,4\\} \\notin  \\mathcal{A}_1\\cup\\mathcal{A}_2.\\]",
     "crumbs": [
       "Home",
       "Chapter 2",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise 2.2</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Exercise 2.2</span>"
     ]
   },
   {
@@ -281,7 +121,7 @@
     "crumbs": [
       "Home",
       "Chapter 2",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise 2.2</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Exercise 2.2</span>"
     ]
   },
   {
@@ -289,23 +129,23 @@
     "href": "chapter-2/exercise-2-3.html",
     "title": "Exercise 2.3",
     "section": "",
-    "text": "Problem\nParaphrase the problem here.",
+    "text": "Solution\nConsider \\(X = \\mathbb{N}\\) and \\(\\mathcal{A}_n = \\sigma \\Big( \\big\\{\\{1\\},\\{2\\},\\cdots,\\{n\\} \\big\\} \\Big).\\)\nNote that \\(\\mathcal{A}_n\\) is a \\(\\sigma\\)-algebra by construction. Moreover, since \\[\\{\\{1\\},\\{2\\},\\cdots,\\{n\\}\\} \\subset \\{\\{1\\},\\{2\\}, \\cdots, \\{n+1\\}\\},\\] we have \\(\\mathcal{A}_n \\subset \\mathcal{A}_{n+1}\\).\nFirst, we establish a useful property of \\(\\mathcal{A}_n\\).\nFor each \\(n \\in \\mathbb{N}\\), define \\[ T_n = \\{n+1, n+2, \\cdots \\} \\quad \\text{and} \\quad \\mathcal{B}_n = \\{E \\subset \\mathbb{N} : T_n \\subset E  ~~\\text{or}~~ E \\cap T_n = \\emptyset \\}.\\] We claim that \\(\\mathcal{B}_n\\) is a \\(\\sigma\\)-algebra.\nTherefore, \\(\\mathcal{B}_n\\) is a \\(\\sigma\\)-algebra.\nNext, since \\(\\{1\\}, \\ldots, \\{n\\} \\in \\mathcal{B}_n\\), we conclude that \\[\\mathcal{A}_n = \\sigma \\Big( \\big\\{\\{1\\},\\{2\\},\\cdots,\\{n\\} \\big\\} \\Big) \\subset \\mathcal{B}_n. \\]\nConsequently, for every \\(E \\in \\mathcal{A}_n\\), we have \\(E \\cap T_n = \\emptyset\\) or \\(T_n \\subset E\\).\nUsing this property, we will show that \\(\\bigcup_k \\mathcal{A}_k\\) is not a \\(\\sigma\\)-algebra.\nConsider the set \\[ \\{2,4,6, \\cdots \\} = \\bigcup_n \\{2n\\}. \\] For any \\(n \\in \\mathbb{N}\\), we have \\[\\{2,4,6, \\cdots \\} \\cap T_n \\neq \\emptyset \\quad \\text{and} \\quad T_n \\not\\subset \\{2,4,6, \\cdots \\}.\\] Hence, \\(\\{2,4,6, \\cdots \\} \\notin \\mathcal{A}_n\\) for any \\(n \\in \\mathbb{N}\\), which implies that \\(\\{2,4,6, \\cdots \\} \\notin \\bigcup_k \\mathcal{A}_k\\).\nOn the other hand, \\(\\{2n\\} \\in \\mathcal{A}_{2n} \\subset \\bigcup_k \\mathcal{A}_k\\) for each \\(n \\in \\mathbb{N}\\).\nTherefore, \\(\\bigcup_k \\mathcal{A}_k\\) is not closed under countable unions, and therefore is not a \\(\\sigma\\)-algebra.",
     "crumbs": [
       "Home",
       "Chapter 2",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise 2.3</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exercise 2.3</span>"
     ]
   },
   {
     "objectID": "chapter-2/exercise-2-3.html#solution",
     "href": "chapter-2/exercise-2-3.html#solution",
     "title": "Exercise 2.3",
-    "section": "Solution",
-    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "section": "",
+    "text": "First, \\(\\emptyset \\in \\mathcal{B}_n\\), since \\(\\emptyset \\cap T_n = \\emptyset\\).\nSecond, suppose that \\(E \\in \\mathcal{B}_n\\).\nIf \\(T_n \\subset E\\), then \\(E^c \\cap T_n = \\emptyset\\). And if \\(E \\cap T_n = \\emptyset\\), then \\(T_n \\subset E^c\\).\nThus, we have \\(E^c \\in \\mathcal{B}_n\\).\nThird, suppose that \\(E_k \\in \\mathcal{B}_n\\) for \\(k= 1,2,\\cdots\\).\nIf there exists \\(k\\) such that \\(T_n \\subset E_k\\), then \\(T_n \\subset \\bigcup_{k} E_k\\). Thus, we have \\(\\bigcup_{k} E_k \\in \\mathcal{B}_n\\).\nOtherwise, \\(E_k \\cap T_n = \\emptyset\\) for all \\(k\\). Hence,\n\\[ \\Big(\\bigcup_{k} E_k \\Big) \\cap T_n = \\bigcup_k (E_k\\cap T_n) = \\emptyset.\\]",
     "crumbs": [
       "Home",
       "Chapter 2",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise 2.3</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exercise 2.3</span>"
     ]
   },
   {
@@ -317,7 +157,7 @@
     "crumbs": [
       "Home",
       "Chapter 3",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise 3.1</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise 3.1</span>"
     ]
   },
   {
@@ -329,7 +169,7 @@
     "crumbs": [
       "Home",
       "Chapter 3",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise 3.1</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise 3.1</span>"
     ]
   },
   {
@@ -341,7 +181,7 @@
     "crumbs": [
       "Home",
       "Chapter 3",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exercise 3.2</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise 3.2</span>"
     ]
   },
   {
@@ -353,7 +193,7 @@
     "crumbs": [
       "Home",
       "Chapter 3",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exercise 3.2</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise 3.2</span>"
     ]
   },
   {
@@ -365,7 +205,7 @@
     "crumbs": [
       "Home",
       "Chapter 3",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Exercise 3.3</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise 3.3</span>"
     ]
   },
   {
@@ -377,7 +217,7 @@
     "crumbs": [
       "Home",
       "Chapter 3",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Exercise 3.3</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise 3.3</span>"
     ]
   },
   {
@@ -450,6 +290,126 @@
       "Home",
       "Chapter 4",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Exercise 4.3</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-4.html",
+    "href": "chapter-2/exercise-2-4.html",
+    "title": "Exercise 2.4",
+    "section": "",
+    "text": "Solution\n(I think it is \\(A_j \\in \\mathcal{M}_j\\) in exercise, not \\(A_j\\in \\mathcal{M}\\))\nConsider \\(A_n = \\{2,4, \\cdots, 2n\\}\\) and \\(\\mathcal{M}_n = \\{\\emptyset, A_n, \\mathbb{N}\\}\\). It is straightforward to verify that\nHowever, \\(A \\neq A_n \\text{ for every } n\\), so, \\(A \\notin \\mathcal{M}\\).",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise 2.4</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-4.html#solution",
+    "href": "chapter-2/exercise-2-4.html#solution",
+    "title": "Exercise 2.4",
+    "section": "",
+    "text": "\\(\\mathcal{M}_n\\) is a monotone class, and\n\\(A_n \\uparrow A = \\{2,4,6, \\cdots\\}\\).",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise 2.4</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-5.html",
+    "href": "chapter-2/exercise-2-5.html",
+    "title": "Exercise 2.5",
+    "section": "",
+    "text": "Solution\nWe show that \\(\\mathcal B\\) is a \\(\\sigma\\)-algebra.",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise 2.5</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-5.html#solution",
+    "href": "chapter-2/exercise-2-5.html#solution",
+    "title": "Exercise 2.5",
+    "section": "",
+    "text": "\\(\\emptyset \\in \\mathcal{B}\\)\nSince \\(\\emptyset \\in \\mathcal{A}\\), we have \\(f^{-1}(\\emptyset) \\in \\mathcal{B}\\). And we can say that \\(f^{-1}(\\emptyset)=\\emptyset\\).\nTo prove this, suppose not. Then there exists \\(x \\in X\\), such that \\(x \\in f^{-1}(\\emptyset)\\). That is, \\(f(x) \\in \\emptyset\\). But it is a contradiction.\n\\(X \\in \\mathcal{B}\\)\nSince \\(Y \\in \\mathcal{A}\\), we have \\(f^{-1}(Y) \\in \\mathcal{B}\\). And we can say that \\(f^{-1}(Y)=X\\).\nTo prove this, suppose not. Then there exists \\(x \\in X\\), such that \\(x \\notin f^{-1}(Y)\\). That is, \\(f(x) \\notin Y\\). But it is a contradiction.\nIf \\(B \\in \\mathcal{B}\\), then \\(B^c \\in \\mathcal{B}\\)\nConsider \\(B\\in \\mathcal{B}\\). Then there exists \\(A \\in \\mathcal{A}\\), such that \\(f^{-1}(A)=B\\). Since\n\\[f^{-1}(A^c) = X\\setminus f^{-1}(A) = B^c, \\]\nand \\(A^c \\in \\mathcal{A}\\), we can conclude that \\(B^c \\in \\mathcal{B}\\).\nIf \\(B_1, B_2, \\ldots \\in \\mathcal{B}\\), then \\(\\bigcup_i B_i \\in \\mathcal{B}\\)\nConsider \\(B_1, B_2, \\ldots \\in \\mathcal{B}\\) and corresponding \\(A_1, A_2, \\ldots \\in \\mathcal{A}\\). Since\n\\[ \\bigcup_i B_i = \\bigcup_i f^{-1}(A_i) =  f^{-1}\\Big(\\bigcup_i A_i \\Big), \\]\nand \\(\\bigcup_i A_i \\in \\mathcal{A}\\), we can conclude that \\(\\bigcup_i B_i \\in \\mathcal{B}\\).",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise 2.5</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-6.html",
+    "href": "chapter-2/exercise-2-6.html",
+    "title": "Exercise 2.6",
+    "section": "",
+    "text": "Solution\nSuppose, for contradiction, that \\(\\mathcal{A}\\) is finite.\nSince \\(X \\neq \\emptyset\\) and \\(X \\in \\mathcal{A}\\), the assumed property implies that \\(X\\) can be written as a disjoint union of two nonempty sets in \\(\\mathcal A\\).\nChoose one of them and call it \\(A_1\\). Now apply the same property to \\(A_1\\). Then \\(A_1\\) can be written as a disjoint union of two nonempty sets in \\(\\mathcal A\\).\nChoose one of them and call it \\(A_2\\). Since the other piece is also nonempty, we have \\[ A_2 \\subsetneq A_1.\\]\nRepeating this argument, we obtain a strictly decreasing sequence \\[ X \\supsetneq A_1 \\supsetneq A_2 \\supsetneq A_3 \\supsetneq \\cdots \\] of sets in \\(\\mathcal A\\).\nThis is impossible if \\(\\mathcal A\\) is finite. Hence \\(\\mathcal A\\) is infinite.\nBy Exercise 2.8, every infinite \\(\\sigma\\)-algebra is uncountable. Therefore, \\(\\mathcal A\\) is uncountable.",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise 2.6</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-7.html",
+    "href": "chapter-2/exercise-2-7.html",
+    "title": "Exercise 2.7",
+    "section": "",
+    "text": "Solution\nWe show that \\(\\mathcal A\\) is a \\(\\sigma\\)-algebra.\nHence, \\(\\mathcal A\\) is a \\(\\sigma\\)-algebra.",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise 2.7</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-7.html#solution",
+    "href": "chapter-2/exercise-2-7.html#solution",
+    "title": "Exercise 2.7",
+    "section": "",
+    "text": "\\(\\emptyset \\in \\mathcal{A}\\)\nSince \\(\\chi_{\\emptyset}(x) = 0\\) for every \\(x \\in X\\), it is a constant function. Hence, \\[\\chi_{\\emptyset} \\in \\mathcal{F}.\\] Therefore, \\(\\emptyset\\in\\mathcal A\\).\n\\(X \\in \\mathcal{A}\\)\nSince \\(\\chi_{X}(x) = 1\\) for evert \\(x \\in X\\), it is a constant function. Hence, \\[\\chi_{X} \\in \\mathcal{F}.\\] Therefore, \\(X\\in\\mathcal A\\).\nIf \\(A \\in \\mathcal{A}\\), then \\(A^c \\in \\mathcal{A}\\)\nLet \\(A\\in \\mathcal{A}\\). Then \\(\\chi_A \\in \\mathcal F\\). Since\n\\[ \\chi_{A^c}=1-\\chi_A, \\]\nand since \\(1\\in\\mathcal F\\), it follows that\n\\[\\chi_{A^c}\\in\\mathcal F.\\] Therefore, \\(A^c\\in\\mathcal A\\).\nIf \\(A_1, A_2, \\ldots \\in \\mathcal{A}\\), then \\(\\bigcup_i A_i \\in \\mathcal{A}\\)\nFirst, if \\(\\chi_A, \\chi_B \\in \\mathcal F\\), then \\[\\chi_{A \\cup B} = \\chi_{A} + \\chi_{B} - \\chi_A \\chi_B. \\]\nSince \\(\\chi_A,\\chi_B\\in\\mathcal F\\), we have \\[ \\chi_{A\\cup B}\\in\\mathcal F. \\]\nThus, for every \\(n \\in \\mathbb{N}\\), \\[ f_n:=\\chi_{\\bigcup_{i=1}^n A_i}\\in\\mathcal F.\\]\nMoreover, \\[ f_n(x)\\to \\chi_{\\bigcup_i A_i}(x) \\quad\\text{for every }x\\in X. \\]\nSince \\(\\mathcal F\\) is closed under pointwise limits, we have \\[ \\chi_{\\bigcup_i A_i}\\in\\mathcal F.\\] Therefore, \\[ \\bigcup_i A_i\\in\\mathcal A. \\]",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise 2.7</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-8.html",
+    "href": "chapter-2/exercise-2-8.html",
+    "title": "Exercise 2.8",
+    "section": "",
+    "text": "Solution\nLet \\(X\\) be a set and let \\(\\mathcal{A}\\) be a \\(\\sigma\\)-algebra on \\(X\\). Suppose that \\(\\mathcal{A}\\) is infinite. Then \\(X\\) must also be infinite, since if \\(X\\) were finite, then \\(\\mathcal A\\subset \\mathcal P(X)\\) would also be finite.\nWe will show that \\(\\mathcal{A}\\) has uncountably many elements. For this, we first construct a sequence of pairwise disjoint nonempty sets \\(B_1, B_2, \\cdots, \\in \\mathcal A\\). Then, we show that \\(\\mathcal{P}(\\mathbb{N})\\) injects into \\(\\mathcal A\\).\nStep 1:\nClaim. For \\(E \\in \\mathcal A\\), if \\(\\{E \\cap A : A \\in \\mathcal{A} \\}\\) is infinite, then there exists \\(C \\in \\mathcal A\\) such that \\[ \\emptyset \\neq E \\cap C \\subsetneq E. \\]\nProof. Suppose, to the contrary, that no such \\(C\\) exists. Then for every \\(A \\in \\mathcal A\\), we have \\[ E \\cap A =\\emptyset \\quad \\text{or} \\quad E \\cap A = E. \\] Hence, \\[\\{E \\cap A : A \\in \\mathcal{A} \\} = \\{ \\emptyset, E \\},\\] which contradicts the assumption that this collection is infinite. \\(\\blacksquare\\)\nNow let \\(A_1 = X\\). Then \\[\\{A_1 \\cap A : A \\in \\mathcal{A} \\} = \\mathcal A\\] is infinite.\nSuppose that \\(A_n \\in \\mathcal A\\) has been chosen so that \\[\\{ A_n \\cap A : A \\in \\mathcal{A}\\} \\] is infinite. By the claim, there exists \\(C \\in \\mathcal A\\) such that \\[\\emptyset \\neq A_n \\cap C \\subsetneq A_n. \\] Then both \\(A_n\\cap C\\) and \\(A_n\\cap C^c\\) are nonempty members of \\(\\mathcal A\\).\nAt least one of the two collections \\[\\{(A_n \\cap C) \\cap A : A \\in \\mathcal{A} \\} \\quad \\text{and} \\quad \\{(A_n \\cap C^c) \\cap A : A \\in \\mathcal{A} \\}\\] must be infinite; otherwise \\(\\{A_n \\cap A : A \\in \\mathcal A \\}\\) would be finite.\nChoose \\(A_{n+1}\\) to be one of \\(A_n \\cap C\\) and \\(A_n \\cap C^c\\) whose associated collection is infinite.\nBy induction, we obtain a strictly decreasing sequence \\[A_1 \\supsetneq A_2 \\supsetneq  \\cdots \\] of nonempty sets in \\(\\mathcal A\\).\nDefine \\[B_n = A_n \\setminus A_{n+1} .\\] Then each \\(B_n\\) is a nonempty member of \\(\\mathcal A\\), and the sets \\(B_1,B_2,\\ldots\\) are pairwise disjoint.\nStep 2:\nFor each \\(N \\subset \\mathbb{N}\\), define \\[E_ N = \\bigcup_{n \\in N} B_n.\\] Since \\(\\mathcal A\\) is a \\(\\sigma\\)-algebra, we have \\(E_N \\in \\mathcal{A}\\).\nMoreover, since the sets \\(B_n\\) are pairwise disjoint and nonempty, if \\(N\\neq M\\), then \\[ E_N \\neq E_M.\\]\nThus the map \\[N\\mapsto E_N\\] is an injection from \\(\\mathcal P(\\mathbb N)\\) into \\(\\mathcal A\\).\nSince \\(\\mathcal P(\\mathbb N)\\) is uncountable, \\(\\mathcal A\\) is uncountable.",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exercise 2.8</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-9.html",
+    "href": "chapter-2/exercise-2-9.html",
+    "title": "Exercise 2.9",
+    "section": "",
+    "text": "Solution",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Exercise 2.9</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-2/exercise-2-9.html#solution",
+    "href": "chapter-2/exercise-2-9.html#solution",
+    "title": "Exercise 2.9",
+    "section": "",
+    "text": "Let \\(x \\in \\liminf_i A_i\\). Then there exists \\(j \\in \\mathbb{N}\\) such that \\[ x \\in \\bigcap_{i=j}^{\\infty}A_i.\\] Thus \\(x \\in A_i\\) for every \\(i \\geq j\\), and hence \\(x \\in A_i\\) for all but finitely many \\(i\\).\nConversely, let \\(x \\in A_i\\) for all but finitely many \\(i\\). Then there exists \\(i^*\\) such that \\(x \\in A_i\\) for every \\(i \\geq i^*\\). Hence, \\[ x \\in \\bigcap_{i=i^*}^{\\infty} A_i \\subset \\liminf_i A_i.\\]\nTherefore, \\[ \\liminf_i A_i = \\{ x : x \\in A_i ~\\text{for all but finitely many } i\\}.\\]\nLet \\(x \\in \\limsup_i A_i\\). Then for every \\(j \\in \\mathbb{N}\\), we have \\[ x \\in \\bigcup_{i=j}^{\\infty}A_i. \\] But if \\(x \\in A_i\\) for only finitely many \\(i\\), then there exists \\(i^*\\) such that \\(x \\notin A_i\\) for every \\(i \\geq i^*\\). It follows that \\[x \\notin \\bigcup_{i=i^*}^{\\infty}A_i, \\] which is a contradiction. Therefore, \\(x \\in A_i\\) for infinitely many \\(i\\).\nConversely, let \\(x \\in A_i\\) for infinitely many \\(i\\). Then for evert \\(j\\), we have \\[x \\in \\bigcup_{i=j}^{\\infty}A_i.\\] Hence, we have \\[ x \\in \\bigcap_{j=1}^{\\infty} \\bigcup_{i=j}^{\\infty}A_i.\\]\nTherefore, \\[ \\limsup_i A_i = \\{ x : x \\in A_i ~\\text{for infinitely many } i\\}.\\]\nDefine \\[ A_n = \\Big( -\\frac{1}{n}, 1 \\Big] \\text{ if $n$ is odd,} \\quad A_n = \\Big( -1, \\frac{1}{n} \\Big] \\text{ if $n$ is even}.\\] For every \\(n\\), we have \\[\\bigcup_{i=n}^{\\infty} A_i = (A_n \\cup A_{n+1}) \\cup (A_{n+2} \\cup A_{n+3}) \\cup \\cdots = (-1,1] \\cup (-1,1] \\cup \\cdots = (-1,1].\\] Therefore, \\[\\limsup_i A_i = \\bigcap_{j=1}^{\\infty}\\bigcup_{i=j}^{\\infty}A_i = (-1,1].\\] If \\(n\\) is odd, we have \\[\\begin{align*}\n    \\bigcap_{i=n}^{\\infty}A_i &= (A_n \\cap A_{n+1}) \\cap (A_{n+2} \\cap A_{n+3}) \\cap \\cdots \\\\\n    &=\\Big(-\\frac{1}{n},\\frac{1}{n+1} \\Big] \\cap \\Big(-\\frac{1}{n+2},\\frac{1}{n+3} \\Big] \\cap \\cdots = \\{0\\}.\n\\end{align*}\\] And if \\(n\\) is even, we have \\[\\bigcap_{i=n}^{\\infty}A_i = \\Big(-\\frac{1}{n+1},\\frac{1}{n} \\Big] \\cap \\Big(-\\frac{1}{n+3},\\frac{1}{n+2} \\Big] \\cap \\cdots = \\{0\\}.\\] Therefore, \\[\\liminf_i A_i = \\bigcup_{j=1}^{\\infty}\\bigcap_{i=j}^{\\infty}A_i = \\{0\\}.\\]\nFor the first case, we have \\[\\begin{align*}\n    \\chi_{(\\liminf A_i)}(x) = 1 &\\iff x \\in \\liminf_i A_i \\iff x \\in A_i \\text{ for all but finitely many $i$ } \\\\\n    &\\iff \\chi_{A_i}(x) = 1 \\text{ for all but finitely many $i$ } \\\\[5pt]\n    &\\iff \\text{there exists } i^* ~s.t.~ \\chi_{A_i}(x) = 1 \\text{ for every } i\\geq i^* \\\\[5pt]\n    &\\iff \\liminf_i \\chi_{A_i}(x) = 1.\n\\end{align*}\\] Since the two functions take values only in \\(\\{0,1\\}\\), the equivalence above implies that they are equal for every \\(x\\). Therefore, \\[ \\chi_{(\\liminf A_i)}(x) = \\liminf_i \\chi_{A_i}(x).\\]\nFor the second case, we have \\[\\begin{align*}\n    \\chi_{(\\limsup A_i)}(x) = 1 &\\iff x \\in \\limsup_i A_i \\iff x \\in A_i \\text{ for infinitely many $i$ } \\\\\n    &\\iff \\chi_{A_i}(x) = 1 \\text{ for infinitely many $i$ } \\\\[6pt]\n    &\\iff \\sup_{i \\geq i^*} \\chi_{A_i}(x) = 1 \\text{ for every } i^*\\\\\n    &\\iff \\limsup_i \\chi_{A_i}(x) = 1.\n\\end{align*}\\] Therefore, \\[ \\chi_{(\\limsup A_i)}(x) = \\limsup_i \\chi_{A_i}(x).\\]",
+    "crumbs": [
+      "Home",
+      "Chapter 2",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Exercise 2.9</span>"
     ]
   }
 ]

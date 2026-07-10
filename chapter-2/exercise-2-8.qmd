@@ -1,0 +1,73 @@
+---
+title: "Exercise 2.8"
+---
+
+
+## Solution
+
+Let $X$ be a set and let $\mathcal{A}$ be a $\sigma$-algebra on $X$. 
+Suppose that $\mathcal{A}$ is infinite. Then $X$ must also be infinite,
+since if $X$ were finite, then $\mathcal A\subset \mathcal P(X)$ would also be finite.
+
+We will show that $\mathcal{A}$ has uncountably many elements. 
+For this, we first construct a sequence of pairwise disjoint nonempty sets $B_1, B_2, \cdots, \in \mathcal A$. 
+Then, we show that $\mathcal{P}(\mathbb{N})$ injects into $\mathcal A$.
+
+<br>
+
+**Step 1:**
+
+**Claim.**
+For $E \in \mathcal A$, if $\{E \cap A : A \in \mathcal{A} \}$ is infinite, then there exists $C \in \mathcal A$ such that
+$$ \emptyset \neq E \cap C \subsetneq E. $$
+
+**Proof.**
+Suppose, to the contrary, that no such $C$ exists. Then for every $A \in \mathcal A$, we have
+$$ E \cap A =\emptyset \quad \text{or} \quad E \cap A = E. $$ 
+Hence,
+$$\{E \cap A : A \in \mathcal{A} \} = \{ \emptyset, E \},$$
+which contradicts the assumption that this collection is infinite. $\blacksquare$
+
+<br>
+
+Now let $A_1 = X$. Then
+$$\{A_1 \cap A : A \in \mathcal{A} \} = \mathcal A$$
+is infinite.
+
+Suppose that $A_n \in \mathcal A$ has been chosen so that 
+$$\{ A_n \cap A : A \in \mathcal{A}\} $$
+is infinite. By the claim, there exists $C \in \mathcal A$ such that
+$$\emptyset \neq A_n \cap C \subsetneq A_n. $$
+Then both $A_n\cap C$ and $A_n\cap C^c$ are nonempty members of $\mathcal A$.
+
+At least one of the two collections
+$$\{(A_n \cap C) \cap A : A \in \mathcal{A} \} \quad \text{and} \quad \{(A_n \cap C^c) \cap A : A \in \mathcal{A} \}$$
+must be infinite; otherwise $\{A_n \cap A : A \in \mathcal A \}$ would be finite. 
+
+Choose $A_{n+1}$ to be one of $A_n \cap C$ and $A_n \cap C^c$ whose associated collection is infinite.
+
+By induction, we obtain a strictly decreasing sequence
+$$A_1 \supsetneq A_2 \supsetneq  \cdots $$
+of nonempty sets in $\mathcal A$.
+
+Define
+$$B_n = A_n \setminus A_{n+1} .$$
+Then each $B_n$ is a nonempty member of $\mathcal A$, 
+and the sets $B_1,B_2,\ldots$ are pairwise disjoint.
+
+<br>
+
+**Step 2:**
+
+For each $N \subset \mathbb{N}$, define
+$$E_ N = \bigcup_{n \in N} B_n.$$
+Since $\mathcal A$ is a $\sigma$-algebra,  we have $E_N \in \mathcal{A}$. 
+
+Moreover, since the sets $B_n$ are pairwise disjoint and nonempty, if $N\neq M$, then
+$$ E_N \neq E_M.$$
+
+Thus the map
+$$N\mapsto E_N$$
+is an injection from $\mathcal P(\mathbb N)$ into $\mathcal A$.
+
+Since $\mathcal P(\mathbb N)$ is uncountable, $\mathcal A$ is uncountable.

@@ -2,24 +2,14 @@
 title: "Exercise 2.2"
 ---
 
-## Problem
-
-Paraphrase the problem here.
 
 ## Solution
 
-Suppose that
+Consider $X=\{1,2,3,4\}$, and 
+$$\mathcal{A}_1 = \{\emptyset, \{1\},\{2,3,4\},X\}, \quad \mathcal{A}_2 = \{\emptyset, \{1,2,3\},\{4\},X\}. $$
 
-$$
-A_n \uparrow A.
-$$
+It is straightforward to verify that $\mathcal{A}_1$ and $\mathcal{A}_2$ are $\sigma$-algebras.
+However, $\mathcal{A}_1\cup\mathcal{A}_2$
+is not a $\sigma$-algebra, since
 
-Then
-
-$$
-\mu(A)
-=
-\lim_{n\to\infty}\mu(A_n).
-$$
-
-Hence the result follows.
+$$ \{1\} \cup \{4\} = \{1,4\} \notin  \mathcal{A}_1\cup\mathcal{A}_2.$$

@@ -1,0 +1,54 @@
+---
+title: "Exercise 2.7"
+---
+
+
+## Solution
+
+We show that $\mathcal A$ is a $\sigma$-algebra.
+
+(1) $\emptyset \in \mathcal{A}$
+
+    Since $\chi_{\emptyset}(x) = 0$ for every $x \in X$, it is a constant function. 
+    Hence, $$\chi_{\emptyset} \in \mathcal{F}.$$
+    Therefore, $\emptyset\in\mathcal A$.
+
+    
+(2) $X \in \mathcal{A}$
+
+    Since $\chi_{X}(x) = 1$ for evert $x \in X$, it is a constant function. 
+    Hence, $$\chi_{X} \in \mathcal{F}.$$
+    Therefore, $X\in\mathcal A$.
+
+(3) If $A \in \mathcal{A}$, then $A^c \in \mathcal{A}$
+
+    Let $A\in \mathcal{A}$. Then $\chi_A \in \mathcal F$. Since
+
+    $$ \chi_{A^c}=1-\chi_A, $$
+
+    and since $1\in\mathcal F$, it follows that
+
+    $$\chi_{A^c}\in\mathcal F.$$
+    Therefore, $A^c\in\mathcal A$.
+
+
+(4) If $A_1, A_2, \ldots \in \mathcal{A}$, then $\bigcup_i A_i \in \mathcal{A}$
+
+    First, if $\chi_A, \chi_B \in \mathcal F$, then
+    $$\chi_{A \cup B} = \chi_{A} + \chi_{B} - \chi_A \chi_B. $$
+
+    Since $\chi_A,\chi_B\in\mathcal F$, we have
+    $$ \chi_{A\cup B}\in\mathcal F. $$
+
+    Thus, for every $n \in \mathbb{N}$,
+    $$ f_n:=\chi_{\bigcup_{i=1}^n A_i}\in\mathcal F.$$
+
+    Moreover, 
+    $$ f_n(x)\to \chi_{\bigcup_i A_i}(x) \quad\text{for every }x\in X. $$
+
+    Since $\mathcal F$ is closed under pointwise limits, we have
+    $$ \chi_{\bigcup_i A_i}\in\mathcal F.$$
+    Therefore,
+    $$ \bigcup_i A_i\in\mathcal A. $$
+
+Hence, $\mathcal A$ is a $\sigma$-algebra. 

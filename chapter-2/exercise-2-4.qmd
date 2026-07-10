@@ -1,0 +1,17 @@
+---
+title: "Exercise 2.4"
+---
+
+
+## Solution
+
+(I think it is *$A_j \in \mathcal{M}_j$* in exercise, not *$A_j\in \mathcal{M}$*)
+<br>
+
+Consider $A_n = \{2,4, \cdots, 2n\}$ and $\mathcal{M}_n = \{\emptyset, A_n, \mathbb{N}\}$. It is straightforward to verify that
+
+(1) $\mathcal{M}_n$ is a monotone class, and
+
+(2) $A_n \uparrow A = \{2,4,6, \cdots\}$.
+
+However, $A \neq A_n \text{ for every } n$, so, $A \notin \mathcal{M}$.

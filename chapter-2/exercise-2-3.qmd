@@ -2,24 +2,63 @@
 title: "Exercise 2.3"
 ---
 
-## Problem
-
-Paraphrase the problem here.
 
 ## Solution
 
-Suppose that
+Consider $X = \mathbb{N}$ and $\mathcal{A}_n = \sigma \Big( \big\{\{1\},\{2\},\cdots,\{n\} \big\} \Big).$
 
-$$
-A_n \uparrow A.
-$$
+Note that $\mathcal{A}_n$ is a $\sigma$-algebra by construction. Moreover, since
+$$\{\{1\},\{2\},\cdots,\{n\}\} \subset \{\{1\},\{2\}, \cdots, \{n+1\}\},$$
+we have 
+$\mathcal{A}_n \subset \mathcal{A}_{n+1}$.
 
-Then
+First, we establish a useful property of $\mathcal{A}_n$.
 
-$$
-\mu(A)
-=
-\lim_{n\to\infty}\mu(A_n).
-$$
+<br>
 
-Hence the result follows.
+For each $n \in \mathbb{N}$, define 
+$$ T_n = \{n+1, n+2, \cdots \} \quad \text{and} \quad \mathcal{B}_n = \{E \subset \mathbb{N} : T_n \subset E  ~~\text{or}~~ E \cap T_n = \emptyset \}.$$
+We claim that $\mathcal{B}_n$ is a $\sigma$-algebra. 
+
+(1) First, $\emptyset \in \mathcal{B}_n$, since $\emptyset \cap T_n = \emptyset$.
+
+(2) Second, suppose that $E \in \mathcal{B}_n$. 
+
+    If $T_n \subset E$, then $E^c \cap T_n = \emptyset$. 
+    And if $E \cap T_n = \emptyset$, then $T_n \subset E^c$. 
+
+    Thus, we have $E^c \in \mathcal{B}_n$.
+
+(3) Third, suppose that $E_k \in \mathcal{B}_n$ for $k= 1,2,\cdots$.
+
+    If there exists $k$ such that $T_n \subset E_k$, then $T_n \subset \bigcup_{k} E_k$.
+    Thus, we have $\bigcup_{k} E_k \in \mathcal{B}_n$.
+
+    Otherwise, $E_k \cap T_n = \emptyset$ for all $k$. Hence, 
+    
+    $$ \Big(\bigcup_{k} E_k \Big) \cap T_n = \bigcup_k (E_k\cap T_n) = \emptyset.$$
+
+
+Therefore, $\mathcal{B}_n$ is a $\sigma$-algebra. 
+
+Next, since $\{1\}, \ldots, \{n\} \in \mathcal{B}_n$, 
+we conclude that 
+$$\mathcal{A}_n = \sigma \Big( \big\{\{1\},\{2\},\cdots,\{n\} \big\} \Big) \subset \mathcal{B}_n. $$
+
+Consequently, for every $E \in \mathcal{A}_n$, we have $E \cap T_n = \emptyset$ or $T_n \subset E$.
+
+<br>
+
+Using this property, we will show that $\bigcup_k \mathcal{A}_k$ is not a $\sigma$-algebra. 
+
+Consider the set
+$$ \{2,4,6, \cdots \} = \bigcup_n \{2n\}. $$
+For any $n \in \mathbb{N}$, we have
+$$\{2,4,6, \cdots \} \cap T_n \neq \emptyset \quad \text{and} \quad T_n \not\subset \{2,4,6, \cdots \}.$$
+Hence, $\{2,4,6, \cdots \} \notin \mathcal{A}_n$ for any $n \in \mathbb{N}$, which implies that 
+$\{2,4,6, \cdots \} \notin \bigcup_k \mathcal{A}_k$.
+
+On the other hand, $\{2n\} \in \mathcal{A}_{2n} \subset \bigcup_k \mathcal{A}_k$ for each $n \in \mathbb{N}$.
+
+
+Therefore, $\bigcup_k \mathcal{A}_k$ is not closed under countable unions, and therefore is not a $\sigma$-algebra.

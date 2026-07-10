@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>References – Bass Real Analysis Solutions</title>
+<title>Exercise 2.9 – Bass Real Analysis Solutions</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,46 +23,28 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./chapter-4/exercise-4-3.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapter-3/exercise-3-1.html" rel="next">
+<link href="../chapter-2/exercise-2-8.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -91,6 +73,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -101,7 +112,7 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Bass Real Analysis Solutions</span>
     </a>
   </div>
@@ -112,11 +123,11 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -130,7 +141,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter-2/exercise-2-1.html">Chapter 2</a></li><li class="breadcrumb-item"><a href="../chapter-2/exercise-2-9.html"><span class="chapter-title">Exercise 2.9</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -144,12 +155,12 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Home</span></a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">About</span></a>
+  <a href="../about.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">About</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -163,17 +174,47 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-2/exercise-2-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.1</span></a>
+  <a href="../chapter-2/exercise-2-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-2/exercise-2-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.2</span></a>
+  <a href="../chapter-2/exercise-2-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-2/exercise-2-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.3</span></a>
+  <a href="../chapter-2/exercise-2-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-2/exercise-2-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-2/exercise-2-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-2/exercise-2-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-2/exercise-2-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-2/exercise-2-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-2/exercise-2-9.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Exercise 2.9</span></a>
   </div>
 </li>
       </ul>
@@ -189,17 +230,17 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-3/exercise-3-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.1</span></a>
+  <a href="../chapter-3/exercise-3-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-3/exercise-3-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.2</span></a>
+  <a href="../chapter-3/exercise-3-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-3/exercise-3-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.3</span></a>
+  <a href="../chapter-3/exercise-3-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.3</span></a>
   </div>
 </li>
       </ul>
@@ -215,24 +256,24 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-4/exercise-4-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.1</span></a>
+  <a href="../chapter-4/exercise-4-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-4/exercise-4-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.2</span></a>
+  <a href="../chapter-4/exercise-4-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-4/exercise-4-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.3</span></a>
+  <a href="../chapter-4/exercise-4-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.3</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -241,15 +282,21 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#solution" id="toc-solution" class="nav-link active" data-scroll-target="#solution">Solution</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter-2/exercise-2-1.html">Chapter 2</a></li><li class="breadcrumb-item"><a href="../chapter-2/exercise-2-9.html"><span class="chapter-title">Exercise 2.9</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title"><span class="chapter-title">Exercise 2.9</span></h1>
 </div>
 
 
@@ -266,10 +313,35 @@ div.csl-indent {
 </header>
 
 
+<section id="solution" class="level2">
+<h2 class="anchored" data-anchor-id="solution">Solution</h2>
+<ol type="1">
+<li><p>Let <span class="math inline">\(x \in \liminf_i A_i\)</span>. Then there exists <span class="math inline">\(j \in \mathbb{N}\)</span> such that <span class="math display">\[ x \in \bigcap_{i=j}^{\infty}A_i.\]</span> Thus <span class="math inline">\(x \in A_i\)</span> for every <span class="math inline">\(i \geq j\)</span>, and hence <span class="math inline">\(x \in A_i\)</span> for all but finitely many <span class="math inline">\(i\)</span>.</p>
+<p>Conversely, let <span class="math inline">\(x \in A_i\)</span> for all but finitely many <span class="math inline">\(i\)</span>. Then there exists <span class="math inline">\(i^*\)</span> such that <span class="math inline">\(x \in A_i\)</span> for every <span class="math inline">\(i \geq i^*\)</span>. Hence, <span class="math display">\[ x \in \bigcap_{i=i^*}^{\infty} A_i \subset \liminf_i A_i.\]</span></p>
+<p>Therefore, <span class="math display">\[ \liminf_i A_i = \{ x : x \in A_i ~\text{for all but finitely many } i\}.\]</span></p>
+<p>Let <span class="math inline">\(x \in \limsup_i A_i\)</span>. Then for every <span class="math inline">\(j \in \mathbb{N}\)</span>, we have <span class="math display">\[ x \in \bigcup_{i=j}^{\infty}A_i. \]</span> But if <span class="math inline">\(x \in A_i\)</span> for only finitely many <span class="math inline">\(i\)</span>, then there exists <span class="math inline">\(i^*\)</span> such that <span class="math inline">\(x \notin A_i\)</span> for every <span class="math inline">\(i \geq i^*\)</span>. It follows that <span class="math display">\[x \notin \bigcup_{i=i^*}^{\infty}A_i, \]</span> which is a contradiction. Therefore, <span class="math inline">\(x \in A_i\)</span> for infinitely many <span class="math inline">\(i\)</span>.</p>
+<p>Conversely, let <span class="math inline">\(x \in A_i\)</span> for infinitely many <span class="math inline">\(i\)</span>. Then for evert <span class="math inline">\(j\)</span>, we have <span class="math display">\[x \in \bigcup_{i=j}^{\infty}A_i.\]</span> Hence, we have <span class="math display">\[ x \in \bigcap_{j=1}^{\infty} \bigcup_{i=j}^{\infty}A_i.\]</span></p>
+<p>Therefore, <span class="math display">\[ \limsup_i A_i = \{ x : x \in A_i ~\text{for infinitely many } i\}.\]</span></p></li>
+<li><p>Define <span class="math display">\[ A_n = \Big( -\frac{1}{n}, 1 \Big] \text{ if $n$ is odd,} \quad A_n = \Big( -1, \frac{1}{n} \Big] \text{ if $n$ is even}.\]</span> For every <span class="math inline">\(n\)</span>, we have <span class="math display">\[\bigcup_{i=n}^{\infty} A_i = (A_n \cup A_{n+1}) \cup (A_{n+2} \cup A_{n+3}) \cup \cdots = (-1,1] \cup (-1,1] \cup \cdots = (-1,1].\]</span> Therefore, <span class="math display">\[\limsup_i A_i = \bigcap_{j=1}^{\infty}\bigcup_{i=j}^{\infty}A_i = (-1,1].\]</span> If <span class="math inline">\(n\)</span> is odd, we have <span class="math display">\[\begin{align*}
+    \bigcap_{i=n}^{\infty}A_i &amp;= (A_n \cap A_{n+1}) \cap (A_{n+2} \cap A_{n+3}) \cap \cdots \\
+    &amp;=\Big(-\frac{1}{n},\frac{1}{n+1} \Big] \cap \Big(-\frac{1}{n+2},\frac{1}{n+3} \Big] \cap \cdots = \{0\}.
+\end{align*}\]</span> And if <span class="math inline">\(n\)</span> is even, we have <span class="math display">\[\bigcap_{i=n}^{\infty}A_i = \Big(-\frac{1}{n+1},\frac{1}{n} \Big] \cap \Big(-\frac{1}{n+3},\frac{1}{n+2} \Big] \cap \cdots = \{0\}.\]</span> Therefore, <span class="math display">\[\liminf_i A_i = \bigcup_{j=1}^{\infty}\bigcap_{i=j}^{\infty}A_i = \{0\}.\]</span></p></li>
+<li><p>For the first case, we have <span class="math display">\[\begin{align*}
+    \chi_{(\liminf A_i)}(x) = 1 &amp;\iff x \in \liminf_i A_i \iff x \in A_i \text{ for all but finitely many $i$ } \\
+    &amp;\iff \chi_{A_i}(x) = 1 \text{ for all but finitely many $i$ } \\[5pt]
+    &amp;\iff \text{there exists } i^* ~s.t.~ \chi_{A_i}(x) = 1 \text{ for every } i\geq i^* \\[5pt]
+    &amp;\iff \liminf_i \chi_{A_i}(x) = 1.
+\end{align*}\]</span> Since the two functions take values only in <span class="math inline">\(\{0,1\}\)</span>, the equivalence above implies that they are equal for every <span class="math inline">\(x\)</span>. Therefore, <span class="math display">\[ \chi_{(\liminf A_i)}(x) = \liminf_i \chi_{A_i}(x).\]</span></p>
+<p>For the second case, we have <span class="math display">\[\begin{align*}
+    \chi_{(\limsup A_i)}(x) = 1 &amp;\iff x \in \limsup_i A_i \iff x \in A_i \text{ for infinitely many $i$ } \\
+    &amp;\iff \chi_{A_i}(x) = 1 \text{ for infinitely many $i$ } \\[6pt]
+    &amp;\iff \sup_{i \geq i^*} \chi_{A_i}(x) = 1 \text{ for every } i^*\\
+    &amp;\iff \limsup_i \chi_{A_i}(x) = 1.
+\end{align*}\]</span> Therefore, <span class="math display">\[ \chi_{(\limsup A_i)}(x) = \limsup_i \chi_{A_i}(x).\]</span></p></li>
+</ol>
 
 
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -674,11 +746,14 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter-4/exercise-4-3.html" class="pagination-link" aria-label="Exercise 4.3">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Exercise 4.3</span></span>
+      <a href="../chapter-2/exercise-2-8.html" class="pagination-link" aria-label="Exercise 2.8">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Exercise 2.8</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../chapter-3/exercise-3-1.html" class="pagination-link" aria-label="Exercise 3.1">
+        <span class="nav-page-text"><span class="chapter-title">Exercise 3.1</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
