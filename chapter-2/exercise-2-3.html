@@ -33,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapter-3/exercise-3-1.html" rel="next">
+<link href="../chapter-2/exercise-2-4.html" rel="next">
 <link href="../chapter-2/exercise-2-2.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -187,6 +187,36 @@ window.Quarto = {
   <a href="../chapter-2/exercise-2-3.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Exercise 2.3</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-2/exercise-2-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-2/exercise-2-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-2/exercise-2-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-2/exercise-2-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-2/exercise-2-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-2/exercise-2-9.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.9</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -257,8 +287,7 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#problem" id="toc-problem" class="nav-link active" data-scroll-target="#problem">Problem</a></li>
-  <li><a href="#solution" id="toc-solution" class="nav-link" data-scroll-target="#solution">Solution</a></li>
+  <li><a href="#solution" id="toc-solution" class="nav-link active" data-scroll-target="#solution">Solution</a></li>
   </ul>
 </nav>
     </div>
@@ -284,23 +313,31 @@ window.Quarto = {
 </header>
 
 
-<section id="problem" class="level2">
-<h2 class="anchored" data-anchor-id="problem">Problem</h2>
-<p>Paraphrase the problem here.</p>
-</section>
 <section id="solution" class="level2">
 <h2 class="anchored" data-anchor-id="solution">Solution</h2>
-<p>Suppose that</p>
-<p><span class="math display">\[
-A_n \uparrow A.
-\]</span></p>
-<p>Then</p>
-<p><span class="math display">\[
-\mu(A)
-=
-\lim_{n\to\infty}\mu(A_n).
-\]</span></p>
-<p>Hence the result follows.</p>
+<p>Consider <span class="math inline">\(X = \mathbb{N}\)</span> and <span class="math inline">\(\mathcal{A}_n = \sigma \Big( \big\{\{1\},\{2\},\cdots,\{n\} \big\} \Big).\)</span></p>
+<p>Note that <span class="math inline">\(\mathcal{A}_n\)</span> is a <span class="math inline">\(\sigma\)</span>-algebra by construction. Moreover, since <span class="math display">\[\{\{1\},\{2\},\cdots,\{n\}\} \subset \{\{1\},\{2\}, \cdots, \{n+1\}\},\]</span> we have <span class="math inline">\(\mathcal{A}_n \subset \mathcal{A}_{n+1}\)</span>.</p>
+<p>First, we establish a useful property of <span class="math inline">\(\mathcal{A}_n\)</span>.</p>
+<p><br></p>
+<p>For each <span class="math inline">\(n \in \mathbb{N}\)</span>, define <span class="math display">\[ T_n = \{n+1, n+2, \cdots \} \quad \text{and} \quad \mathcal{B}_n = \{E \subset \mathbb{N} : T_n \subset E  ~~\text{or}~~ E \cap T_n = \emptyset \}.\]</span> We claim that <span class="math inline">\(\mathcal{B}_n\)</span> is a <span class="math inline">\(\sigma\)</span>-algebra.</p>
+<ol type="1">
+<li><p>First, <span class="math inline">\(\emptyset \in \mathcal{B}_n\)</span>, since <span class="math inline">\(\emptyset \cap T_n = \emptyset\)</span>.</p></li>
+<li><p>Second, suppose that <span class="math inline">\(E \in \mathcal{B}_n\)</span>.</p>
+<p>If <span class="math inline">\(T_n \subset E\)</span>, then <span class="math inline">\(E^c \cap T_n = \emptyset\)</span>. And if <span class="math inline">\(E \cap T_n = \emptyset\)</span>, then <span class="math inline">\(T_n \subset E^c\)</span>.</p>
+<p>Thus, we have <span class="math inline">\(E^c \in \mathcal{B}_n\)</span>.</p></li>
+<li><p>Third, suppose that <span class="math inline">\(E_k \in \mathcal{B}_n\)</span> for <span class="math inline">\(k= 1,2,\cdots\)</span>.</p>
+<p>If there exists <span class="math inline">\(k\)</span> such that <span class="math inline">\(T_n \subset E_k\)</span>, then <span class="math inline">\(T_n \subset \bigcup_{k} E_k\)</span>. Thus, we have <span class="math inline">\(\bigcup_{k} E_k \in \mathcal{B}_n\)</span>.</p>
+<p>Otherwise, <span class="math inline">\(E_k \cap T_n = \emptyset\)</span> for all <span class="math inline">\(k\)</span>. Hence,</p>
+<p><span class="math display">\[ \Big(\bigcup_{k} E_k \Big) \cap T_n = \bigcup_k (E_k\cap T_n) = \emptyset.\]</span></p></li>
+</ol>
+<p>Therefore, <span class="math inline">\(\mathcal{B}_n\)</span> is a <span class="math inline">\(\sigma\)</span>-algebra.</p>
+<p>Next, since <span class="math inline">\(\{1\}, \ldots, \{n\} \in \mathcal{B}_n\)</span>, we conclude that <span class="math display">\[\mathcal{A}_n = \sigma \Big( \big\{\{1\},\{2\},\cdots,\{n\} \big\} \Big) \subset \mathcal{B}_n. \]</span></p>
+<p>Consequently, for every <span class="math inline">\(E \in \mathcal{A}_n\)</span>, we have <span class="math inline">\(E \cap T_n = \emptyset\)</span> or <span class="math inline">\(T_n \subset E\)</span>.</p>
+<p><br></p>
+<p>Using this property, we will show that <span class="math inline">\(\bigcup_k \mathcal{A}_k\)</span> is not a <span class="math inline">\(\sigma\)</span>-algebra.</p>
+<p>Consider the set <span class="math display">\[ \{2,4,6, \cdots \} = \bigcup_n \{2n\}. \]</span> For any <span class="math inline">\(n \in \mathbb{N}\)</span>, we have <span class="math display">\[\{2,4,6, \cdots \} \cap T_n \neq \emptyset \quad \text{and} \quad T_n \not\subset \{2,4,6, \cdots \}.\]</span> Hence, <span class="math inline">\(\{2,4,6, \cdots \} \notin \mathcal{A}_n\)</span> for any <span class="math inline">\(n \in \mathbb{N}\)</span>, which implies that <span class="math inline">\(\{2,4,6, \cdots \} \notin \bigcup_k \mathcal{A}_k\)</span>.</p>
+<p>On the other hand, <span class="math inline">\(\{2n\} \in \mathcal{A}_{2n} \subset \bigcup_k \mathcal{A}_k\)</span> for each <span class="math inline">\(n \in \mathbb{N}\)</span>.</p>
+<p>Therefore, <span class="math inline">\(\bigcup_k \mathcal{A}_k\)</span> is not closed under countable unions, and therefore is not a <span class="math inline">\(\sigma\)</span>-algebra.</p>
 
 
 </section>
@@ -713,8 +750,8 @@ A_n \uparrow A.
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapter-3/exercise-3-1.html" class="pagination-link" aria-label="Exercise 3.1">
-        <span class="nav-page-text"><span class="chapter-title">Exercise 3.1</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapter-2/exercise-2-4.html" class="pagination-link" aria-label="Exercise 2.4">
+        <span class="nav-page-text"><span class="chapter-title">Exercise 2.4</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
