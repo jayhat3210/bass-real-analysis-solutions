@@ -1,0 +1,31 @@
+---
+title: "Exercise 3.7"
+---
+
+## Solution
+We will show that $\mu$ is a measure.
+
+First, we have $\mu(\emptyset)=0$, since
+$$\mu(\emptyset) = \lim_{n \to \infty} \mu_n(\emptyset) = 0. $$
+
+Next, let $\{A_i\}$ be a pairwise disjoint sequence of sets in $\mathcal A$. Then
+
+$$\mu \left( \bigcup_{i} A) \right) = \lim_{n \to \infty} \mu_n\left( \bigcup_{i} A) \right) = 
+\lim_{n \to \infty} \sum_{i=1}^{\infty} \mu_n(A_i).$$
+
+1. Suppose that $\mu_n(A) \uparrow$ for each $A \in \mathcal A$. Let
+    $$ c_{ni} = \mu_n(A_i).$$
+    Since $c_{ni}$ is a non-negative real number that increases in $n$ to $c_i = \mu(A_i)$ for each $i$, we have
+    $$ \lim_{n \to \infty} \sum_{i=1}^{\infty} \mu_n(A_i) = \sum_{i=1}^{\infty} \mu(A_i).$$
+    Hence $\mu$ is countably additive, and therefore a measure.
+
+2. Suppose that $\mu_n(A) \downarrow$ for each $A \in \mathcal A$ and $\mu_1(X)<\infty$. Let
+    $$ c_{ni} = \mu_n(A_i).$$
+    Note that $c_{ni}$ is a non-negative real number that decreases in $n$ to $c_i = \mu(A_i)$ for each $i$.
+    Thus, we have
+    $$\sup_n \vert c_{ni} \vert = \mu_1 (A_i). $$
+    Since $\mu_1$ is a measure, then
+    $$\sum_{i=1}^{\infty}\sup_n \vert c_{ni} \vert =  \sum_{i=1}^{\infty} \mu_1 (A_i) = \mu_1 \left( \bigcup_i A_i \right) \leq \mu_1 (X) <\infty.$$
+    Therefore, we have 
+    $$ \lim_{n \to \infty} \sum_{i=1}^{\infty} \mu_n(A_i) = \sum_{i=1}^{\infty} \mu(A_i).$$
+    Hence $\mu$ is countably additive, and therefore a measure.

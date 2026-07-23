@@ -1,0 +1,13 @@
+---
+title: "Exercise 3.6"
+---
+
+## Solution
+
+First, we have $\nu(\emptyset) = \mu(\emptyset \cap B) = \mu(\emptyset) = 0$.
+
+Next, let $\{A_i\}$ be a pairwise disjoint sequence of sets in $\mathcal A$. Then
+$$\nu \left( \bigcup_i A_i \right) = \mu \left( \left(\bigcup_i A_i \right) \cap B\right)
+= \mu \left( \bigcup_i (A_i \cap B) \right) = \sum_i \mu(A_i \cap B) = \sum_i \nu(A_i).$$
+
+Hence $\nu$ is countably additive, and therefore a measure.

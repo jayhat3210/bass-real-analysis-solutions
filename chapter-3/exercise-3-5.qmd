@@ -1,0 +1,15 @@
+---
+title: "Exercise 3.5"
+---
+
+## Solution
+
+First, we have $\sum_n a_n\mu_n(\emptyset) = 0$, since 
+$$\mu_1(\emptyset) = \mu_2(\emptyset) = \cdots = 0. $$
+
+Next, let $\{A_i\}$ be a pairwise disjoint sequence of measurable sets. Then
+$$\sum_{n} a_n\mu_n \left(\bigcup_i A_i \right) = \sum_{n} a_n \left(\sum_i \mu_n (A_i) \right) = 
+\sum_{n} \sum_i a_n\mu_n (A_i) = \sum_i \sum_n a_n\mu_n (A_i), $$
+where the last equality follows from $a_n\mu_n (A_i) \geq 0$.
+
+Hence $\sum_n a_n\mu_n$ is countably additive, and therefore a measure.

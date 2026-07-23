@@ -4,7 +4,7 @@ title: "Home"
 
 # Bass Real Analysis Solutions
 
-This website contains my solutions to selected exercises from Richard Bass's *Real Analysis for Graduate Students*.
+This website contains my solutions to selected exercises from Richard Bass's *Real Analysis for Graduate Students v5.0*.
 
 ## About this project
 

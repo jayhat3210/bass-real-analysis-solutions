@@ -33,6 +33,13 @@ book:
         - chapter-3/exercise-3-1.qmd
         - chapter-3/exercise-3-2.qmd
         - chapter-3/exercise-3-3.qmd
+        - chapter-3/exercise-3-4.qmd
+        - chapter-3/exercise-3-5.qmd
+        - chapter-3/exercise-3-6.qmd
+        - chapter-3/exercise-3-7.qmd
+        - chapter-3/exercise-3-8.qmd
+        - chapter-3/exercise-3-9.qmd
+        - chapter-3/exercise-3-10.qmd
     - part: "Chapter 4"
       chapters:
         - chapter-4/exercise-4-1.qmd

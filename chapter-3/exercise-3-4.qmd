@@ -1,0 +1,11 @@
+---
+title: "Exercise 3.4"
+---
+
+## Solution
+\begin{align*}
+\mu(A)+\mu(B) &= \mu\big( (A \cap B) \cup (A \setminus B) \big) +\mu(B) \\[6pt]
+&= \mu(A \cap B) + \mu(A\setminus B)+\mu(B) \\[6pt]
+&= \mu(A \cap B) + \mu\big((A\setminus B) \cup B \big) \\[6pt]
+&= \mu(A \cap B) + \mu(A \cup B).
+\end{align*}

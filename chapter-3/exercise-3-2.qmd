@@ -2,24 +2,20 @@
 title: "Exercise 3.2"
 ---
 
-## Problem
-
-Paraphrase the problem here.
-
 ## Solution
 
-Suppose that
+Let $\{B_i\}$ be a pairwise disjoint sequence of sets in $\mathcal A$ and define
+$$  A_i = \bigcup_{k=i+1}^{\infty} B_k.$$
 
-$$
-A_n \uparrow A.
-$$
+Then $\{A_i\}$ is a decreasing sequence of sets in $\mathcal A$ and
+$$ A_i \downarrow \emptyset. $$
+Thus, by assumption,
+$$ \mu(A_i) \to 0.$$
+Since $\mu$ is finitely additive, for every $n \in \mathbb N$, we have
+$$\mu \left( \bigcup B_i \right) = \mu \left(\left(\bigcup_{i=1}^{n} B_i \right)\cup A_n \right) = \mu(A_n) + \sum_{i=1}^n \mu(B_i).$$
 
-Then
+Therefore,
+$$ \sum_{i=1}^{\infty} \mu(B_i) = \lim_{n\to\infty} \sum_{i=1}^n \mu(B_i) = \mu \left( \bigcup B_i \right) - \lim_{n \to \infty} \mu(A_n)= \mu \left( \bigcup B_i \right).$$
 
-$$
-\mu(A)
-=
-\lim_{n\to\infty}\mu(A_n).
-$$
 
-Hence the result follows.
+Hence $\mu$ is countably additive, and therefore a measure.

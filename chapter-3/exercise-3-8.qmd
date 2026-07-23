@@ -1,0 +1,86 @@
+---
+title: "Exercise 3.8"
+---
+
+## Solution
+Let $\mathcal C = \{A \cup N : A \in \mathcal A, N \in \mathcal N\}$. First, we will show that $\mathcal C$ is a $\sigma$-algebra. 
+
+(1) $\emptyset, X \in \mathcal C$
+
+    Since $\emptyset \in \mathcal A \cap \mathcal N$, we have
+    $$\emptyset = \emptyset \cup \emptyset \in \mathcal C.$$
+    Also,
+    $$X = X \cup  \emptyset \in  \mathcal C.$$
+
+(2) If $E \in \mathcal C$, then $E^c \in \mathcal C$
+
+    Let $E = A \cup N$, where $A \in \mathcal A$ and $N \in \mathcal N$. Then there exists $F \in \mathcal A$ such that 
+    $$N \subset F, \quad \mu(F) = 0. $$
+    Thus, we have
+    $$E^c = A^c \cap N^c = A^c \cap \Big( F^c \cup (F\setminus N) \Big) = 
+    (A^c \cap F^c) \cup \big(A^c \cap (F\setminus N) \big) .$$
+    Since $A, F \in \mathcal A$, we have $A^c \cap F^c \in \mathcal A$. Moreover, since
+    $$A^c \cap (F\setminus N) = (F\setminus N) \setminus A \subset F, $$
+    we have $A^c \cap (F\setminus N) \in \mathcal N$.
+    Hence, $E^c \in \mathcal C.$
+
+
+(3) If $E_1, E_2, \ldots \in \mathcal C$, then $\bigcup_i E_i \in \mathcal C$
+
+    Let $E_i = A_i \cup N_i$, where $A_i \in \mathcal A$ and $N_i \in \mathcal N$. Then there exists $F_i \in \mathcal A$ such that 
+    $$N_i \subset F_i, \quad \mu(F_i) = 0. $$
+    Since
+    $$\bigcup_i N_i \subset \bigcup_i F_i, \quad \mu\left(\bigcup_i F_i\right) \leq \sum_i \mu(F_i) =0,$$
+    we have
+    $$ \bigcup_i N_i \in \mathcal N.$$
+    Hence, we have
+    $$\bigcup_i E_i = \left(\bigcup_i A_i \right) \cup \left(\bigcup_i N_i \right) \in \mathcal C.$$
+
+    
+Therefore, $\mathcal C$ is a $\sigma$-algebra.
+
+<br>
+
+Next, we will show that $\mathcal B = \mathcal C$. 
+
+Let $E = A \cup N \in \mathcal C$. Then $A \in \mathcal A$ and $N \in \mathcal N$, which implies that $A, N \in \mathcal B$.
+Thus, we have $A \cup N \in \mathcal B$. Therefore,
+$$\mathcal C \subset \mathcal B.$$
+On the other hand, let $E \in \mathcal A \cup \mathcal N$.
+If $E \in \mathcal A$, then 
+$$E = E \cup \emptyset \in \mathcal C.$$
+And if $E \in \mathcal N$, then
+$$ E = \emptyset \cup E \in \mathcal C.$$
+Thus, we have
+$$ \mathcal A \cup \mathcal N \subset \mathcal C.$$
+Since $\mathcal C$ is a $\sigma$-algebra containing $\mathcal A \cup \mathcal N$, we have
+$$ \mathcal B = \sigma(\mathcal A \cup \mathcal N) \subset \mathcal C.$$
+Hence, $\mathcal B = \mathcal C$.
+
+
+<br>
+
+Finally, we will show that $\bar\mu$ is uniquely defined.
+
+Suppose that
+$$ B = A_1 \cup N_1 = A_2 \cup N_2,$$
+where $A_1, A_2 \in \mathcal A$ and $N_1, N_2 \in \mathcal N$. If $x \in A_1 \setminus A_2$, then
+$$ x \in  A_1 \subset B = A_2 \cup N_2, \quad x \notin A_2 \quad \Rightarrow \quad x \in N_2.$$
+Thus, we have
+$$ A_1 \setminus A_2 \subset N_2.$$
+Similarly, we have
+$$ A_2 \setminus A_1 \subset N_1.$$
+Since $N_2 \in \mathcal N$, there is a set $B_2 \in \mathcal A$ such that $N_2 \subset B_2$ and $\mu(B_2)=0$. Moreover, since
+$$ A_1 \setminus A_2 \subset N_2 \subset B_2,$$
+we have
+$$ \mu(A_1 \setminus A_2)=0.$$
+Similarly,
+$$ \mu(A_2 \setminus A_1)=0.$$
+Since $A_1 = (A_1 \cap A_2) \cup (A_1 \setminus A_2)$ and this union is disjoint, we have
+$$\mu(A_1) = \mu(A_1 \cap A_2) + \mu(A_1 \setminus A_2) = \mu(A_1 \cap A_2).$$
+Similarly, we have $\mu(A_2) = \mu(A_1 \cap A_2)$. Hence, 
+$$\mu(A_1) = \mu(A_2). $$
+
+Hence,
+$$ \bar\mu(B)=\mu(A_1)=\mu(A_2), $$
+so $\bar\mu$ is well-defined.

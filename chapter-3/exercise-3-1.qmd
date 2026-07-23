@@ -2,24 +2,17 @@
 title: "Exercise 3.1"
 ---
 
-## Problem
-
-Paraphrase the problem here.
-
 ## Solution
 
-Suppose that
+Let $\{B_i\}$ be a pairwise disjoint sequence of sets in $\mathcal A$ and define
+$$  A_i = \bigcup_{k=1}^{i} B_k.$$
 
-$$
-A_n \uparrow A.
-$$
+Then $A_i$ is an increasing sequence of sets in $\mathcal A$ and 
+$$ \bigcup_i A_i = \bigcup_i B_i.$$
+Thus,
+$$ \mu \left(\bigcup_i B_i \right) = \mu \left(\bigcup_i A_i \right) = \lim_{i \to \infty}\mu(A_i) = \lim_{i \to \infty} \mu \left(\bigcup_{k=1}^{i} B_k \right).$$
 
-Then
+Since $\mu$ is finitely additive, we have
+$$ \lim_{i \to \infty} \mu \left(\bigcup_{k=1}^{i} B_k \right) = \lim_{i \to \infty} \sum_{k=1}^{i} \mu(B_k) = \sum_{i=1}^{\infty} \mu(B_i).$$
 
-$$
-\mu(A)
-=
-\lim_{n\to\infty}\mu(A_n).
-$$
-
-Hence the result follows.
+Hence $\mu$ is countably additive, and therefore a measure.

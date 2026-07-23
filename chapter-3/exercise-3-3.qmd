@@ -2,24 +2,23 @@
 title: "Exercise 3.3"
 ---
 
-## Problem
-
-Paraphrase the problem here.
-
 ## Solution
 
-Suppose that
+Clearly, we have $\mu(\emptyset) = 0$.
 
-$$
-A_n \uparrow A.
-$$
+Next, let $\{A_i\}$ be a pairwise disjoint sequence of sets in $\mathcal A$.
+We first show that at most one of the sets $A_i$ is uncountable.
 
-Then
+Suppose, to the contrary, that $A_1$ and $A_2$ are uncountable.
+Since $A_1\cap A_2=\emptyset$, we have
+$$ A_1\subset A_2^c. $$
+Because $A_2$ is uncountable and $A_2\in\mathcal A$, its complement $A_2^c$ is countable. 
+Hence $A_1$ is countable, a contradiction.
 
-$$
-\mu(A)
-=
-\lim_{n\to\infty}\mu(A_n).
-$$
+If every $A_i$ is countable, then $\bigcup_i A_i$ is countable. Therefore,
+$$\mu\left(\bigcup_i A_i \right) = 0, \quad \sum_i \mu(A_i) = 0.$$
 
-Hence the result follows.
+Otherwise, exactly one of the $A_i$ is uncountable. Then $\bigcup_i A_i$ is uncountable, and
+$$ \mu\left(\bigcup_i A_i \right)=1, \quad \sum_i \mu(A_i) = 1.$$
+
+Hence $\mu$ is countably additive, and therefore a measure.

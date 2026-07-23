@@ -1,0 +1,31 @@
+---
+title: "Exercise 3.10"
+---
+
+## Solution
+
+The statement is false, even when $m$ and $n$ are finite measures.
+
+Consider
+
+(1) $X = \{1,2,3\}$
+(2) $\mathcal A = \mathcal P(X)$
+(3) $\mathcal C = \{\{1,2\}, \{2,3\}\}$.
+
+Then $\sigma(\mathcal C) = \mathcal A$.
+
+Define $m$, where
+
+(1) $m(\{\emptyset\})=0$, $m(\{1\})=m(\{3\})=1$, $m(\{2\})=0$,
+(2) $m(\{1,2\}) = m(\{2,3\}) = 1$, $m(\{1,3\}) =2$,
+(3) $m(\{1,2,3\}) = 2$.
+
+Define $n$, where
+
+(1) $n(\{\emptyset\})=0$, $n(\{1\})=n(\{3\})=0$, $n(\{2\})=1$,
+(2) $n(\{1,2\}) = m(\{2,3\}) = 1$, $n(\{1,3\}) =0$,
+(3) $n(\{1,2,3\}) = 1$.
+
+Then $m,n$ are finite measures (also $\sigma$-finite measures), 
+agree on $\mathcal C$, but do not agree on $\sigma(\mathcal C)$.
+

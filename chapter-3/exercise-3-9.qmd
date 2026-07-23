@@ -1,0 +1,104 @@
+---
+title: "Exercise 3.9"
+---
+
+## Solution
+First, we consider the case where $m$ and $n$ are finite.
+
+Let
+$$ \mathcal A = \{ A \in \mathcal B : m(A) = n(A) \}.$$
+We will show that $\mathcal A$ is a monotone class. 
+
+1. If $A_i \uparrow A$ and each $A_i \in \mathcal A$, then
+    \begin{align*}
+        m(A) = m\left(\bigcup_i A_i \right) &= m \left(A_1 \cup \bigcup_{i=1}^{\infty} (A_{i+1}-A_{i}) \right)
+        = m(A_1)+ \sum_{i=1}^{\infty}m(A_{i+1}-A_{i}) \\
+        &= m(A_1)+ \sum_{i=1}^{\infty}\big( m(A_{i+1})-m(A_{i}) \big)
+        = n(A_1)+ \sum_{i=1}^{\infty}\big( n(A_{i+1})-n(A_{i}) \big) \\
+    & = n \left(A_1 \cup \bigcup_{i=1}^{\infty} (A_{i+1}-A_{i}) \right) = n\left(\bigcup_i A_i \right) \\[5pt]
+    &= n(A).
+    \end{align*}
+
+    Hence, $A \in \mathcal A$. 
+
+2. Suppose that $A_i \downarrow A$ and each $A_i \in \mathcal A$. 
+    Since
+    $$(-i,i)\uparrow\mathbb R,$$
+    we have $\mathbb R \in \mathcal A$. Thus, if $E\in\mathcal A$, then
+    $$m(E^c)=m(\mathbb R)-m(E)=n(\mathbb R)-n(E)=n(E^c),$$
+    which implies that $E^c\in\mathcal A$.
+    Thus, we have $A_i^c \in \mathcal A$.
+
+    Since $A_i^c\uparrow A^c$, Step 1 implies that $A^c\in\mathcal A$.
+    Thus, we have $A\in\mathcal A$.
+
+Therefore, $\mathcal A$ is a monotone class.
+
+<br>
+
+Next, we will show that $\mathcal B = \mathcal A$.
+
+
+Let $\mathcal C$ be the collection of all finite disjoint unions of intervals of the forms
+$$(a,b],\qquad (-\infty,b],\qquad (a,\infty),$$
+where $a,b\in\mathbb R$, together with $\emptyset$ and $\mathbb R$. 
+Then $\mathcal C$ is an algebra and
+$$\sigma(\mathcal C)=\mathcal B.$$
+
+First, for any $a<b$, we have
+$$(a,b+1/n)\downarrow(a,b].$$
+Since each $(a,b+1/n)\in\mathcal A$ by assumption and $\mathcal A$ is a monotone class, 
+it follows that
+$$(a,b]\in\mathcal A.$$
+Next, for any $b\in\mathbb R$,
+$$(-n,b]\uparrow(-\infty,b].$$
+
+Since $(-n,b]\in\mathcal A$ for all sufficiently large $n$, 
+the monotone class property gives
+$$(-\infty,b]\in\mathcal A.$$
+
+We know that $\mathcal A$ is closed under complements.
+Hence
+$$(a,\infty)=(-\infty,a]^c\in\mathcal A.$$
+
+Therefore, $m$ and $n$ agree on every interval used in the definition of $\mathcal C$. 
+By finite additivity, they agree on every finite disjoint union of such intervals. Hence,
+$$\mathcal C\subset\mathcal A.$$
+
+Since $\mathcal A$ is a monotone class containing $\mathcal C$,
+$$\mathcal M(\mathcal C)\subset\mathcal A.$$
+By the monotone class theorem,
+$$\mathcal B=\sigma(\mathcal C)=\mathcal M(\mathcal C),$$
+and therefore
+$$\mathcal B\subset\mathcal A.$$
+Since $\mathcal A\subset\mathcal B$ by definition, we conclude that
+$$\mathcal A=\mathcal B.$$
+Thus,
+$$m(A)=n(A) \qquad\text{for every }A\in\mathcal B.$$
+
+
+<br>
+
+Now suppose that at least one of $m$ and $n$ is not finite.
+For $k \in \mathbb N$, define
+$$ m_k(A) = m(A \cap (-k,k)), \quad n_k(A) = n(A \cap (-k,k)).$$
+Thus $m_k$ and $n_k$ are finite, since
+$$ m((-k,k)) = n((-k,k)) <\infty.$$
+
+For any open interval $(a,b)$, we know that $(a,b) \cap (-k,k)$ is an open interval or the emptyset. Thus,
+$$ m_k((a,b)) = m((a,b)\cap(-k,k)) = n((a,b)\cap(-k,k)) = n_k(a,b).$$
+Hence, from finite case, we can say that $m_k(A)=n_k(A)$ for any $A \in \mathcal B$.
+
+For any $A \in \mathcal B$, defined
+$$A_k = A \cap (-k,k).$$
+Then we have
+$$ A_k \uparrow A.$$
+Since
+$$ m(A_k)=n(A_k) $$
+for every $k$, and
+$$ A = A_1 \cup \bigcup_{k=2}^{\infty}(A_k\setminus A_{k-1}),$$
+we obtain
+$$ m(A) = m(A_1) + \sum_{k=2}^{\infty} m(A_k\setminus A_{k-1}) = n(A_1) + \sum_{k=2}^{\infty} n(A_k\setminus A_{k-1})= n(A).$$
+
+
+
