@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Bass Real Analysis Solutions",
     "section": "",
-    "text": "Bass Real Analysis Solutions\nThis website contains my solutions to selected exercises from Richard Bass’s Real Analysis for Graduate Students.",
+    "text": "Bass Real Analysis Solutions\nThis website contains my solutions to selected exercises from Richard Bass’s Real Analysis for Graduate Students v5.0.",
     "crumbs": [
       "Home",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
@@ -249,19 +249,7 @@
     "href": "chapter-3/exercise-3-1.html",
     "title": "Exercise 3.1",
     "section": "",
-    "text": "Problem\nParaphrase the problem here.",
-    "crumbs": [
-      "Home",
-      "Chapter 3",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Exercise 3.1</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-3/exercise-3-1.html#solution",
-    "href": "chapter-3/exercise-3-1.html#solution",
-    "title": "Exercise 3.1",
-    "section": "Solution",
-    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "text": "Solution\nLet \\(\\{B_i\\}\\) be a pairwise disjoint sequence of sets in \\(\\mathcal A\\) and define \\[  A_i = \\bigcup_{k=1}^{i} B_k.\\]\nThen \\(A_i\\) is an increasing sequence of sets in \\(\\mathcal A\\) and \\[ \\bigcup_i A_i = \\bigcup_i B_i.\\] Thus, \\[ \\mu \\left(\\bigcup_i B_i \\right) = \\mu \\left(\\bigcup_i A_i \\right) = \\lim_{i \\to \\infty}\\mu(A_i) = \\lim_{i \\to \\infty} \\mu \\left(\\bigcup_{k=1}^{i} B_k \\right).\\]\nSince \\(\\mu\\) is finitely additive, we have \\[ \\lim_{i \\to \\infty} \\mu \\left(\\bigcup_{k=1}^{i} B_k \\right) = \\lim_{i \\to \\infty} \\sum_{k=1}^{i} \\mu(B_k) = \\sum_{i=1}^{\\infty} \\mu(B_i).\\]\nHence \\(\\mu\\) is countably additive, and therefore a measure.",
     "crumbs": [
       "Home",
       "Chapter 3",
@@ -273,19 +261,7 @@
     "href": "chapter-3/exercise-3-2.html",
     "title": "Exercise 3.2",
     "section": "",
-    "text": "Problem\nParaphrase the problem here.",
-    "crumbs": [
-      "Home",
-      "Chapter 3",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise 3.2</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-3/exercise-3-2.html#solution",
-    "href": "chapter-3/exercise-3-2.html#solution",
-    "title": "Exercise 3.2",
-    "section": "Solution",
-    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "text": "Solution\nLet \\(\\{B_i\\}\\) be a pairwise disjoint sequence of sets in \\(\\mathcal A\\) and define \\[  A_i = \\bigcup_{k=i+1}^{\\infty} B_k.\\]\nThen \\(\\{A_i\\}\\) is a decreasing sequence of sets in \\(\\mathcal A\\) and \\[ A_i \\downarrow \\emptyset. \\] Thus, by assumption, \\[ \\mu(A_i) \\to 0.\\] Since \\(\\mu\\) is finitely additive, for every \\(n \\in \\mathbb N\\), we have \\[\\mu \\left( \\bigcup B_i \\right) = \\mu \\left(\\left(\\bigcup_{i=1}^{n} B_i \\right)\\cup A_n \\right) = \\mu(A_n) + \\sum_{i=1}^n \\mu(B_i).\\]\nTherefore, \\[ \\sum_{i=1}^{\\infty} \\mu(B_i) = \\lim_{n\\to\\infty} \\sum_{i=1}^n \\mu(B_i) = \\mu \\left( \\bigcup B_i \\right) - \\lim_{n \\to \\infty} \\mu(A_n)= \\mu \\left( \\bigcup B_i \\right).\\]\nHence \\(\\mu\\) is countably additive, and therefore a measure.",
     "crumbs": [
       "Home",
       "Chapter 3",
@@ -297,7 +273,7 @@
     "href": "chapter-3/exercise-3-3.html",
     "title": "Exercise 3.3",
     "section": "",
-    "text": "Problem\nParaphrase the problem here.",
+    "text": "Solution\nClearly, we have \\(\\mu(\\emptyset) = 0\\).\nNext, let \\(\\{A_i\\}\\) be a pairwise disjoint sequence of sets in \\(\\mathcal A\\). We first show that at most one of the sets \\(A_i\\) is uncountable.\nSuppose, to the contrary, that \\(A_1\\) and \\(A_2\\) are uncountable. Since \\(A_1\\cap A_2=\\emptyset\\), we have \\[ A_1\\subset A_2^c. \\] Because \\(A_2\\) is uncountable and \\(A_2\\in\\mathcal A\\), its complement \\(A_2^c\\) is countable. Hence \\(A_1\\) is countable, a contradiction.\nIf every \\(A_i\\) is countable, then \\(\\bigcup_i A_i\\) is countable. Therefore, \\[\\mu\\left(\\bigcup_i A_i \\right) = 0, \\quad \\sum_i \\mu(A_i) = 0.\\]\nOtherwise, exactly one of the \\(A_i\\) is uncountable. Then \\(\\bigcup_i A_i\\) is uncountable, and \\[ \\mu\\left(\\bigcup_i A_i \\right)=1, \\quad \\sum_i \\mu(A_i) = 1.\\]\nHence \\(\\mu\\) is countably additive, and therefore a measure.",
     "crumbs": [
       "Home",
       "Chapter 3",
@@ -305,15 +281,135 @@
     ]
   },
   {
-    "objectID": "chapter-3/exercise-3-3.html#solution",
-    "href": "chapter-3/exercise-3-3.html#solution",
-    "title": "Exercise 3.3",
-    "section": "Solution",
-    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "objectID": "chapter-3/exercise-3-4.html",
+    "href": "chapter-3/exercise-3-4.html",
+    "title": "Exercise 3.4",
+    "section": "",
+    "text": "Solution\n\\[\\begin{align*}\n\\mu(A)+\\mu(B) &= \\mu\\big( (A \\cap B) \\cup (A \\setminus B) \\big) +\\mu(B) \\\\[6pt]\n&= \\mu(A \\cap B) + \\mu(A\\setminus B)+\\mu(B) \\\\[6pt]\n&= \\mu(A \\cap B) + \\mu\\big((A\\setminus B) \\cup B \\big) \\\\[6pt]\n&= \\mu(A \\cap B) + \\mu(A \\cup B).\n\\end{align*}\\]",
     "crumbs": [
       "Home",
       "Chapter 3",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Exercise 3.3</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Exercise 3.4</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-5.html",
+    "href": "chapter-3/exercise-3-5.html",
+    "title": "Exercise 3.5",
+    "section": "",
+    "text": "Solution\nFirst, we have \\(\\sum_n a_n\\mu_n(\\emptyset) = 0\\), since \\[\\mu_1(\\emptyset) = \\mu_2(\\emptyset) = \\cdots = 0. \\]\nNext, let \\(\\{A_i\\}\\) be a pairwise disjoint sequence of measurable sets. Then \\[\\sum_{n} a_n\\mu_n \\left(\\bigcup_i A_i \\right) = \\sum_{n} a_n \\left(\\sum_i \\mu_n (A_i) \\right) =\n\\sum_{n} \\sum_i a_n\\mu_n (A_i) = \\sum_i \\sum_n a_n\\mu_n (A_i), \\] where the last equality follows from \\(a_n\\mu_n (A_i) \\geq 0\\).\nHence \\(\\sum_n a_n\\mu_n\\) is countably additive, and therefore a measure.",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Exercise 3.5</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-6.html",
+    "href": "chapter-3/exercise-3-6.html",
+    "title": "Exercise 3.6",
+    "section": "",
+    "text": "Solution\nFirst, we have \\(\\nu(\\emptyset) = \\mu(\\emptyset \\cap B) = \\mu(\\emptyset) = 0\\).\nNext, let \\(\\{A_i\\}\\) be a pairwise disjoint sequence of sets in \\(\\mathcal A\\). Then \\[\\nu \\left( \\bigcup_i A_i \\right) = \\mu \\left( \\left(\\bigcup_i A_i \\right) \\cap B\\right)\n= \\mu \\left( \\bigcup_i (A_i \\cap B) \\right) = \\sum_i \\mu(A_i \\cap B) = \\sum_i \\nu(A_i).\\]\nHence \\(\\nu\\) is countably additive, and therefore a measure.",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Exercise 3.6</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-7.html",
+    "href": "chapter-3/exercise-3-7.html",
+    "title": "Exercise 3.7",
+    "section": "",
+    "text": "Solution\nWe will show that \\(\\mu\\) is a measure.\nFirst, we have \\(\\mu(\\emptyset)=0\\), since \\[\\mu(\\emptyset) = \\lim_{n \\to \\infty} \\mu_n(\\emptyset) = 0. \\]\nNext, let \\(\\{A_i\\}\\) be a pairwise disjoint sequence of sets in \\(\\mathcal A\\). Then\n\\[\\mu \\left( \\bigcup_{i} A) \\right) = \\lim_{n \\to \\infty} \\mu_n\\left( \\bigcup_{i} A) \\right) =\n\\lim_{n \\to \\infty} \\sum_{i=1}^{\\infty} \\mu_n(A_i).\\]",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Exercise 3.7</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-7.html#solution",
+    "href": "chapter-3/exercise-3-7.html#solution",
+    "title": "Exercise 3.7",
+    "section": "",
+    "text": "Suppose that \\(\\mu_n(A) \\uparrow\\) for each \\(A \\in \\mathcal A\\). Let \\[ c_{ni} = \\mu_n(A_i).\\] Since \\(c_{ni}\\) is a non-negative real number that increases in \\(n\\) to \\(c_i = \\mu(A_i)\\) for each \\(i\\), we have \\[ \\lim_{n \\to \\infty} \\sum_{i=1}^{\\infty} \\mu_n(A_i) = \\sum_{i=1}^{\\infty} \\mu(A_i).\\] Hence \\(\\mu\\) is countably additive, and therefore a measure.\nSuppose that \\(\\mu_n(A) \\downarrow\\) for each \\(A \\in \\mathcal A\\) and \\(\\mu_1(X)&lt;\\infty\\). Let \\[ c_{ni} = \\mu_n(A_i).\\] Note that \\(c_{ni}\\) is a non-negative real number that decreases in \\(n\\) to \\(c_i = \\mu(A_i)\\) for each \\(i\\). Thus, we have \\[\\sup_n \\vert c_{ni} \\vert = \\mu_1 (A_i). \\] Since \\(\\mu_1\\) is a measure, then \\[\\sum_{i=1}^{\\infty}\\sup_n \\vert c_{ni} \\vert =  \\sum_{i=1}^{\\infty} \\mu_1 (A_i) = \\mu_1 \\left( \\bigcup_i A_i \\right) \\leq \\mu_1 (X) &lt;\\infty.\\] Therefore, we have \\[ \\lim_{n \\to \\infty} \\sum_{i=1}^{\\infty} \\mu_n(A_i) = \\sum_{i=1}^{\\infty} \\mu(A_i).\\] Hence \\(\\mu\\) is countably additive, and therefore a measure.",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Exercise 3.7</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-8.html",
+    "href": "chapter-3/exercise-3-8.html",
+    "title": "Exercise 3.8",
+    "section": "",
+    "text": "Solution\nLet \\(\\mathcal C = \\{A \\cup N : A \\in \\mathcal A, N \\in \\mathcal N\\}\\). First, we will show that \\(\\mathcal C\\) is a \\(\\sigma\\)-algebra.\nTherefore, \\(\\mathcal C\\) is a \\(\\sigma\\)-algebra.\nNext, we will show that \\(\\mathcal B = \\mathcal C\\).\nLet \\(E = A \\cup N \\in \\mathcal C\\). Then \\(A \\in \\mathcal A\\) and \\(N \\in \\mathcal N\\), which implies that \\(A, N \\in \\mathcal B\\). Thus, we have \\(A \\cup N \\in \\mathcal B\\). Therefore, \\[\\mathcal C \\subset \\mathcal B.\\] On the other hand, let \\(E \\in \\mathcal A \\cup \\mathcal N\\). If \\(E \\in \\mathcal A\\), then \\[E = E \\cup \\emptyset \\in \\mathcal C.\\] And if \\(E \\in \\mathcal N\\), then \\[ E = \\emptyset \\cup E \\in \\mathcal C.\\] Thus, we have \\[ \\mathcal A \\cup \\mathcal N \\subset \\mathcal C.\\] Since \\(\\mathcal C\\) is a \\(\\sigma\\)-algebra containing \\(\\mathcal A \\cup \\mathcal N\\), we have \\[ \\mathcal B = \\sigma(\\mathcal A \\cup \\mathcal N) \\subset \\mathcal C.\\] Hence, \\(\\mathcal B = \\mathcal C\\).\nFinally, we will show that \\(\\bar\\mu\\) is uniquely defined.\nSuppose that \\[ B = A_1 \\cup N_1 = A_2 \\cup N_2,\\] where \\(A_1, A_2 \\in \\mathcal A\\) and \\(N_1, N_2 \\in \\mathcal N\\). If \\(x \\in A_1 \\setminus A_2\\), then \\[ x \\in  A_1 \\subset B = A_2 \\cup N_2, \\quad x \\notin A_2 \\quad \\Rightarrow \\quad x \\in N_2.\\] Thus, we have \\[ A_1 \\setminus A_2 \\subset N_2.\\] Similarly, we have \\[ A_2 \\setminus A_1 \\subset N_1.\\] Since \\(N_2 \\in \\mathcal N\\), there is a set \\(B_2 \\in \\mathcal A\\) such that \\(N_2 \\subset B_2\\) and \\(\\mu(B_2)=0\\). Moreover, since \\[ A_1 \\setminus A_2 \\subset N_2 \\subset B_2,\\] we have \\[ \\mu(A_1 \\setminus A_2)=0.\\] Similarly, \\[ \\mu(A_2 \\setminus A_1)=0.\\] Since \\(A_1 = (A_1 \\cap A_2) \\cup (A_1 \\setminus A_2)\\) and this union is disjoint, we have \\[\\mu(A_1) = \\mu(A_1 \\cap A_2) + \\mu(A_1 \\setminus A_2) = \\mu(A_1 \\cap A_2).\\] Similarly, we have \\(\\mu(A_2) = \\mu(A_1 \\cap A_2)\\). Hence, \\[\\mu(A_1) = \\mu(A_2). \\]\nHence, \\[ \\bar\\mu(B)=\\mu(A_1)=\\mu(A_2), \\] so \\(\\bar\\mu\\) is well-defined.",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Exercise 3.8</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-8.html#solution",
+    "href": "chapter-3/exercise-3-8.html#solution",
+    "title": "Exercise 3.8",
+    "section": "",
+    "text": "\\(\\emptyset, X \\in \\mathcal C\\)\nSince \\(\\emptyset \\in \\mathcal A \\cap \\mathcal N\\), we have \\[\\emptyset = \\emptyset \\cup \\emptyset \\in \\mathcal C.\\] Also, \\[X = X \\cup  \\emptyset \\in  \\mathcal C.\\]\nIf \\(E \\in \\mathcal C\\), then \\(E^c \\in \\mathcal C\\)\nLet \\(E = A \\cup N\\), where \\(A \\in \\mathcal A\\) and \\(N \\in \\mathcal N\\). Then there exists \\(F \\in \\mathcal A\\) such that \\[N \\subset F, \\quad \\mu(F) = 0. \\] Thus, we have \\[E^c = A^c \\cap N^c = A^c \\cap \\Big( F^c \\cup (F\\setminus N) \\Big) =\n(A^c \\cap F^c) \\cup \\big(A^c \\cap (F\\setminus N) \\big) .\\] Since \\(A, F \\in \\mathcal A\\), we have \\(A^c \\cap F^c \\in \\mathcal A\\). Moreover, since \\[A^c \\cap (F\\setminus N) = (F\\setminus N) \\setminus A \\subset F, \\] we have \\(A^c \\cap (F\\setminus N) \\in \\mathcal N\\). Hence, \\(E^c \\in \\mathcal C.\\)\nIf \\(E_1, E_2, \\ldots \\in \\mathcal C\\), then \\(\\bigcup_i E_i \\in \\mathcal C\\)\nLet \\(E_i = A_i \\cup N_i\\), where \\(A_i \\in \\mathcal A\\) and \\(N_i \\in \\mathcal N\\). Then there exists \\(F_i \\in \\mathcal A\\) such that \\[N_i \\subset F_i, \\quad \\mu(F_i) = 0. \\] Since \\[\\bigcup_i N_i \\subset \\bigcup_i F_i, \\quad \\mu\\left(\\bigcup_i F_i\\right) \\leq \\sum_i \\mu(F_i) =0,\\] we have \\[ \\bigcup_i N_i \\in \\mathcal N.\\] Hence, we have \\[\\bigcup_i E_i = \\left(\\bigcup_i A_i \\right) \\cup \\left(\\bigcup_i N_i \\right) \\in \\mathcal C.\\]",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Exercise 3.8</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-9.html",
+    "href": "chapter-3/exercise-3-9.html",
+    "title": "Exercise 3.9",
+    "section": "",
+    "text": "Solution\nFirst, we consider the case where \\(m\\) and \\(n\\) are finite.\nLet \\[ \\mathcal A = \\{ A \\in \\mathcal B : m(A) = n(A) \\}.\\] We will show that \\(\\mathcal A\\) is a monotone class.\nTherefore, \\(\\mathcal A\\) is a monotone class.\nNext, we will show that \\(\\mathcal B = \\mathcal A\\).\nLet \\(\\mathcal C\\) be the collection of all finite disjoint unions of intervals of the forms \\[(a,b],\\qquad (-\\infty,b],\\qquad (a,\\infty),\\] where \\(a,b\\in\\mathbb R\\), together with \\(\\emptyset\\) and \\(\\mathbb R\\). Then \\(\\mathcal C\\) is an algebra and \\[\\sigma(\\mathcal C)=\\mathcal B.\\]\nFirst, for any \\(a&lt;b\\), we have \\[(a,b+1/n)\\downarrow(a,b].\\] Since each \\((a,b+1/n)\\in\\mathcal A\\) by assumption and \\(\\mathcal A\\) is a monotone class, it follows that \\[(a,b]\\in\\mathcal A.\\] Next, for any \\(b\\in\\mathbb R\\), \\[(-n,b]\\uparrow(-\\infty,b].\\]\nSince \\((-n,b]\\in\\mathcal A\\) for all sufficiently large \\(n\\), the monotone class property gives \\[(-\\infty,b]\\in\\mathcal A.\\]\nWe know that \\(\\mathcal A\\) is closed under complements. Hence \\[(a,\\infty)=(-\\infty,a]^c\\in\\mathcal A.\\]\nTherefore, \\(m\\) and \\(n\\) agree on every interval used in the definition of \\(\\mathcal C\\). By finite additivity, they agree on every finite disjoint union of such intervals. Hence, \\[\\mathcal C\\subset\\mathcal A.\\]\nSince \\(\\mathcal A\\) is a monotone class containing \\(\\mathcal C\\), \\[\\mathcal M(\\mathcal C)\\subset\\mathcal A.\\] By the monotone class theorem, \\[\\mathcal B=\\sigma(\\mathcal C)=\\mathcal M(\\mathcal C),\\] and therefore \\[\\mathcal B\\subset\\mathcal A.\\] Since \\(\\mathcal A\\subset\\mathcal B\\) by definition, we conclude that \\[\\mathcal A=\\mathcal B.\\] Thus, \\[m(A)=n(A) \\qquad\\text{for every }A\\in\\mathcal B.\\]\nNow suppose that at least one of \\(m\\) and \\(n\\) is not finite. For \\(k \\in \\mathbb N\\), define \\[ m_k(A) = m(A \\cap (-k,k)), \\quad n_k(A) = n(A \\cap (-k,k)).\\] Thus \\(m_k\\) and \\(n_k\\) are finite, since \\[ m((-k,k)) = n((-k,k)) &lt;\\infty.\\]\nFor any open interval \\((a,b)\\), we know that \\((a,b) \\cap (-k,k)\\) is an open interval or the emptyset. Thus, \\[ m_k((a,b)) = m((a,b)\\cap(-k,k)) = n((a,b)\\cap(-k,k)) = n_k(a,b).\\] Hence, from finite case, we can say that \\(m_k(A)=n_k(A)\\) for any \\(A \\in \\mathcal B\\).\nFor any \\(A \\in \\mathcal B\\), defined \\[A_k = A \\cap (-k,k).\\] Then we have \\[ A_k \\uparrow A.\\] Since \\[ m(A_k)=n(A_k) \\] for every \\(k\\), and \\[ A = A_1 \\cup \\bigcup_{k=2}^{\\infty}(A_k\\setminus A_{k-1}),\\] we obtain \\[ m(A) = m(A_1) + \\sum_{k=2}^{\\infty} m(A_k\\setminus A_{k-1}) = n(A_1) + \\sum_{k=2}^{\\infty} n(A_k\\setminus A_{k-1})= n(A).\\]",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Exercise 3.9</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-9.html#solution",
+    "href": "chapter-3/exercise-3-9.html#solution",
+    "title": "Exercise 3.9",
+    "section": "",
+    "text": "If \\(A_i \\uparrow A\\) and each \\(A_i \\in \\mathcal A\\), then \\[\\begin{align*}\n     m(A) = m\\left(\\bigcup_i A_i \\right) &= m \\left(A_1 \\cup \\bigcup_{i=1}^{\\infty} (A_{i+1}-A_{i}) \\right)\n     = m(A_1)+ \\sum_{i=1}^{\\infty}m(A_{i+1}-A_{i}) \\\\\n     &= m(A_1)+ \\sum_{i=1}^{\\infty}\\big( m(A_{i+1})-m(A_{i}) \\big)\n     = n(A_1)+ \\sum_{i=1}^{\\infty}\\big( n(A_{i+1})-n(A_{i}) \\big) \\\\\n& = n \\left(A_1 \\cup \\bigcup_{i=1}^{\\infty} (A_{i+1}-A_{i}) \\right) = n\\left(\\bigcup_i A_i \\right) \\\\[5pt]\n&= n(A).\n\\end{align*}\\]\nHence, \\(A \\in \\mathcal A\\).\nSuppose that \\(A_i \\downarrow A\\) and each \\(A_i \\in \\mathcal A\\). Since \\[(-i,i)\\uparrow\\mathbb R,\\] we have \\(\\mathbb R \\in \\mathcal A\\). Thus, if \\(E\\in\\mathcal A\\), then \\[m(E^c)=m(\\mathbb R)-m(E)=n(\\mathbb R)-n(E)=n(E^c),\\] which implies that \\(E^c\\in\\mathcal A\\). Thus, we have \\(A_i^c \\in \\mathcal A\\).\nSince \\(A_i^c\\uparrow A^c\\), Step 1 implies that \\(A^c\\in\\mathcal A\\). Thus, we have \\(A\\in\\mathcal A\\).",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Exercise 3.9</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-10.html",
+    "href": "chapter-3/exercise-3-10.html",
+    "title": "Exercise 3.10",
+    "section": "",
+    "text": "Solution\nThe statement is false, even when \\(m\\) and \\(n\\) are finite measures.\nConsider\nThen \\(\\sigma(\\mathcal C) = \\mathcal A\\).\nDefine \\(m\\), where\nDefine \\(n\\), where\nThen \\(m,n\\) are finite measures (also \\(\\sigma\\)-finite measures), agree on \\(\\mathcal C\\), but do not agree on \\(\\sigma(\\mathcal C)\\).",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Exercise 3.10</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-3/exercise-3-10.html#solution",
+    "href": "chapter-3/exercise-3-10.html#solution",
+    "title": "Exercise 3.10",
+    "section": "",
+    "text": "\\(X = \\{1,2,3\\}\\)\n\\(\\mathcal A = \\mathcal P(X)\\)\n\\(\\mathcal C = \\{\\{1,2\\}, \\{2,3\\}\\}\\).\n\n\n\n\n\\(m(\\{\\emptyset\\})=0\\), \\(m(\\{1\\})=m(\\{3\\})=1\\), \\(m(\\{2\\})=0\\),\n\\(m(\\{1,2\\}) = m(\\{2,3\\}) = 1\\), \\(m(\\{1,3\\}) =2\\),\n\\(m(\\{1,2,3\\}) = 2\\).\n\n\n\n\\(n(\\{\\emptyset\\})=0\\), \\(n(\\{1\\})=n(\\{3\\})=0\\), \\(n(\\{2\\})=1\\),\n\\(n(\\{1,2\\}) = m(\\{2,3\\}) = 1\\), \\(n(\\{1,3\\}) =0\\),\n\\(n(\\{1,2,3\\}) = 1\\).",
+    "crumbs": [
+      "Home",
+      "Chapter 3",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Exercise 3.10</span>"
     ]
   },
   {
@@ -325,7 +421,7 @@
     "crumbs": [
       "Home",
       "Chapter 4",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Exercise 4.1</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Exercise 4.1</span>"
     ]
   },
   {
@@ -337,7 +433,7 @@
     "crumbs": [
       "Home",
       "Chapter 4",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Exercise 4.1</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Exercise 4.1</span>"
     ]
   },
   {
@@ -349,7 +445,7 @@
     "crumbs": [
       "Home",
       "Chapter 4",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Exercise 4.2</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Exercise 4.2</span>"
     ]
   },
   {
@@ -361,7 +457,7 @@
     "crumbs": [
       "Home",
       "Chapter 4",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Exercise 4.2</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Exercise 4.2</span>"
     ]
   },
   {
@@ -373,7 +469,7 @@
     "crumbs": [
       "Home",
       "Chapter 4",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Exercise 4.3</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Exercise 4.3</span>"
     ]
   },
   {
@@ -385,7 +481,7 @@
     "crumbs": [
       "Home",
       "Chapter 4",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Exercise 4.3</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Exercise 4.3</span>"
     ]
   }
 ]
