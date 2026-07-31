@@ -1,0 +1,79 @@
+---
+title: "Exercise 4.8"
+---
+
+
+## Solution
+**Claim.**
+There exists countable subset $A \subset F$ such that $\bar{A}=F$.
+
+**Proof.**
+If $F = \emptyset$, then let $A=\emptyset$. Suppose, therefore, that $F \neq \emptyset$. 
+
+For each pair $p,q\in\mathbb Q$ with $p<q$ and
+$$ (p,q)\cap F\neq\varnothing,$$
+choose one point
+$$ a_{p,q}\in(p,q)\cap F.$$
+
+Let
+$$A=\{a_{p,q} : p,q\in\mathbb Q,\ p<q,\ (p,q)\cap F\neq\varnothing \}.$$
+
+Since $\mathbb Q^2$ is countable, $A$ is also countable. And by construction, $A \subset F$.
+Moreover, since $F$ is closed,
+$$ \overline A\subset F.$$
+
+To prove the reverse inclusion, let $x\in F$ and let $\epsilon>0$. 
+By the density of $\mathbb Q$ in $\mathbb R$, we can choose $p,q\in\mathbb Q$ such that
+$$x-\epsilon<p<x<q<x+\epsilon.$$
+
+Since $(p,q) \cap F \neq \emptyset$, this intersection is nonempty. Hence there exists. 
+Hence, there exists 
+$$a_{p,q} \in A$$. 
+It follows that
+$$ \vert x - a_{p,q}\vert < \epsilon.$$
+Thus every neighborhood of $x$ intersects $A$, so
+$$ x\in\overline A.$$
+Therefore, $F\subset\overline A.$
+
+Hence, $\overline A=F.$  $\blacksquare$
+
+<br>
+
+We now construct the desired measure.
+
+If $F=\varnothing$, define
+$$\nu(B)=0$$
+for every Borel set $B\subset[0,1]$. Then $\nu$ is a finite measure whose support is $\varnothing$.
+
+Now suppose that $F\neq\varnothing$. Since $A$ is countable, we may write
+$$ A=\{a_1,a_2,\ldots\} $$
+if $A$ is infinite, or
+$$ A=\{a_1,\ldots,a_N\} $$
+if $A$ is finite.
+
+Assign to each $a_i$ a positive weight $w_i$ such that
+$$\sum_i w_i<\infty.$$
+For example, if $A$ is infinite, take
+$$w_i=\frac1{2^i},$$
+and if $A$ has $N$ elements, take
+$$w_i=\frac{1}{N}.$$
+
+Define, for every Borel set $B\subset[0,1]$,
+$$\nu(B) = \sum_{\{i:a_i \in  B \}} w_i.$$
+
+Thus $\nu$ is a measure, and
+$$\nu([0,1])=\sum_i w_i<\infty.$$
+Hence $\nu$ is finite. Moreover, since $A\subset F$,
+$$\nu(F^c)=0.$$
+
+It remains to show that $F$ is the smallest closed set with this property. 
+Let $G\subset[0,1]$ be closed and suppose that
+$$\nu(G^c)=0.$$
+Since every $w_i$ is positive, no point $a_i$ can belong to $G^c$. Hence
+$$ A\subset G. $$
+Since $G$ is closed,
+$$ F=\overline A\subset G. $$
+
+Therefore, $F$ is the smallest closed set $G$ such that
+$$\nu(G^c)=0.$$
+Thus the support of $\nu$ is $F$.

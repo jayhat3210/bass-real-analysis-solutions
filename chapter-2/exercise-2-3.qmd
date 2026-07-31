@@ -12,9 +12,9 @@ $$\{\{1\},\{2\},\cdots,\{n\}\} \subset \{\{1\},\{2\}, \cdots, \{n+1\}\},$$
 we have 
 $\mathcal{A}_n \subset \mathcal{A}_{n+1}$.
 
-First, we establish a useful property of $\mathcal{A}_n$.
-
 <br>
+
+First, we establish a useful property of $\mathcal{A}_n$.
 
 For each $n \in \mathbb{N}$, define 
 $$ T_n = \{n+1, n+2, \cdots \} \quad \text{and} \quad \mathcal{B}_n = \{E \subset \mathbb{N} : T_n \subset E  ~~\text{or}~~ E \cap T_n = \emptyset \}.$$

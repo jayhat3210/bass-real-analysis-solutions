@@ -6,6 +6,7 @@ title: "Exercise 2.1"
 ## Solution
 
 Consider $X = \{1, 2, 3\}$ and $\mathcal{M} = \{ \emptyset, \{1\}, \{2\}, \{3\}, X\}$.
+
 It is straightforward to verify that $\mathcal{M}$ is a monotone class. However, $\mathcal{M}$ is not a $\sigma$-algebra, since
 
 $$\{1\} \cup \{2\} = \{1,2\} \notin \mathcal{M}.$$

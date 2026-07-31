@@ -45,6 +45,11 @@ book:
         - chapter-4/exercise-4-1.qmd
         - chapter-4/exercise-4-2.qmd
         - chapter-4/exercise-4-3.qmd
+        - chapter-4/exercise-4-4.qmd
+        - chapter-4/exercise-4-5.qmd
+        - chapter-4/exercise-4-6.qmd
+        - chapter-4/exercise-4-7.qmd
+        - chapter-4/exercise-4-8.qmd
     - references.qmd
 
 bibliography: references.bib

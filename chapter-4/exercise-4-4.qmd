@@ -1,0 +1,9 @@
+---
+title: "Exercise 4.4"
+---
+
+
+## Solution
+
+$$m\big( \{x\} \big) = \lim_{n \to \infty} m \left( \left( x - \frac{1}{n}, x \right] \right)
+\lim_{n \to \infty} \left(\alpha(x) - \alpha\left(x - \frac{1}{n} \right) \right)= \alpha(x) - \alpha(x-).$$

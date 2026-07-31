@@ -2,24 +2,73 @@
 title: "Exercise 4.3"
 ---
 
-## Problem
-
-Paraphrase the problem here.
 
 ## Solution
 
-Suppose that
+We will show that $\mu^*$ is an outer measure.
 
-$$
-A_n \uparrow A.
-$$
+1. Clearly $\mu^*(\emptyset) = 0$. 
 
-Then
+2. If $A_1 \subset A_2$, then $\mu^*(A_1) \leq \mu^* (A_2)$.
 
-$$
-\mu(A)
-=
-\lim_{n\to\infty}\mu(A_n).
-$$
+    Every measurable set containing $A_2$ also contains $A_1$. Therefore,
+    $$\{B\in\mathcal A: A_2\subset B\} \subset \{B\in\mathcal A: A_1\subset B\}.$$
+    Taking the infimum over the larger collection gives
+    $$ \mu^*(A_1)\leq \mu^*(A_2).$$
 
-Hence the result follows.
+
+3. $\mu^*(\bigcup_{i=1}^{\infty}A_i) \leq \sum_{i=1}^{\infty}\mu^*(A_i)$ whenever $A_1, A_2, \dots$ are subsets of $X$.    
+    
+    If $\mu^*(A_i)=\infty$ for some $i$, 
+    then the right-hand side is infinite, and the inequality is immediate.
+    Suppose, therefore, that
+    $$\mu^*(A_i)<\infty$$
+    for every $i$.
+
+    Given $\epsilon>0$, for each $i$, choose $B_i \in \mathcal A$ such that
+    $$ A_i \subset B_i, \quad \mu(B_i) \leq \mu^*(A_i) + \frac{\epsilon}{2^i}.$$
+
+    Then
+    $$\bigcup_{i=1}^{\infty}A_i \subset \bigcup_{i=1}^{\infty}B_i, \quad \bigcup_{i=1}^{\infty}B_i\in\mathcal A.$$
+    Since $\mu$ is a measure,
+    $$\mu^*\left(\bigcup_{i=1}^{\infty} A_i \right ) \leq \mu\left(\bigcup_{i=1}^{\infty} B_i \right )
+    \leq \sum_{i=1}^{\infty} \mu(B_i) \leq \sum_{i=1}^{\infty} \mu^*(A_i) + \sum_{i=1}^{\infty} \frac{\epsilon}{2^i}
+    = \sum_{i=1}^{\infty} \mu^*(A_i) + \epsilon.$$
+    Since $\epsilon$ is arbitrary, we have $\mu^*(\bigcup_{i=1}^{\infty}A_i) \leq \sum_{i=1}^{\infty}\mu^*(A_i)$.
+
+Therefore, $\mu^*$ is an outer measure.
+
+<br>
+
+Next, we will show that $\mu^*$ agrees with the measure $\mu$ on $\mathcal A$.
+
+Let $A \in \mathcal A$. Then $\mu^*(A) \leq \mu(A)$, since $A \subset A$. 
+
+For the other direction, for every $B \in \mathcal A$ with $A \subset B$, we have
+$$\mu(A) \leq \mu(B). $$
+Taking the infimum over all such $B$, we have
+$$\mu(A) \leq \inf\{ \mu(B) : A \subset B, B \in \mathcal A\} = \mu^* (A). $$
+Hence, $\mu(A) = \mu^*(A)$.
+
+<br>
+
+Finally, we will show that every set in $\mathcal A$ is $\mu^*$-measurable.
+
+
+Let $A \in \mathcal A$. Then it is enough to show that
+$$ \mu^*(E) \geq \mu^*(E \cap A) + \mu^*(E \cap A^c) ~\text{ for all }~ E \subset X.$$
+
+Given $E$, let $B\in\mathcal A$ be any measurable set such that
+$$ E\subset B.$$
+Since $A,B\in\mathcal A$,
+
+\begin{align*}
+\mu(B) &=\mu(B\cap A)+\mu(B\cap A^c)\\
+&=\mu^*(B\cap A)+\mu^*(B\cap A^c)\\
+&\geq \mu^*(E\cap A)+\mu^*(E\cap A^c).
+\end{align*}
+
+Taking the infimum over all such $B$, we have
+$$\mu^*(E) \geq \mu^*(E\cap A)+\mu^*(E\cap A^c).$$
+
+Hence, $A$ is $\mu^*$-measurable.

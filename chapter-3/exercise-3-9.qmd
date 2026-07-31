@@ -10,26 +10,15 @@ $$ \mathcal A = \{ A \in \mathcal B : m(A) = n(A) \}.$$
 We will show that $\mathcal A$ is a monotone class. 
 
 1. If $A_i \uparrow A$ and each $A_i \in \mathcal A$, then
-    \begin{align*}
-        m(A) = m\left(\bigcup_i A_i \right) &= m \left(A_1 \cup \bigcup_{i=1}^{\infty} (A_{i+1}-A_{i}) \right)
-        = m(A_1)+ \sum_{i=1}^{\infty}m(A_{i+1}-A_{i}) \\
-        &= m(A_1)+ \sum_{i=1}^{\infty}\big( m(A_{i+1})-m(A_{i}) \big)
-        = n(A_1)+ \sum_{i=1}^{\infty}\big( n(A_{i+1})-n(A_{i}) \big) \\
-    & = n \left(A_1 \cup \bigcup_{i=1}^{\infty} (A_{i+1}-A_{i}) \right) = n\left(\bigcup_i A_i \right) \\[5pt]
-    &= n(A).
-    \end{align*}
+    $$m(A)= \lim_{i \to \infty } m(A_i) = \lim_{i \to \infty } n(A_i) = n(A).$$
 
     Hence, $A \in \mathcal A$. 
 
 2. Suppose that $A_i \downarrow A$ and each $A_i \in \mathcal A$. 
-    Since
-    $$(-i,i)\uparrow\mathbb R,$$
-    we have $\mathbb R \in \mathcal A$. Thus, if $E\in\mathcal A$, then
-    $$m(E^c)=m(\mathbb R)-m(E)=n(\mathbb R)-n(E)=n(E^c),$$
-    which implies that $E^c\in\mathcal A$.
-    Thus, we have $A_i^c \in \mathcal A$.
-
-    Since $A_i^c\uparrow A^c$, Step 1 implies that $A^c\in\mathcal A$.
+    Since $m$ and $n$ are finite, we have
+    $$m(A_1) = n(A_1) < \infty. $$
+    Thus,
+    $$m(A)= \lim_{i \to \infty } m(A_i) = \lim_{i \to \infty } n(A_i) = n(A).$$
     Thus, we have $A\in\mathcal A$.
 
 Therefore, $\mathcal A$ is a monotone class.
@@ -57,9 +46,9 @@ Since $(-n,b]\in\mathcal A$ for all sufficiently large $n$,
 the monotone class property gives
 $$(-\infty,b]\in\mathcal A.$$
 
-We know that $\mathcal A$ is closed under complements.
-Hence
-$$(a,\infty)=(-\infty,a]^c\in\mathcal A.$$
+Since $(a,n)\in\mathcal A$ for all sufficiently large $n$, 
+the monotone class property gives
+$$(a,\infty)\in\mathcal A.$$
 
 Therefore, $m$ and $n$ agree on every interval used in the definition of $\mathcal C$. 
 By finite additivity, they agree on every finite disjoint union of such intervals. Hence,
@@ -95,10 +84,6 @@ Then we have
 $$ A_k \uparrow A.$$
 Since
 $$ m(A_k)=n(A_k) $$
-for every $k$, and
-$$ A = A_1 \cup \bigcup_{k=2}^{\infty}(A_k\setminus A_{k-1}),$$
-we obtain
-$$ m(A) = m(A_1) + \sum_{k=2}^{\infty} m(A_k\setminus A_{k-1}) = n(A_1) + \sum_{k=2}^{\infty} n(A_k\setminus A_{k-1})= n(A).$$
-
-
+for every $k$, we obtain
+$$ m(A) = \lim_{k \to \infty}m(A_k) = \lim_{k \to \infty}n(A_k) = n(A).$$
 

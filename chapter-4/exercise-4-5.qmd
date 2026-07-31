@@ -1,0 +1,78 @@
+---
+title: "Exercise 4.5"
+---
+
+
+## Solution
+1. $m(x+ A) = m(A)$
+
+    Consider the collection of half-open intervals $\{I_i\}$ that cover $A$. Since
+    $$x+A \subset \bigcup_{i=1}^{\infty}(x+I_i),$$
+    we have
+    $$m(x+A) \leq \sum_{i=1}^{\infty}l(x+I_i) = \sum_{i=1}^{\infty}l(I_i).$$
+    Taking the infimum over all such collections $\{I_i\}$ that cover $A$, we obtain
+    $$m(x+A) \leq m(A).$$
+
+    Conversely, consider the collection of half-open intervals $\{I_i\}$ that cover $x+A$. Since
+    $$ A \subset \bigcup_{i=1}^{\infty} (I_i -x),$$
+    we have
+    $$m(A) \leq \sum_{i=1}^{\infty} l(I_i-x) = \sum_{i=1}^{\infty} l(I_i).$$
+    Taking the infimum over all such collections $\{I_i\}$ that cover $x+A$, we obtain
+    $$m(x+A) \geq m(A).$$
+
+    Hence, $m(x+ A) = m(A)$.
+
+2. $m(cA)=\vert c \vert m(A)$
+
+    Suppose that $c>0$.
+    
+    Consider the collection of half-open intervals $\{I_i\}$ that cover $A$. Since
+    $$cA \subset \bigcup_{i=1}^{\infty}(cI_i),$$
+    we have
+    $$m(cA) \leq \sum_{i=1}^{\infty}l(cI_i) = c\sum_{i=1}^{\infty}l(I_i).$$
+    Taking the infimum over all such collections $\{I_i\}$ that cover $A$, we obtain
+    $$m(cA) \leq c m(A).$$
+
+    Conversely, consider the collection of half-open intervals $\{I_i\}$ that cover $cA$. Since
+    $$ A \subset \bigcup_{i=1}^{\infty} \left(\frac{1}{c} I_i \right),$$
+    we have
+    $$m(A) \leq \sum_{i=1}^{\infty} l\left(\frac{1}{c} I_i \right) = \frac{1}{c}\sum_{i=1}^{\infty} l(I_i).$$
+    Taking the infimum over all such collections $\{I_i\}$ that cover $cA$, we obtain
+    $$cm(A) \leq m(cA).$$
+
+    Hence, $m(cA) = cm(A)$.
+
+    To show the case $c<0$, we first show that
+    $$ m(-A)=m(A).$$
+    Let $\{I_i\}_{i=1}^{\infty}$ be a collection of half-open intervals covering $A$, where
+    $$ I_i=(a_i,b_i].$$
+    Then
+    $$-A\subset \bigcup_{i=1}^{\infty}[-b_i,-a_i).$$
+    These reflected intervals are not of the form $(a,b]$. Given $\epsilon>0$, define
+    $$J_i=\left(-b_i-\frac{\epsilon}{2^i},-a_i\right].$$
+    Then $\left(-b_i-\epsilon/2^i,-a_i\right] \subset J_i$,
+    and hence
+    $$ -A\subset\bigcup_{i=1}^{\infty}J_i.$$
+    Moreover,
+    $$ l(J_i) = b_i-a_i+\frac{\epsilon}{2^i}=l(I_i)+\frac{\epsilon}{2^i}.$$
+    Therefore,
+    \begin{align*}
+    m(-A) &\leq \sum_{i=1}^{\infty}l(J_i)\\
+    &=\sum_{i=1}^{\infty}l(I_i)+\sum_{i=1}^{\infty}\frac{\epsilon}{2^i}\\
+    &=\sum_{i=1}^{\infty}l(I_i)+\epsilon.
+    \end{align*}
+    Taking the infimum over all half-open interval covers ${I_i}$ of $A$, we obtain
+    $$m(-A)\leq m(A)+\epsilon.$$
+    Since $\epsilon>0$ is arbitrary,
+    $m(-A)\leq m(A).$
+
+    Applying the same inequality to the set $-A$, we get
+    $$ m(A)=m(-(-A))\leq m(-A).$$
+    Thus, $m(-A)=m(A).$
+
+
+    Now let $c<0$. Since
+    $$ cA= \vert c \vert(-A),$$
+    the positive case gives
+    $$ m(cA) = m\big(\vert c \vert (-A)\big) =|c|m(-A) =|c|m(A).$$
+

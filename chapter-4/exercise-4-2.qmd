@@ -2,24 +2,55 @@
 title: "Exercise 4.2"
 ---
 
-## Problem
-
-Paraphrase the problem here.
 
 ## Solution
 
-Suppose that
+By the same argument of the proof of Proposition 4.14 (1), there exist a open set $G$ such that
+$$ A \subset G, \quad m(G\setminus A)<\epsilon/2.$$
 
-$$
-A_n \uparrow A.
-$$
+Let's construct $F$. Since 
+$$A\cap[-n,n]\uparrow A$$
+and $m(A)< \infty$, continuity from below gives
+$$ m(A\cap[-n,n])\longrightarrow m(A).$$
+Therefore, we may choose $N$ sufficiently large that, with $I=[-N,N]$,
+we have
+$$m(A\setminus I)<\frac{\epsilon}{4}.$$
 
-Then
+The set
+$$I\setminus A=I\setminus(I\cap A)$$
+is Lebesgue measurable and has finite measure. Again by Proposition 4.14(1), 
+there exists an open set $G'$ such that
+$$I\setminus A\subset G', \quad m\bigl(G'\setminus(I\setminus A)\bigr)<\frac{\epsilon}{4}.$$
 
-$$
-\mu(A)
-=
-\lim_{n\to\infty}\mu(A_n).
-$$
+Let
+$$F=I\setminus G'.$$
+Since $I$ is closed and $G'$ is open, $F$ is closed. Moreover, since $I\setminus A\subset G'$,
+we have
+$$F=I\setminus G' = I \cap G'^c \subset I \cap (I\setminus A)^c = I \cap (I^c \cup A)
+= I \cap A \subset A.$$
 
-Hence the result follows.
+Now, consider $A\setminus F$. Then we have
+\begin{align*}
+A\setminus F &= (A\setminus I) \cup \Big( (A\setminus F) \setminus (A\setminus I) \Big)\\
+&= (A\setminus I) \cup \Big((A\cap F^c) \cap (A^c \cup I) \Big) \\
+&= (A\setminus I) \cup (A \cap F^c \cap I)\\
+&= (A\setminus I) \cup (A \cap (I^c \cup G') \cap I)\\
+&= (A\setminus I) \cup (A \cap I \cap  G')
+\end{align*}
+
+Note that two sets on the right are disjoint. Furthermore, since
+$$ A \cap I \subset A \subset A \cup I^c,$$
+we have
+$$(A\cap I)\cap G' \subset G'\setminus(I\setminus A) = G' \cap (A \cup I^c).$$
+
+Hence
+$$ m(A\setminus F) \leq m(A\setminus I) +m\bigl(G'\setminus(I\setminus A)\bigr)
+<\frac{\epsilon}{4}+\frac{\epsilon}{4} =\frac{\epsilon}{2}.$$
+
+Thus,
+$$m(G\setminus F) = m(G\setminus A)+m(A\setminus F)<\frac{\epsilon}{2}+\frac{\epsilon}{2}=
+\epsilon.$$
+
+Therefore, there exist an open set $G$ and a closed set $F$ such that
+$$ F\subset A\subset G, \quad m(G\setminus F)<\epsilon.$$
+]

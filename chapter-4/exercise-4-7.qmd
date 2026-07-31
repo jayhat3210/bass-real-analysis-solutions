@@ -1,0 +1,23 @@
+---
+title: "Exercise 4.7"
+---
+
+
+## Solution
+Define
+$$E=(0,\epsilon)\cup\bigl(\mathbb Q\cap(\epsilon,1)\bigr).$$
+Then $E\subset[0,1]$, and $E$ is measurable.
+
+Since
+$$\overline{(0,\epsilon)}=[0,\epsilon]$$
+and $\mathbb Q\cap(\epsilon,1)$ is dense in $(\epsilon,1)$,
+$$\overline{\mathbb Q\cap(\epsilon,1)}=[\epsilon,1].$$
+Therefore,
+$$\overline E=[0,1].$$
+
+
+Moreover,
+$$m\bigl(\mathbb Q\cap(\epsilon,1)\bigr)=0,$$
+so
+$$m(E) = m((0,\epsilon)) + m\bigl(\mathbb Q\cap(\epsilon,1)\bigr) = \epsilon.$$
+

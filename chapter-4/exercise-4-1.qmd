@@ -2,24 +2,71 @@
 title: "Exercise 4.1"
 ---
 
-## Problem
-
-Paraphrase the problem here.
 
 ## Solution
 
-Suppose that
-
+Recall that the Lebesgue-Stieltjes measure $m^*$ is defined as
+$$ m^*(E) = \inf \left\{\sum_{i=1}^{\infty} l(A_i): A_i \in \mathcal{C} \text{ for each $i$ and } 
+E \subset \bigcup_{i=1}^{\infty} A_i \right \},
 $$
-A_n \uparrow A.
-$$
+where $\mathcal{C} = \big\{ (a,b] : a,b \in \mathbb R \text{ and } a<b \big\}$ 
+and $l((a,b]) = \alpha(b) - \alpha(a)$ for an increasing right-continuous function $\alpha$. 
 
-Then
+We first show that $l = \mu$ on $\mathcal{C}$.
+If $b>a \geq 0$, since $\mu$ is measure, 
+$$ l\big((a,b] \big) = \alpha(b)-\alpha(a) = \mu\big((0,b]\big)-\mu\big((0,a]\big) = \mu\big((a,b]\big).$$
+The remaining cases, $b \geq 0>a$ and $0>b>a$, are proved similarly.
 
-$$
-\mu(A)
-=
-\lim_{n\to\infty}\mu(A_n).
-$$
+It is straightforward to verify that $\alpha$ is increasing.
+To verify that $\alpha$ is right-continuous, let $x_n\downarrow x$. By the identity above,
+$$ 0\leq \alpha(x_n)-\alpha(x)=\mu\big((x,x_n] \big).$$
 
-Hence the result follows.
+Since $[x,x_1]$ is compact, 
+$$\mu((x,x_1])\leq \mu([x,x_1])<\infty.$$
+Since $(x,x_n] \downarrow \emptyset$, by continuity from above,
+$$\mu((x,x_n])\longrightarrow 0.$$
+Hence $\alpha(x_n)\to\alpha(x)$, so $\alpha$ is right-continuous.
+
+<br>
+
+We will show that $\mu = m^*$ on the Borel $\sigma$-algebra of $\mathbb R$.
+
+1. $m^* \big( (a,b] \big) = \mu \big((a,b] \big)$
+
+    Since $m^*((a,b]) = l((a,b])$ by Proposition 4.8, 
+    $$m^*\big((a,b]\big) = l\big((a,b]\big) = \mu\big((a,b]\big).$$
+
+    
+2. $m^*(E) = \mu(E)$, where $E \in \mathcal{B}$ and $E$ is bounded.
+
+    For every $\epsilon>0$, there exists a sequence of sets $\{A_n \}$ in $\mathcal C$ such that
+    $$ E \subset \bigcup_{n=1}^{\infty} A_n, \quad
+    \sum_{n=1}^{\infty} \mu(A_n) = \sum_{n=1}^{\infty} l(A_n)\leq m^*(E) + \epsilon.$$
+    
+    Since $\mu$ is a measure, 
+    $$\mu(E) \leq \mu\left(\bigcup_{n=1}^{\infty} A_n \right) \leq \sum_{n=1}^{\infty} \mu(A_n).$$
+    
+    Hence, $\mu(E) \leq m^*(E) + \epsilon$. Since $\epsilon$ is arbitrary, we have $\mu(E) \leq m^*(E)$.
+    
+    For the other direction, suppose that $E \subset (-N,N]$. Then
+    $$(-N,N] = E \cup ((-N,N] \setminus E).$$
+    Since $m^*$ is a measure on $\mathcal B$, 
+    $$m^*\big((−N,N] \big)=m^*(E)+m^*\big((−N,N]∖E \big).$$
+    
+    Applying the inequality above to $(−N,N]∖E$, we have
+    $$\mu\big( (−N,N]∖E \big) \leq m^*\big( (−N,N]∖E \big).$$
+    Since $\mu\big( (-N,N] \big) = m^*\big( (-N,N] \big)$ by Step 1,
+    \begin{align*}
+    m^*(E) = m^*\big( (−N,N] \big) - m^*\big( (−N,N]∖E \big) &= \mu\big( (-N,N] \big) - m^*\big( (−N,N]∖E \big) \\[5pt]
+    &\leq \mu\big( (-N,N] \big) - \mu \big( (−N,N]∖E \big) = \mu(E).
+    \end{align*}
+
+    Therefore, $m^*(E) = \mu(E)$.
+
+ 3. $m^*(E) = \mu(E)$, where $E \in \mathcal{B}$
+
+    Let $I_n = (-n,n)$. Since 
+    $$I_n \cap E \in \mathcal{B}, \quad I_n \cap E \uparrow E, \quad
+    m^*(I_n \cap E) = \mu(I_n \cap E) \leq \mu([-n,n])< \infty, $$
+    we have
+    $$m^*(E) = \lim_{n \to \infty} m^*(E \cap I_n) = \lim_{n \to \infty} \mu(E \cap I_n) = \mu(E).$$

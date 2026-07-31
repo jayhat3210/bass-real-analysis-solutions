@@ -1,0 +1,35 @@
+---
+title: "Exercise 4.6"
+---
+
+
+## Solution
+1. By Exercise 2.9(1), we can denote that
+$$ B = \limsup_n A_n = \bigcap_{i=1}^{\infty} \bigcup_{n=i}^{\infty} A_n.$$
+Since the collection of Lebesgue measurable sets is closed under countable uninons and intersection, $B$ is Lebesgue measurable.
+
+2. Let
+$$ B_i = \bigcup_{n=i}^{\infty} A_n.$$
+Then $B_i \downarrow B$ and each $B_i$ is Lebesgue measurable.
+Since $m(B_1) \leq m([0,1])=1$ and $B$ is Lebesgue measurable,
+$$\lim_{i \to \infty} m(B_i) = m(\lim_{i \to \infty} B_i) = m(B).$$
+Since
+$$m(B_i) = m\left(\bigcup_{n=i}^{\infty} A_n \right) \geq m(A_i) > \delta$$
+for each $i$, we have
+$$m(B) = \lim_{i \to \infty} m(B_i) \geq \delta.$$
+
+3. Since $\sum_{n=1}^{\infty} m(A_n) < \infty$, we have
+$$ \lim_{i \to \infty} \sum_{n=i}^{\infty} m(A_n) = 0.$$
+For each $n$, we have
+$$m(B) \leq m(B_n) = m\left(\bigcup_{n=i}^{\infty}A_n\right) \leq \sum_{n=i}^{\infty} m(A_n).$$
+Taking the limit as $i \to \infty$, we obtain
+$$m(B)=0.$$
+
+4. Let
+$$A_n = \left[0, \frac{1}{n} \right].$$
+Then,
+$$\sum_{n=1}^{\infty}m(A_n) = \sum_{n=1}^{\infty} \frac{1}{n} = \infty.$$
+However, since 
+$$B = \bigcap_{i=1}^{\infty} \bigcup_{n=i}^{\infty} \left[0, \frac{1}{n} \right] = \bigcap_{i=1}^{\infty} \left[0, \frac{1}{i} \right] = \{0\},$$
+we have
+$$m(B) = 0.$$
