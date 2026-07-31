@@ -33,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../references.html" rel="next">
+<link href="../chapter-4/exercise-4-4.html" rel="next">
 <link href="../chapter-4/exercise-4-2.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -304,6 +304,31 @@ window.Quarto = {
   <a href="../chapter-4/exercise-4-3.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Exercise 4.3</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.8</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -322,8 +347,7 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#problem" id="toc-problem" class="nav-link active" data-scroll-target="#problem">Problem</a></li>
-  <li><a href="#solution" id="toc-solution" class="nav-link" data-scroll-target="#solution">Solution</a></li>
+  <li><a href="#solution" id="toc-solution" class="nav-link active" data-scroll-target="#solution">Solution</a></li>
   </ul>
 </nav>
     </div>
@@ -349,23 +373,36 @@ window.Quarto = {
 </header>
 
 
-<section id="problem" class="level2">
-<h2 class="anchored" data-anchor-id="problem">Problem</h2>
-<p>Paraphrase the problem here.</p>
-</section>
 <section id="solution" class="level2">
 <h2 class="anchored" data-anchor-id="solution">Solution</h2>
-<p>Suppose that</p>
-<p><span class="math display">\[
-A_n \uparrow A.
-\]</span></p>
-<p>Then</p>
-<p><span class="math display">\[
-\mu(A)
-=
-\lim_{n\to\infty}\mu(A_n).
-\]</span></p>
-<p>Hence the result follows.</p>
+<p>We will show that <span class="math inline">\(\mu^*\)</span> is an outer measure.</p>
+<ol type="1">
+<li><p>Clearly <span class="math inline">\(\mu^*(\emptyset) = 0\)</span>.</p></li>
+<li><p>If <span class="math inline">\(A_1 \subset A_2\)</span>, then <span class="math inline">\(\mu^*(A_1) \leq \mu^* (A_2)\)</span>.</p>
+<p>Every measurable set containing <span class="math inline">\(A_2\)</span> also contains <span class="math inline">\(A_1\)</span>. Therefore, <span class="math display">\[\{B\in\mathcal A: A_2\subset B\} \subset \{B\in\mathcal A: A_1\subset B\}.\]</span> Taking the infimum over the larger collection gives <span class="math display">\[ \mu^*(A_1)\leq \mu^*(A_2).\]</span></p></li>
+<li><p><span class="math inline">\(\mu^*(\bigcup_{i=1}^{\infty}A_i) \leq \sum_{i=1}^{\infty}\mu^*(A_i)\)</span> whenever <span class="math inline">\(A_1, A_2, \dots\)</span> are subsets of <span class="math inline">\(X\)</span>.</p>
+<p>If <span class="math inline">\(\mu^*(A_i)=\infty\)</span> for some <span class="math inline">\(i\)</span>, then the right-hand side is infinite, and the inequality is immediate. Suppose, therefore, that <span class="math display">\[\mu^*(A_i)&lt;\infty\]</span> for every <span class="math inline">\(i\)</span>.</p>
+<p>Given <span class="math inline">\(\epsilon&gt;0\)</span>, for each <span class="math inline">\(i\)</span>, choose <span class="math inline">\(B_i \in \mathcal A\)</span> such that <span class="math display">\[ A_i \subset B_i, \quad \mu(B_i) \leq \mu^*(A_i) + \frac{\epsilon}{2^i}.\]</span></p>
+<p>Then <span class="math display">\[\bigcup_{i=1}^{\infty}A_i \subset \bigcup_{i=1}^{\infty}B_i, \quad \bigcup_{i=1}^{\infty}B_i\in\mathcal A.\]</span> Since <span class="math inline">\(\mu\)</span> is a measure, <span class="math display">\[\mu^*\left(\bigcup_{i=1}^{\infty} A_i \right ) \leq \mu\left(\bigcup_{i=1}^{\infty} B_i \right )
+\leq \sum_{i=1}^{\infty} \mu(B_i) \leq \sum_{i=1}^{\infty} \mu^*(A_i) + \sum_{i=1}^{\infty} \frac{\epsilon}{2^i}
+= \sum_{i=1}^{\infty} \mu^*(A_i) + \epsilon.\]</span> Since <span class="math inline">\(\epsilon\)</span> is arbitrary, we have <span class="math inline">\(\mu^*(\bigcup_{i=1}^{\infty}A_i) \leq \sum_{i=1}^{\infty}\mu^*(A_i)\)</span>.</p></li>
+</ol>
+<p>Therefore, <span class="math inline">\(\mu^*\)</span> is an outer measure.</p>
+<p><br></p>
+<p>Next, we will show that <span class="math inline">\(\mu^*\)</span> agrees with the measure <span class="math inline">\(\mu\)</span> on <span class="math inline">\(\mathcal A\)</span>.</p>
+<p>Let <span class="math inline">\(A \in \mathcal A\)</span>. Then <span class="math inline">\(\mu^*(A) \leq \mu(A)\)</span>, since <span class="math inline">\(A \subset A\)</span>.</p>
+<p>For the other direction, for every <span class="math inline">\(B \in \mathcal A\)</span> with <span class="math inline">\(A \subset B\)</span>, we have <span class="math display">\[\mu(A) \leq \mu(B). \]</span> Taking the infimum over all such <span class="math inline">\(B\)</span>, we have <span class="math display">\[\mu(A) \leq \inf\{ \mu(B) : A \subset B, B \in \mathcal A\} = \mu^* (A). \]</span> Hence, <span class="math inline">\(\mu(A) = \mu^*(A)\)</span>.</p>
+<p><br></p>
+<p>Finally, we will show that every set in <span class="math inline">\(\mathcal A\)</span> is <span class="math inline">\(\mu^*\)</span>-measurable.</p>
+<p>Let <span class="math inline">\(A \in \mathcal A\)</span>. Then it is enough to show that <span class="math display">\[ \mu^*(E) \geq \mu^*(E \cap A) + \mu^*(E \cap A^c) ~\text{ for all }~ E \subset X.\]</span></p>
+<p>Given <span class="math inline">\(E\)</span>, let <span class="math inline">\(B\in\mathcal A\)</span> be any measurable set such that <span class="math display">\[ E\subset B.\]</span> Since <span class="math inline">\(A,B\in\mathcal A\)</span>,</p>
+<p><span class="math display">\[\begin{align*}
+\mu(B) &amp;=\mu(B\cap A)+\mu(B\cap A^c)\\
+&amp;=\mu^*(B\cap A)+\mu^*(B\cap A^c)\\
+&amp;\geq \mu^*(E\cap A)+\mu^*(E\cap A^c).
+\end{align*}\]</span></p>
+<p>Taking the infimum over all such <span class="math inline">\(B\)</span>, we have <span class="math display">\[\mu^*(E) \geq \mu^*(E\cap A)+\mu^*(E\cap A^c).\]</span></p>
+<p>Hence, <span class="math inline">\(A\)</span> is <span class="math inline">\(\mu^*\)</span>-measurable.</p>
 
 
 </section>
@@ -778,8 +815,8 @@ A_n \uparrow A.
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapter-4/exercise-4-4.html" class="pagination-link" aria-label="Exercise 4.4">
+        <span class="nav-page-text"><span class="chapter-title">Exercise 4.4</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

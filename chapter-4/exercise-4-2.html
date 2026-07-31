@@ -304,6 +304,31 @@ window.Quarto = {
   <a href="../chapter-4/exercise-4-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.3</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.8</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -322,8 +347,7 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#problem" id="toc-problem" class="nav-link active" data-scroll-target="#problem">Problem</a></li>
-  <li><a href="#solution" id="toc-solution" class="nav-link" data-scroll-target="#solution">Solution</a></li>
+  <li><a href="#solution" id="toc-solution" class="nav-link active" data-scroll-target="#solution">Solution</a></li>
   </ul>
 </nav>
     </div>
@@ -349,23 +373,26 @@ window.Quarto = {
 </header>
 
 
-<section id="problem" class="level2">
-<h2 class="anchored" data-anchor-id="problem">Problem</h2>
-<p>Paraphrase the problem here.</p>
-</section>
 <section id="solution" class="level2">
 <h2 class="anchored" data-anchor-id="solution">Solution</h2>
-<p>Suppose that</p>
-<p><span class="math display">\[
-A_n \uparrow A.
-\]</span></p>
-<p>Then</p>
-<p><span class="math display">\[
-\mu(A)
-=
-\lim_{n\to\infty}\mu(A_n).
-\]</span></p>
-<p>Hence the result follows.</p>
+<p>By the same argument of the proof of Proposition 4.14 (1), there exist a open set <span class="math inline">\(G\)</span> such that <span class="math display">\[ A \subset G, \quad m(G\setminus A)&lt;\epsilon/2.\]</span></p>
+<p>Let’s construct <span class="math inline">\(F\)</span>. Since <span class="math display">\[A\cap[-n,n]\uparrow A\]</span> and <span class="math inline">\(m(A)&lt; \infty\)</span>, continuity from below gives <span class="math display">\[ m(A\cap[-n,n])\longrightarrow m(A).\]</span> Therefore, we may choose <span class="math inline">\(N\)</span> sufficiently large that, with <span class="math inline">\(I=[-N,N]\)</span>, we have <span class="math display">\[m(A\setminus I)&lt;\frac{\epsilon}{4}.\]</span></p>
+<p>The set <span class="math display">\[I\setminus A=I\setminus(I\cap A)\]</span> is Lebesgue measurable and has finite measure. Again by Proposition 4.14(1), there exists an open set <span class="math inline">\(G'\)</span> such that <span class="math display">\[I\setminus A\subset G', \quad m\bigl(G'\setminus(I\setminus A)\bigr)&lt;\frac{\epsilon}{4}.\]</span></p>
+<p>Let <span class="math display">\[F=I\setminus G'.\]</span> Since <span class="math inline">\(I\)</span> is closed and <span class="math inline">\(G'\)</span> is open, <span class="math inline">\(F\)</span> is closed. Moreover, since <span class="math inline">\(I\setminus A\subset G'\)</span>, we have <span class="math display">\[F=I\setminus G' = I \cap G'^c \subset I \cap (I\setminus A)^c = I \cap (I^c \cup A)
+= I \cap A \subset A.\]</span></p>
+<p>Now, consider <span class="math inline">\(A\setminus F\)</span>. Then we have <span class="math display">\[\begin{align*}
+A\setminus F &amp;= (A\setminus I) \cup \Big( (A\setminus F) \setminus (A\setminus I) \Big)\\
+&amp;= (A\setminus I) \cup \Big((A\cap F^c) \cap (A^c \cup I) \Big) \\
+&amp;= (A\setminus I) \cup (A \cap F^c \cap I)\\
+&amp;= (A\setminus I) \cup (A \cap (I^c \cup G') \cap I)\\
+&amp;= (A\setminus I) \cup (A \cap I \cap  G')
+\end{align*}\]</span></p>
+<p>Note that two sets on the right are disjoint. Furthermore, since <span class="math display">\[ A \cap I \subset A \subset A \cup I^c,\]</span> we have <span class="math display">\[(A\cap I)\cap G' \subset G'\setminus(I\setminus A) = G' \cap (A \cup I^c).\]</span></p>
+<p>Hence <span class="math display">\[ m(A\setminus F) \leq m(A\setminus I) +m\bigl(G'\setminus(I\setminus A)\bigr)
+&lt;\frac{\epsilon}{4}+\frac{\epsilon}{4} =\frac{\epsilon}{2}.\]</span></p>
+<p>Thus, <span class="math display">\[m(G\setminus F) = m(G\setminus A)+m(A\setminus F)&lt;\frac{\epsilon}{2}+\frac{\epsilon}{2}=
+\epsilon.\]</span></p>
+<p>Therefore, there exist an open set <span class="math inline">\(G\)</span> and a closed set <span class="math inline">\(F\)</span> such that <span class="math display">\[ F\subset A\subset G, \quad m(G\setminus F)&lt;\epsilon.\]</span> ]</p>
 
 
 </section>

@@ -304,6 +304,31 @@ window.Quarto = {
   <a href="../chapter-4/exercise-4-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.3</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapter-4/exercise-4-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.8</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -353,17 +378,9 @@ window.Quarto = {
 <p>First, we consider the case where <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are finite.</p>
 <p>Let <span class="math display">\[ \mathcal A = \{ A \in \mathcal B : m(A) = n(A) \}.\]</span> We will show that <span class="math inline">\(\mathcal A\)</span> is a monotone class.</p>
 <ol type="1">
-<li><p>If <span class="math inline">\(A_i \uparrow A\)</span> and each <span class="math inline">\(A_i \in \mathcal A\)</span>, then <span class="math display">\[\begin{align*}
-     m(A) = m\left(\bigcup_i A_i \right) &amp;= m \left(A_1 \cup \bigcup_{i=1}^{\infty} (A_{i+1}-A_{i}) \right)
-     = m(A_1)+ \sum_{i=1}^{\infty}m(A_{i+1}-A_{i}) \\
-     &amp;= m(A_1)+ \sum_{i=1}^{\infty}\big( m(A_{i+1})-m(A_{i}) \big)
-     = n(A_1)+ \sum_{i=1}^{\infty}\big( n(A_{i+1})-n(A_{i}) \big) \\
-&amp; = n \left(A_1 \cup \bigcup_{i=1}^{\infty} (A_{i+1}-A_{i}) \right) = n\left(\bigcup_i A_i \right) \\[5pt]
-&amp;= n(A).
-\end{align*}\]</span></p>
+<li><p>If <span class="math inline">\(A_i \uparrow A\)</span> and each <span class="math inline">\(A_i \in \mathcal A\)</span>, then <span class="math display">\[m(A)= \lim_{i \to \infty } m(A_i) = \lim_{i \to \infty } n(A_i) = n(A).\]</span></p>
 <p>Hence, <span class="math inline">\(A \in \mathcal A\)</span>.</p></li>
-<li><p>Suppose that <span class="math inline">\(A_i \downarrow A\)</span> and each <span class="math inline">\(A_i \in \mathcal A\)</span>. Since <span class="math display">\[(-i,i)\uparrow\mathbb R,\]</span> we have <span class="math inline">\(\mathbb R \in \mathcal A\)</span>. Thus, if <span class="math inline">\(E\in\mathcal A\)</span>, then <span class="math display">\[m(E^c)=m(\mathbb R)-m(E)=n(\mathbb R)-n(E)=n(E^c),\]</span> which implies that <span class="math inline">\(E^c\in\mathcal A\)</span>. Thus, we have <span class="math inline">\(A_i^c \in \mathcal A\)</span>.</p>
-<p>Since <span class="math inline">\(A_i^c\uparrow A^c\)</span>, Step 1 implies that <span class="math inline">\(A^c\in\mathcal A\)</span>. Thus, we have <span class="math inline">\(A\in\mathcal A\)</span>.</p></li>
+<li><p>Suppose that <span class="math inline">\(A_i \downarrow A\)</span> and each <span class="math inline">\(A_i \in \mathcal A\)</span>. Since <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are finite, we have <span class="math display">\[m(A_1) = n(A_1) &lt; \infty. \]</span> Thus, <span class="math display">\[m(A)= \lim_{i \to \infty } m(A_i) = \lim_{i \to \infty } n(A_i) = n(A).\]</span> Thus, we have <span class="math inline">\(A\in\mathcal A\)</span>.</p></li>
 </ol>
 <p>Therefore, <span class="math inline">\(\mathcal A\)</span> is a monotone class.</p>
 <p><br></p>
@@ -371,13 +388,13 @@ window.Quarto = {
 <p>Let <span class="math inline">\(\mathcal C\)</span> be the collection of all finite disjoint unions of intervals of the forms <span class="math display">\[(a,b],\qquad (-\infty,b],\qquad (a,\infty),\]</span> where <span class="math inline">\(a,b\in\mathbb R\)</span>, together with <span class="math inline">\(\emptyset\)</span> and <span class="math inline">\(\mathbb R\)</span>. Then <span class="math inline">\(\mathcal C\)</span> is an algebra and <span class="math display">\[\sigma(\mathcal C)=\mathcal B.\]</span></p>
 <p>First, for any <span class="math inline">\(a&lt;b\)</span>, we have <span class="math display">\[(a,b+1/n)\downarrow(a,b].\]</span> Since each <span class="math inline">\((a,b+1/n)\in\mathcal A\)</span> by assumption and <span class="math inline">\(\mathcal A\)</span> is a monotone class, it follows that <span class="math display">\[(a,b]\in\mathcal A.\]</span> Next, for any <span class="math inline">\(b\in\mathbb R\)</span>, <span class="math display">\[(-n,b]\uparrow(-\infty,b].\]</span></p>
 <p>Since <span class="math inline">\((-n,b]\in\mathcal A\)</span> for all sufficiently large <span class="math inline">\(n\)</span>, the monotone class property gives <span class="math display">\[(-\infty,b]\in\mathcal A.\]</span></p>
-<p>We know that <span class="math inline">\(\mathcal A\)</span> is closed under complements. Hence <span class="math display">\[(a,\infty)=(-\infty,a]^c\in\mathcal A.\]</span></p>
+<p>Since <span class="math inline">\((a,n)\in\mathcal A\)</span> for all sufficiently large <span class="math inline">\(n\)</span>, the monotone class property gives <span class="math display">\[(a,\infty)\in\mathcal A.\]</span></p>
 <p>Therefore, <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> agree on every interval used in the definition of <span class="math inline">\(\mathcal C\)</span>. By finite additivity, they agree on every finite disjoint union of such intervals. Hence, <span class="math display">\[\mathcal C\subset\mathcal A.\]</span></p>
 <p>Since <span class="math inline">\(\mathcal A\)</span> is a monotone class containing <span class="math inline">\(\mathcal C\)</span>, <span class="math display">\[\mathcal M(\mathcal C)\subset\mathcal A.\]</span> By the monotone class theorem, <span class="math display">\[\mathcal B=\sigma(\mathcal C)=\mathcal M(\mathcal C),\]</span> and therefore <span class="math display">\[\mathcal B\subset\mathcal A.\]</span> Since <span class="math inline">\(\mathcal A\subset\mathcal B\)</span> by definition, we conclude that <span class="math display">\[\mathcal A=\mathcal B.\]</span> Thus, <span class="math display">\[m(A)=n(A) \qquad\text{for every }A\in\mathcal B.\]</span></p>
 <p><br></p>
 <p>Now suppose that at least one of <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> is not finite. For <span class="math inline">\(k \in \mathbb N\)</span>, define <span class="math display">\[ m_k(A) = m(A \cap (-k,k)), \quad n_k(A) = n(A \cap (-k,k)).\]</span> Thus <span class="math inline">\(m_k\)</span> and <span class="math inline">\(n_k\)</span> are finite, since <span class="math display">\[ m((-k,k)) = n((-k,k)) &lt;\infty.\]</span></p>
 <p>For any open interval <span class="math inline">\((a,b)\)</span>, we know that <span class="math inline">\((a,b) \cap (-k,k)\)</span> is an open interval or the emptyset. Thus, <span class="math display">\[ m_k((a,b)) = m((a,b)\cap(-k,k)) = n((a,b)\cap(-k,k)) = n_k(a,b).\]</span> Hence, from finite case, we can say that <span class="math inline">\(m_k(A)=n_k(A)\)</span> for any <span class="math inline">\(A \in \mathcal B\)</span>.</p>
-<p>For any <span class="math inline">\(A \in \mathcal B\)</span>, defined <span class="math display">\[A_k = A \cap (-k,k).\]</span> Then we have <span class="math display">\[ A_k \uparrow A.\]</span> Since <span class="math display">\[ m(A_k)=n(A_k) \]</span> for every <span class="math inline">\(k\)</span>, and <span class="math display">\[ A = A_1 \cup \bigcup_{k=2}^{\infty}(A_k\setminus A_{k-1}),\]</span> we obtain <span class="math display">\[ m(A) = m(A_1) + \sum_{k=2}^{\infty} m(A_k\setminus A_{k-1}) = n(A_1) + \sum_{k=2}^{\infty} n(A_k\setminus A_{k-1})= n(A).\]</span></p>
+<p>For any <span class="math inline">\(A \in \mathcal B\)</span>, defined <span class="math display">\[A_k = A \cap (-k,k).\]</span> Then we have <span class="math display">\[ A_k \uparrow A.\]</span> Since <span class="math display">\[ m(A_k)=n(A_k) \]</span> for every <span class="math inline">\(k\)</span>, we obtain <span class="math display">\[ m(A) = \lim_{k \to \infty}m(A_k) = \lim_{k \to \infty}n(A_k) = n(A).\]</span></p>
 
 
 </section>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – Bass Real Analysis Solutions</title>
+<title>Exercise 4.5 – Bass Real Analysis Solutions</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,25 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./chapter-2/exercise-2-1.html" rel="next">
-<link href="./index.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapter-4/exercise-4-6.html" rel="next">
+<link href="../chapter-4/exercise-4-4.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -83,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Bass Real Analysis Solutions</span>
     </a>
   </div>
@@ -94,11 +123,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -112,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html"><span class="chapter-title">About</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter-4/exercise-4-1.html">Chapter 4</a></li><li class="breadcrumb-item"><a href="../chapter-4/exercise-4-5.html"><span class="chapter-title">Exercise 4.5</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -126,12 +155,12 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Home</span></a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">About</span></a>
+  <a href="../about.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">About</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -145,47 +174,47 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-2/exercise-2-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.1</span></a>
+  <a href="../chapter-2/exercise-2-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-2/exercise-2-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.2</span></a>
+  <a href="../chapter-2/exercise-2-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-2/exercise-2-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.3</span></a>
+  <a href="../chapter-2/exercise-2-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-2/exercise-2-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.4</span></a>
+  <a href="../chapter-2/exercise-2-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.4</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-2/exercise-2-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.5</span></a>
+  <a href="../chapter-2/exercise-2-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.5</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-2/exercise-2-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.6</span></a>
+  <a href="../chapter-2/exercise-2-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.6</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-2/exercise-2-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.7</span></a>
+  <a href="../chapter-2/exercise-2-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.7</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-2/exercise-2-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.8</span></a>
+  <a href="../chapter-2/exercise-2-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.8</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-2/exercise-2-9.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.9</span></a>
+  <a href="../chapter-2/exercise-2-9.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 2.9</span></a>
   </div>
 </li>
       </ul>
@@ -201,52 +230,52 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-3/exercise-3-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.1</span></a>
+  <a href="../chapter-3/exercise-3-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-3/exercise-3-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.2</span></a>
+  <a href="../chapter-3/exercise-3-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-3/exercise-3-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.3</span></a>
+  <a href="../chapter-3/exercise-3-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-3/exercise-3-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.4</span></a>
+  <a href="../chapter-3/exercise-3-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.4</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-3/exercise-3-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.5</span></a>
+  <a href="../chapter-3/exercise-3-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.5</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-3/exercise-3-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.6</span></a>
+  <a href="../chapter-3/exercise-3-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.6</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-3/exercise-3-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.7</span></a>
+  <a href="../chapter-3/exercise-3-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.7</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-3/exercise-3-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.8</span></a>
+  <a href="../chapter-3/exercise-3-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.8</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-3/exercise-3-9.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.9</span></a>
+  <a href="../chapter-3/exercise-3-9.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.9</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-3/exercise-3-10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.10</span></a>
+  <a href="../chapter-3/exercise-3-10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 3.10</span></a>
   </div>
 </li>
       </ul>
@@ -262,49 +291,49 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-4/exercise-4-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.1</span></a>
+  <a href="../chapter-4/exercise-4-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-4/exercise-4-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.2</span></a>
+  <a href="../chapter-4/exercise-4-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-4/exercise-4-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.3</span></a>
+  <a href="../chapter-4/exercise-4-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-4/exercise-4-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.4</span></a>
+  <a href="../chapter-4/exercise-4-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.4</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-4/exercise-4-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.5</span></a>
+  <a href="../chapter-4/exercise-4-5.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Exercise 4.5</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-4/exercise-4-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.6</span></a>
+  <a href="../chapter-4/exercise-4-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.6</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-4/exercise-4-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.7</span></a>
+  <a href="../chapter-4/exercise-4-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.7</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter-4/exercise-4-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.8</span></a>
+  <a href="../chapter-4/exercise-4-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise 4.8</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -318,21 +347,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#jae-yun-lee" id="toc-jae-yun-lee" class="nav-link active" data-scroll-target="#jae-yun-lee">Jae-Yun Lee</a>
-  <ul class="collapse">
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  <li><a href="#research" id="toc-research" class="nav-link" data-scroll-target="#research">Research</a></li>
-  <li><a href="#music" id="toc-music" class="nav-link" data-scroll-target="#music">Music</a></li>
-  </ul></li>
+  <li><a href="#solution" id="toc-solution" class="nav-link active" data-scroll-target="#solution">Solution</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapter-4/exercise-4-1.html">Chapter 4</a></li><li class="breadcrumb-item"><a href="../chapter-4/exercise-4-5.html"><span class="chapter-title">Exercise 4.5</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">About</span></h1>
+<h1 class="title"><span class="chapter-title">Exercise 4.5</span></h1>
 </div>
 
 
@@ -349,35 +373,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="jae-yun-lee" class="level1">
-<h1>Jae-Yun Lee</h1>
-<p>I am an independent researcher and musician from South Korea.</p>
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education">Education</h2>
-<ul>
-<li>B.S. in Mathematical Sciences, KAIST</li>
-<li>M.S. and Ph.D.&nbsp;Track in Economics, Department of Management Engineering, KAIST</li>
-</ul>
-</section>
-<section id="research" class="level2">
-<h2 class="anchored" data-anchor-id="research">Research</h2>
-<p>Selected publication:</p>
-<blockquote class="blockquote">
-<p>Jae-Yun Lee, Jiwoong Shin, and Jungju Yu</p>
-<p><a href="https://pubsonline.informs.org/doi/abs/10.1287/mksc.2024.1124">“Communicating Attribute Importance under Competition”</a></p>
-<p><em>Marketing Science</em>, 45(3), 534–555, 2026.</p>
-</blockquote>
-</section>
-<section id="music" class="level2">
-<h2 class="anchored" data-anchor-id="music">Music</h2>
-<p>Outside academia, I work as an independent musician under the name <strong>Jayhat</strong>.</p>
-<p>My work combines hip-hop, R&amp;B, and classical music, with a particular interest in orchestral composition and piano performance.</p>
-<ul>
-<li>Instagram: <a href="https://www.instagram.com/jayhat3210"><span class="citation" data-cites="jayhat3210">(<span><strong>jayhat3210?</strong></span>)</span></a></li>
-</ul>
+<section id="solution" class="level2">
+<h2 class="anchored" data-anchor-id="solution">Solution</h2>
+<ol type="1">
+<li><p><span class="math inline">\(m(x+ A) = m(A)\)</span></p>
+<p>Consider the collection of half-open intervals <span class="math inline">\(\{I_i\}\)</span> that cover <span class="math inline">\(A\)</span>. Since <span class="math display">\[x+A \subset \bigcup_{i=1}^{\infty}(x+I_i),\]</span> we have <span class="math display">\[m(x+A) \leq \sum_{i=1}^{\infty}l(x+I_i) = \sum_{i=1}^{\infty}l(I_i).\]</span> Taking the infimum over all such collections <span class="math inline">\(\{I_i\}\)</span> that cover <span class="math inline">\(A\)</span>, we obtain <span class="math display">\[m(x+A) \leq m(A).\]</span></p>
+<p>Conversely, consider the collection of half-open intervals <span class="math inline">\(\{I_i\}\)</span> that cover <span class="math inline">\(x+A\)</span>. Since <span class="math display">\[ A \subset \bigcup_{i=1}^{\infty} (I_i -x),\]</span> we have <span class="math display">\[m(A) \leq \sum_{i=1}^{\infty} l(I_i-x) = \sum_{i=1}^{\infty} l(I_i).\]</span> Taking the infimum over all such collections <span class="math inline">\(\{I_i\}\)</span> that cover <span class="math inline">\(x+A\)</span>, we obtain <span class="math display">\[m(x+A) \geq m(A).\]</span></p>
+<p>Hence, <span class="math inline">\(m(x+ A) = m(A)\)</span>.</p></li>
+<li><p><span class="math inline">\(m(cA)=\vert c \vert m(A)\)</span></p>
+<p>Suppose that <span class="math inline">\(c&gt;0\)</span>.</p>
+<p>Consider the collection of half-open intervals <span class="math inline">\(\{I_i\}\)</span> that cover <span class="math inline">\(A\)</span>. Since <span class="math display">\[cA \subset \bigcup_{i=1}^{\infty}(cI_i),\]</span> we have <span class="math display">\[m(cA) \leq \sum_{i=1}^{\infty}l(cI_i) = c\sum_{i=1}^{\infty}l(I_i).\]</span> Taking the infimum over all such collections <span class="math inline">\(\{I_i\}\)</span> that cover <span class="math inline">\(A\)</span>, we obtain <span class="math display">\[m(cA) \leq c m(A).\]</span></p>
+<p>Conversely, consider the collection of half-open intervals <span class="math inline">\(\{I_i\}\)</span> that cover <span class="math inline">\(cA\)</span>. Since <span class="math display">\[ A \subset \bigcup_{i=1}^{\infty} \left(\frac{1}{c} I_i \right),\]</span> we have <span class="math display">\[m(A) \leq \sum_{i=1}^{\infty} l\left(\frac{1}{c} I_i \right) = \frac{1}{c}\sum_{i=1}^{\infty} l(I_i).\]</span> Taking the infimum over all such collections <span class="math inline">\(\{I_i\}\)</span> that cover <span class="math inline">\(cA\)</span>, we obtain <span class="math display">\[cm(A) \leq m(cA).\]</span></p>
+<p>Hence, <span class="math inline">\(m(cA) = cm(A)\)</span>.</p>
+<p>To show the case <span class="math inline">\(c&lt;0\)</span>, we first show that <span class="math display">\[ m(-A)=m(A).\]</span> Let <span class="math inline">\(\{I_i\}_{i=1}^{\infty}\)</span> be a collection of half-open intervals covering <span class="math inline">\(A\)</span>, where <span class="math display">\[ I_i=(a_i,b_i].\]</span> Then <span class="math display">\[-A\subset \bigcup_{i=1}^{\infty}[-b_i,-a_i).\]</span> These reflected intervals are not of the form <span class="math inline">\((a,b]\)</span>. Given <span class="math inline">\(\epsilon&gt;0\)</span>, define <span class="math display">\[J_i=\left(-b_i-\frac{\epsilon}{2^i},-a_i\right].\]</span> Then <span class="math inline">\(\left(-b_i-\epsilon/2^i,-a_i\right] \subset J_i\)</span>, and hence <span class="math display">\[ -A\subset\bigcup_{i=1}^{\infty}J_i.\]</span> Moreover, <span class="math display">\[ l(J_i) = b_i-a_i+\frac{\epsilon}{2^i}=l(I_i)+\frac{\epsilon}{2^i}.\]</span> Therefore, <span class="math display">\[\begin{align*}
+m(-A) &amp;\leq \sum_{i=1}^{\infty}l(J_i)\\
+&amp;=\sum_{i=1}^{\infty}l(I_i)+\sum_{i=1}^{\infty}\frac{\epsilon}{2^i}\\
+&amp;=\sum_{i=1}^{\infty}l(I_i)+\epsilon.
+\end{align*}\]</span> Taking the infimum over all half-open interval covers <span class="math inline">\({I_i}\)</span> of <span class="math inline">\(A\)</span>, we obtain <span class="math display">\[m(-A)\leq m(A)+\epsilon.\]</span> Since <span class="math inline">\(\epsilon&gt;0\)</span> is arbitrary, <span class="math inline">\(m(-A)\leq m(A).\)</span></p>
+<p>Applying the same inequality to the set <span class="math inline">\(-A\)</span>, we get <span class="math display">\[ m(A)=m(-(-A))\leq m(-A).\]</span> Thus, <span class="math inline">\(m(-A)=m(A).\)</span></p>
+<p>Now let <span class="math inline">\(c&lt;0\)</span>. Since <span class="math display">\[ cA= \vert c \vert(-A),\]</span> the positive case gives <span class="math display">\[ m(cA) = m\big(\vert c \vert (-A)\big) =|c|m(-A) =|c|m(A).\]</span></p></li>
+</ol>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -783,13 +800,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Home">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Home</span></span>
+      <a href="../chapter-4/exercise-4-4.html" class="pagination-link" aria-label="Exercise 4.4">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Exercise 4.4</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapter-2/exercise-2-1.html" class="pagination-link" aria-label="Exercise 2.1">
-        <span class="nav-page-text"><span class="chapter-title">Exercise 2.1</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapter-4/exercise-4-6.html" class="pagination-link" aria-label="Exercise 4.6">
+        <span class="nav-page-text"><span class="chapter-title">Exercise 4.6</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

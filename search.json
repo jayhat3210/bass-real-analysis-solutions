@@ -81,7 +81,7 @@
     "href": "chapter-2/exercise-2-1.html",
     "title": "Exercise 2.1",
     "section": "",
-    "text": "Solution\nConsider \\(X = \\{1, 2, 3\\}\\) and \\(\\mathcal{M} = \\{ \\emptyset, \\{1\\}, \\{2\\}, \\{3\\}, X\\}\\). It is straightforward to verify that \\(\\mathcal{M}\\) is a monotone class. However, \\(\\mathcal{M}\\) is not a \\(\\sigma\\)-algebra, since\n\\[\\{1\\} \\cup \\{2\\} = \\{1,2\\} \\notin \\mathcal{M}.\\]",
+    "text": "Solution\nConsider \\(X = \\{1, 2, 3\\}\\) and \\(\\mathcal{M} = \\{ \\emptyset, \\{1\\}, \\{2\\}, \\{3\\}, X\\}\\).\nIt is straightforward to verify that \\(\\mathcal{M}\\) is a monotone class. However, \\(\\mathcal{M}\\) is not a \\(\\sigma\\)-algebra, since\n\\[\\{1\\} \\cup \\{2\\} = \\{1,2\\} \\notin \\mathcal{M}.\\]",
     "crumbs": [
       "Home",
       "Chapter 2",
@@ -369,7 +369,7 @@
     "href": "chapter-3/exercise-3-9.html",
     "title": "Exercise 3.9",
     "section": "",
-    "text": "Solution\nFirst, we consider the case where \\(m\\) and \\(n\\) are finite.\nLet \\[ \\mathcal A = \\{ A \\in \\mathcal B : m(A) = n(A) \\}.\\] We will show that \\(\\mathcal A\\) is a monotone class.\nTherefore, \\(\\mathcal A\\) is a monotone class.\nNext, we will show that \\(\\mathcal B = \\mathcal A\\).\nLet \\(\\mathcal C\\) be the collection of all finite disjoint unions of intervals of the forms \\[(a,b],\\qquad (-\\infty,b],\\qquad (a,\\infty),\\] where \\(a,b\\in\\mathbb R\\), together with \\(\\emptyset\\) and \\(\\mathbb R\\). Then \\(\\mathcal C\\) is an algebra and \\[\\sigma(\\mathcal C)=\\mathcal B.\\]\nFirst, for any \\(a&lt;b\\), we have \\[(a,b+1/n)\\downarrow(a,b].\\] Since each \\((a,b+1/n)\\in\\mathcal A\\) by assumption and \\(\\mathcal A\\) is a monotone class, it follows that \\[(a,b]\\in\\mathcal A.\\] Next, for any \\(b\\in\\mathbb R\\), \\[(-n,b]\\uparrow(-\\infty,b].\\]\nSince \\((-n,b]\\in\\mathcal A\\) for all sufficiently large \\(n\\), the monotone class property gives \\[(-\\infty,b]\\in\\mathcal A.\\]\nWe know that \\(\\mathcal A\\) is closed under complements. Hence \\[(a,\\infty)=(-\\infty,a]^c\\in\\mathcal A.\\]\nTherefore, \\(m\\) and \\(n\\) agree on every interval used in the definition of \\(\\mathcal C\\). By finite additivity, they agree on every finite disjoint union of such intervals. Hence, \\[\\mathcal C\\subset\\mathcal A.\\]\nSince \\(\\mathcal A\\) is a monotone class containing \\(\\mathcal C\\), \\[\\mathcal M(\\mathcal C)\\subset\\mathcal A.\\] By the monotone class theorem, \\[\\mathcal B=\\sigma(\\mathcal C)=\\mathcal M(\\mathcal C),\\] and therefore \\[\\mathcal B\\subset\\mathcal A.\\] Since \\(\\mathcal A\\subset\\mathcal B\\) by definition, we conclude that \\[\\mathcal A=\\mathcal B.\\] Thus, \\[m(A)=n(A) \\qquad\\text{for every }A\\in\\mathcal B.\\]\nNow suppose that at least one of \\(m\\) and \\(n\\) is not finite. For \\(k \\in \\mathbb N\\), define \\[ m_k(A) = m(A \\cap (-k,k)), \\quad n_k(A) = n(A \\cap (-k,k)).\\] Thus \\(m_k\\) and \\(n_k\\) are finite, since \\[ m((-k,k)) = n((-k,k)) &lt;\\infty.\\]\nFor any open interval \\((a,b)\\), we know that \\((a,b) \\cap (-k,k)\\) is an open interval or the emptyset. Thus, \\[ m_k((a,b)) = m((a,b)\\cap(-k,k)) = n((a,b)\\cap(-k,k)) = n_k(a,b).\\] Hence, from finite case, we can say that \\(m_k(A)=n_k(A)\\) for any \\(A \\in \\mathcal B\\).\nFor any \\(A \\in \\mathcal B\\), defined \\[A_k = A \\cap (-k,k).\\] Then we have \\[ A_k \\uparrow A.\\] Since \\[ m(A_k)=n(A_k) \\] for every \\(k\\), and \\[ A = A_1 \\cup \\bigcup_{k=2}^{\\infty}(A_k\\setminus A_{k-1}),\\] we obtain \\[ m(A) = m(A_1) + \\sum_{k=2}^{\\infty} m(A_k\\setminus A_{k-1}) = n(A_1) + \\sum_{k=2}^{\\infty} n(A_k\\setminus A_{k-1})= n(A).\\]",
+    "text": "Solution\nFirst, we consider the case where \\(m\\) and \\(n\\) are finite.\nLet \\[ \\mathcal A = \\{ A \\in \\mathcal B : m(A) = n(A) \\}.\\] We will show that \\(\\mathcal A\\) is a monotone class.\nTherefore, \\(\\mathcal A\\) is a monotone class.\nNext, we will show that \\(\\mathcal B = \\mathcal A\\).\nLet \\(\\mathcal C\\) be the collection of all finite disjoint unions of intervals of the forms \\[(a,b],\\qquad (-\\infty,b],\\qquad (a,\\infty),\\] where \\(a,b\\in\\mathbb R\\), together with \\(\\emptyset\\) and \\(\\mathbb R\\). Then \\(\\mathcal C\\) is an algebra and \\[\\sigma(\\mathcal C)=\\mathcal B.\\]\nFirst, for any \\(a&lt;b\\), we have \\[(a,b+1/n)\\downarrow(a,b].\\] Since each \\((a,b+1/n)\\in\\mathcal A\\) by assumption and \\(\\mathcal A\\) is a monotone class, it follows that \\[(a,b]\\in\\mathcal A.\\] Next, for any \\(b\\in\\mathbb R\\), \\[(-n,b]\\uparrow(-\\infty,b].\\]\nSince \\((-n,b]\\in\\mathcal A\\) for all sufficiently large \\(n\\), the monotone class property gives \\[(-\\infty,b]\\in\\mathcal A.\\]\nSince \\((a,n)\\in\\mathcal A\\) for all sufficiently large \\(n\\), the monotone class property gives \\[(a,\\infty)\\in\\mathcal A.\\]\nTherefore, \\(m\\) and \\(n\\) agree on every interval used in the definition of \\(\\mathcal C\\). By finite additivity, they agree on every finite disjoint union of such intervals. Hence, \\[\\mathcal C\\subset\\mathcal A.\\]\nSince \\(\\mathcal A\\) is a monotone class containing \\(\\mathcal C\\), \\[\\mathcal M(\\mathcal C)\\subset\\mathcal A.\\] By the monotone class theorem, \\[\\mathcal B=\\sigma(\\mathcal C)=\\mathcal M(\\mathcal C),\\] and therefore \\[\\mathcal B\\subset\\mathcal A.\\] Since \\(\\mathcal A\\subset\\mathcal B\\) by definition, we conclude that \\[\\mathcal A=\\mathcal B.\\] Thus, \\[m(A)=n(A) \\qquad\\text{for every }A\\in\\mathcal B.\\]\nNow suppose that at least one of \\(m\\) and \\(n\\) is not finite. For \\(k \\in \\mathbb N\\), define \\[ m_k(A) = m(A \\cap (-k,k)), \\quad n_k(A) = n(A \\cap (-k,k)).\\] Thus \\(m_k\\) and \\(n_k\\) are finite, since \\[ m((-k,k)) = n((-k,k)) &lt;\\infty.\\]\nFor any open interval \\((a,b)\\), we know that \\((a,b) \\cap (-k,k)\\) is an open interval or the emptyset. Thus, \\[ m_k((a,b)) = m((a,b)\\cap(-k,k)) = n((a,b)\\cap(-k,k)) = n_k(a,b).\\] Hence, from finite case, we can say that \\(m_k(A)=n_k(A)\\) for any \\(A \\in \\mathcal B\\).\nFor any \\(A \\in \\mathcal B\\), defined \\[A_k = A \\cap (-k,k).\\] Then we have \\[ A_k \\uparrow A.\\] Since \\[ m(A_k)=n(A_k) \\] for every \\(k\\), we obtain \\[ m(A) = \\lim_{k \\to \\infty}m(A_k) = \\lim_{k \\to \\infty}n(A_k) = n(A).\\]",
     "crumbs": [
       "Home",
       "Chapter 3",
@@ -381,7 +381,7 @@
     "href": "chapter-3/exercise-3-9.html#solution",
     "title": "Exercise 3.9",
     "section": "",
-    "text": "If \\(A_i \\uparrow A\\) and each \\(A_i \\in \\mathcal A\\), then \\[\\begin{align*}\n     m(A) = m\\left(\\bigcup_i A_i \\right) &= m \\left(A_1 \\cup \\bigcup_{i=1}^{\\infty} (A_{i+1}-A_{i}) \\right)\n     = m(A_1)+ \\sum_{i=1}^{\\infty}m(A_{i+1}-A_{i}) \\\\\n     &= m(A_1)+ \\sum_{i=1}^{\\infty}\\big( m(A_{i+1})-m(A_{i}) \\big)\n     = n(A_1)+ \\sum_{i=1}^{\\infty}\\big( n(A_{i+1})-n(A_{i}) \\big) \\\\\n& = n \\left(A_1 \\cup \\bigcup_{i=1}^{\\infty} (A_{i+1}-A_{i}) \\right) = n\\left(\\bigcup_i A_i \\right) \\\\[5pt]\n&= n(A).\n\\end{align*}\\]\nHence, \\(A \\in \\mathcal A\\).\nSuppose that \\(A_i \\downarrow A\\) and each \\(A_i \\in \\mathcal A\\). Since \\[(-i,i)\\uparrow\\mathbb R,\\] we have \\(\\mathbb R \\in \\mathcal A\\). Thus, if \\(E\\in\\mathcal A\\), then \\[m(E^c)=m(\\mathbb R)-m(E)=n(\\mathbb R)-n(E)=n(E^c),\\] which implies that \\(E^c\\in\\mathcal A\\). Thus, we have \\(A_i^c \\in \\mathcal A\\).\nSince \\(A_i^c\\uparrow A^c\\), Step 1 implies that \\(A^c\\in\\mathcal A\\). Thus, we have \\(A\\in\\mathcal A\\).",
+    "text": "If \\(A_i \\uparrow A\\) and each \\(A_i \\in \\mathcal A\\), then \\[m(A)= \\lim_{i \\to \\infty } m(A_i) = \\lim_{i \\to \\infty } n(A_i) = n(A).\\]\nHence, \\(A \\in \\mathcal A\\).\nSuppose that \\(A_i \\downarrow A\\) and each \\(A_i \\in \\mathcal A\\). Since \\(m\\) and \\(n\\) are finite, we have \\[m(A_1) = n(A_1) &lt; \\infty. \\] Thus, \\[m(A)= \\lim_{i \\to \\infty } m(A_i) = \\lim_{i \\to \\infty } n(A_i) = n(A).\\] Thus, we have \\(A\\in\\mathcal A\\).",
     "crumbs": [
       "Home",
       "Chapter 3",
@@ -417,7 +417,7 @@
     "href": "chapter-4/exercise-4-1.html",
     "title": "Exercise 4.1",
     "section": "",
-    "text": "Problem\nParaphrase the problem here.",
+    "text": "Solution\nRecall that the Lebesgue-Stieltjes measure \\(m^*\\) is defined as \\[ m^*(E) = \\inf \\left\\{\\sum_{i=1}^{\\infty} l(A_i): A_i \\in \\mathcal{C} \\text{ for each $i$ and }\nE \\subset \\bigcup_{i=1}^{\\infty} A_i \\right \\},\n\\] where \\(\\mathcal{C} = \\big\\{ (a,b] : a,b \\in \\mathbb R \\text{ and } a&lt;b \\big\\}\\) and \\(l((a,b]) = \\alpha(b) - \\alpha(a)\\) for an increasing right-continuous function \\(\\alpha\\).\nWe first show that \\(l = \\mu\\) on \\(\\mathcal{C}\\). If \\(b&gt;a \\geq 0\\), since \\(\\mu\\) is measure, \\[ l\\big((a,b] \\big) = \\alpha(b)-\\alpha(a) = \\mu\\big((0,b]\\big)-\\mu\\big((0,a]\\big) = \\mu\\big((a,b]\\big).\\] The remaining cases, \\(b \\geq 0&gt;a\\) and \\(0&gt;b&gt;a\\), are proved similarly.\nIt is straightforward to verify that \\(\\alpha\\) is increasing. To verify that \\(\\alpha\\) is right-continuous, let \\(x_n\\downarrow x\\). By the identity above, \\[ 0\\leq \\alpha(x_n)-\\alpha(x)=\\mu\\big((x,x_n] \\big).\\]\nSince \\([x,x_1]\\) is compact, \\[\\mu((x,x_1])\\leq \\mu([x,x_1])&lt;\\infty.\\] Since \\((x,x_n] \\downarrow \\emptyset\\), by continuity from above, \\[\\mu((x,x_n])\\longrightarrow 0.\\] Hence \\(\\alpha(x_n)\\to\\alpha(x)\\), so \\(\\alpha\\) is right-continuous.\nWe will show that \\(\\mu = m^*\\) on the Borel \\(\\sigma\\)-algebra of \\(\\mathbb R\\).",
     "crumbs": [
       "Home",
       "Chapter 4",
@@ -428,8 +428,8 @@
     "objectID": "chapter-4/exercise-4-1.html#solution",
     "href": "chapter-4/exercise-4-1.html#solution",
     "title": "Exercise 4.1",
-    "section": "Solution",
-    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "section": "",
+    "text": "\\(m^* \\big( (a,b] \\big) = \\mu \\big((a,b] \\big)\\)\nSince \\(m^*((a,b]) = l((a,b])\\) by Proposition 4.8, \\[m^*\\big((a,b]\\big) = l\\big((a,b]\\big) = \\mu\\big((a,b]\\big).\\]\n\\(m^*(E) = \\mu(E)\\), where \\(E \\in \\mathcal{B}\\) and \\(E\\) is bounded.\nFor every \\(\\epsilon&gt;0\\), there exists a sequence of sets \\(\\{A_n \\}\\) in \\(\\mathcal C\\) such that \\[ E \\subset \\bigcup_{n=1}^{\\infty} A_n, \\quad\n\\sum_{n=1}^{\\infty} \\mu(A_n) = \\sum_{n=1}^{\\infty} l(A_n)\\leq m^*(E) + \\epsilon.\\]\nSince \\(\\mu\\) is a measure, \\[\\mu(E) \\leq \\mu\\left(\\bigcup_{n=1}^{\\infty} A_n \\right) \\leq \\sum_{n=1}^{\\infty} \\mu(A_n).\\]\nHence, \\(\\mu(E) \\leq m^*(E) + \\epsilon\\). Since \\(\\epsilon\\) is arbitrary, we have \\(\\mu(E) \\leq m^*(E)\\).\nFor the other direction, suppose that \\(E \\subset (-N,N]\\). Then \\[(-N,N] = E \\cup ((-N,N] \\setminus E).\\] Since \\(m^*\\) is a measure on \\(\\mathcal B\\), \\[m^*\\big((−N,N] \\big)=m^*(E)+m^*\\big((−N,N]∖E \\big).\\]\nApplying the inequality above to \\((−N,N]∖E\\), we have \\[\\mu\\big( (−N,N]∖E \\big) \\leq m^*\\big( (−N,N]∖E \\big).\\] Since \\(\\mu\\big( (-N,N] \\big) = m^*\\big( (-N,N] \\big)\\) by Step 1, \\[\\begin{align*}\nm^*(E) = m^*\\big( (−N,N] \\big) - m^*\\big( (−N,N]∖E \\big) &= \\mu\\big( (-N,N] \\big) - m^*\\big( (−N,N]∖E \\big) \\\\[5pt]\n&\\leq \\mu\\big( (-N,N] \\big) - \\mu \\big( (−N,N]∖E \\big) = \\mu(E).\n\\end{align*}\\]\nTherefore, \\(m^*(E) = \\mu(E)\\).\n\\(m^*(E) = \\mu(E)\\), where \\(E \\in \\mathcal{B}\\)\nLet \\(I_n = (-n,n)\\). Since \\[I_n \\cap E \\in \\mathcal{B}, \\quad I_n \\cap E \\uparrow E, \\quad\nm^*(I_n \\cap E) = \\mu(I_n \\cap E) \\leq \\mu([-n,n])&lt; \\infty, \\] we have \\[m^*(E) = \\lim_{n \\to \\infty} m^*(E \\cap I_n) = \\lim_{n \\to \\infty} \\mu(E \\cap I_n) = \\mu(E).\\]",
     "crumbs": [
       "Home",
       "Chapter 4",
@@ -441,19 +441,7 @@
     "href": "chapter-4/exercise-4-2.html",
     "title": "Exercise 4.2",
     "section": "",
-    "text": "Problem\nParaphrase the problem here.",
-    "crumbs": [
-      "Home",
-      "Chapter 4",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Exercise 4.2</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-4/exercise-4-2.html#solution",
-    "href": "chapter-4/exercise-4-2.html#solution",
-    "title": "Exercise 4.2",
-    "section": "Solution",
-    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "text": "Solution\nBy the same argument of the proof of Proposition 4.14 (1), there exist a open set \\(G\\) such that \\[ A \\subset G, \\quad m(G\\setminus A)&lt;\\epsilon/2.\\]\nLet’s construct \\(F\\). Since \\[A\\cap[-n,n]\\uparrow A\\] and \\(m(A)&lt; \\infty\\), continuity from below gives \\[ m(A\\cap[-n,n])\\longrightarrow m(A).\\] Therefore, we may choose \\(N\\) sufficiently large that, with \\(I=[-N,N]\\), we have \\[m(A\\setminus I)&lt;\\frac{\\epsilon}{4}.\\]\nThe set \\[I\\setminus A=I\\setminus(I\\cap A)\\] is Lebesgue measurable and has finite measure. Again by Proposition 4.14(1), there exists an open set \\(G'\\) such that \\[I\\setminus A\\subset G', \\quad m\\bigl(G'\\setminus(I\\setminus A)\\bigr)&lt;\\frac{\\epsilon}{4}.\\]\nLet \\[F=I\\setminus G'.\\] Since \\(I\\) is closed and \\(G'\\) is open, \\(F\\) is closed. Moreover, since \\(I\\setminus A\\subset G'\\), we have \\[F=I\\setminus G' = I \\cap G'^c \\subset I \\cap (I\\setminus A)^c = I \\cap (I^c \\cup A)\n= I \\cap A \\subset A.\\]\nNow, consider \\(A\\setminus F\\). Then we have \\[\\begin{align*}\nA\\setminus F &= (A\\setminus I) \\cup \\Big( (A\\setminus F) \\setminus (A\\setminus I) \\Big)\\\\\n&= (A\\setminus I) \\cup \\Big((A\\cap F^c) \\cap (A^c \\cup I) \\Big) \\\\\n&= (A\\setminus I) \\cup (A \\cap F^c \\cap I)\\\\\n&= (A\\setminus I) \\cup (A \\cap (I^c \\cup G') \\cap I)\\\\\n&= (A\\setminus I) \\cup (A \\cap I \\cap  G')\n\\end{align*}\\]\nNote that two sets on the right are disjoint. Furthermore, since \\[ A \\cap I \\subset A \\subset A \\cup I^c,\\] we have \\[(A\\cap I)\\cap G' \\subset G'\\setminus(I\\setminus A) = G' \\cap (A \\cup I^c).\\]\nHence \\[ m(A\\setminus F) \\leq m(A\\setminus I) +m\\bigl(G'\\setminus(I\\setminus A)\\bigr)\n&lt;\\frac{\\epsilon}{4}+\\frac{\\epsilon}{4} =\\frac{\\epsilon}{2}.\\]\nThus, \\[m(G\\setminus F) = m(G\\setminus A)+m(A\\setminus F)&lt;\\frac{\\epsilon}{2}+\\frac{\\epsilon}{2}=\n\\epsilon.\\]\nTherefore, there exist an open set \\(G\\) and a closed set \\(F\\) such that \\[ F\\subset A\\subset G, \\quad m(G\\setminus F)&lt;\\epsilon.\\] ]",
     "crumbs": [
       "Home",
       "Chapter 4",
@@ -465,7 +453,7 @@
     "href": "chapter-4/exercise-4-3.html",
     "title": "Exercise 4.3",
     "section": "",
-    "text": "Problem\nParaphrase the problem here.",
+    "text": "Solution\nWe will show that \\(\\mu^*\\) is an outer measure.\nTherefore, \\(\\mu^*\\) is an outer measure.\nNext, we will show that \\(\\mu^*\\) agrees with the measure \\(\\mu\\) on \\(\\mathcal A\\).\nLet \\(A \\in \\mathcal A\\). Then \\(\\mu^*(A) \\leq \\mu(A)\\), since \\(A \\subset A\\).\nFor the other direction, for every \\(B \\in \\mathcal A\\) with \\(A \\subset B\\), we have \\[\\mu(A) \\leq \\mu(B). \\] Taking the infimum over all such \\(B\\), we have \\[\\mu(A) \\leq \\inf\\{ \\mu(B) : A \\subset B, B \\in \\mathcal A\\} = \\mu^* (A). \\] Hence, \\(\\mu(A) = \\mu^*(A)\\).\nFinally, we will show that every set in \\(\\mathcal A\\) is \\(\\mu^*\\)-measurable.\nLet \\(A \\in \\mathcal A\\). Then it is enough to show that \\[ \\mu^*(E) \\geq \\mu^*(E \\cap A) + \\mu^*(E \\cap A^c) ~\\text{ for all }~ E \\subset X.\\]\nGiven \\(E\\), let \\(B\\in\\mathcal A\\) be any measurable set such that \\[ E\\subset B.\\] Since \\(A,B\\in\\mathcal A\\),\n\\[\\begin{align*}\n\\mu(B) &=\\mu(B\\cap A)+\\mu(B\\cap A^c)\\\\\n&=\\mu^*(B\\cap A)+\\mu^*(B\\cap A^c)\\\\\n&\\geq \\mu^*(E\\cap A)+\\mu^*(E\\cap A^c).\n\\end{align*}\\]\nTaking the infimum over all such \\(B\\), we have \\[\\mu^*(E) \\geq \\mu^*(E\\cap A)+\\mu^*(E\\cap A^c).\\]\nHence, \\(A\\) is \\(\\mu^*\\)-measurable.",
     "crumbs": [
       "Home",
       "Chapter 4",
@@ -476,12 +464,96 @@
     "objectID": "chapter-4/exercise-4-3.html#solution",
     "href": "chapter-4/exercise-4-3.html#solution",
     "title": "Exercise 4.3",
-    "section": "Solution",
-    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
+    "section": "",
+    "text": "Clearly \\(\\mu^*(\\emptyset) = 0\\).\nIf \\(A_1 \\subset A_2\\), then \\(\\mu^*(A_1) \\leq \\mu^* (A_2)\\).\nEvery measurable set containing \\(A_2\\) also contains \\(A_1\\). Therefore, \\[\\{B\\in\\mathcal A: A_2\\subset B\\} \\subset \\{B\\in\\mathcal A: A_1\\subset B\\}.\\] Taking the infimum over the larger collection gives \\[ \\mu^*(A_1)\\leq \\mu^*(A_2).\\]\n\\(\\mu^*(\\bigcup_{i=1}^{\\infty}A_i) \\leq \\sum_{i=1}^{\\infty}\\mu^*(A_i)\\) whenever \\(A_1, A_2, \\dots\\) are subsets of \\(X\\).\nIf \\(\\mu^*(A_i)=\\infty\\) for some \\(i\\), then the right-hand side is infinite, and the inequality is immediate. Suppose, therefore, that \\[\\mu^*(A_i)&lt;\\infty\\] for every \\(i\\).\nGiven \\(\\epsilon&gt;0\\), for each \\(i\\), choose \\(B_i \\in \\mathcal A\\) such that \\[ A_i \\subset B_i, \\quad \\mu(B_i) \\leq \\mu^*(A_i) + \\frac{\\epsilon}{2^i}.\\]\nThen \\[\\bigcup_{i=1}^{\\infty}A_i \\subset \\bigcup_{i=1}^{\\infty}B_i, \\quad \\bigcup_{i=1}^{\\infty}B_i\\in\\mathcal A.\\] Since \\(\\mu\\) is a measure, \\[\\mu^*\\left(\\bigcup_{i=1}^{\\infty} A_i \\right ) \\leq \\mu\\left(\\bigcup_{i=1}^{\\infty} B_i \\right )\n\\leq \\sum_{i=1}^{\\infty} \\mu(B_i) \\leq \\sum_{i=1}^{\\infty} \\mu^*(A_i) + \\sum_{i=1}^{\\infty} \\frac{\\epsilon}{2^i}\n= \\sum_{i=1}^{\\infty} \\mu^*(A_i) + \\epsilon.\\] Since \\(\\epsilon\\) is arbitrary, we have \\(\\mu^*(\\bigcup_{i=1}^{\\infty}A_i) \\leq \\sum_{i=1}^{\\infty}\\mu^*(A_i)\\).",
     "crumbs": [
       "Home",
       "Chapter 4",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>Exercise 4.3</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-4/exercise-4-4.html",
+    "href": "chapter-4/exercise-4-4.html",
+    "title": "Exercise 4.4",
+    "section": "",
+    "text": "Solution\n\\[m\\big( \\{x\\} \\big) = \\lim_{n \\to \\infty} m \\left( \\left( x - \\frac{1}{n}, x \\right] \\right)\n\\lim_{n \\to \\infty} \\left(\\alpha(x) - \\alpha\\left(x - \\frac{1}{n} \\right) \\right)= \\alpha(x) - \\alpha(x-).\\]",
+    "crumbs": [
+      "Home",
+      "Chapter 4",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Exercise 4.4</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-4/exercise-4-5.html",
+    "href": "chapter-4/exercise-4-5.html",
+    "title": "Exercise 4.5",
+    "section": "",
+    "text": "Solution",
+    "crumbs": [
+      "Home",
+      "Chapter 4",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Exercise 4.5</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-4/exercise-4-5.html#solution",
+    "href": "chapter-4/exercise-4-5.html#solution",
+    "title": "Exercise 4.5",
+    "section": "",
+    "text": "\\(m(x+ A) = m(A)\\)\nConsider the collection of half-open intervals \\(\\{I_i\\}\\) that cover \\(A\\). Since \\[x+A \\subset \\bigcup_{i=1}^{\\infty}(x+I_i),\\] we have \\[m(x+A) \\leq \\sum_{i=1}^{\\infty}l(x+I_i) = \\sum_{i=1}^{\\infty}l(I_i).\\] Taking the infimum over all such collections \\(\\{I_i\\}\\) that cover \\(A\\), we obtain \\[m(x+A) \\leq m(A).\\]\nConversely, consider the collection of half-open intervals \\(\\{I_i\\}\\) that cover \\(x+A\\). Since \\[ A \\subset \\bigcup_{i=1}^{\\infty} (I_i -x),\\] we have \\[m(A) \\leq \\sum_{i=1}^{\\infty} l(I_i-x) = \\sum_{i=1}^{\\infty} l(I_i).\\] Taking the infimum over all such collections \\(\\{I_i\\}\\) that cover \\(x+A\\), we obtain \\[m(x+A) \\geq m(A).\\]\nHence, \\(m(x+ A) = m(A)\\).\n\\(m(cA)=\\vert c \\vert m(A)\\)\nSuppose that \\(c&gt;0\\).\nConsider the collection of half-open intervals \\(\\{I_i\\}\\) that cover \\(A\\). Since \\[cA \\subset \\bigcup_{i=1}^{\\infty}(cI_i),\\] we have \\[m(cA) \\leq \\sum_{i=1}^{\\infty}l(cI_i) = c\\sum_{i=1}^{\\infty}l(I_i).\\] Taking the infimum over all such collections \\(\\{I_i\\}\\) that cover \\(A\\), we obtain \\[m(cA) \\leq c m(A).\\]\nConversely, consider the collection of half-open intervals \\(\\{I_i\\}\\) that cover \\(cA\\). Since \\[ A \\subset \\bigcup_{i=1}^{\\infty} \\left(\\frac{1}{c} I_i \\right),\\] we have \\[m(A) \\leq \\sum_{i=1}^{\\infty} l\\left(\\frac{1}{c} I_i \\right) = \\frac{1}{c}\\sum_{i=1}^{\\infty} l(I_i).\\] Taking the infimum over all such collections \\(\\{I_i\\}\\) that cover \\(cA\\), we obtain \\[cm(A) \\leq m(cA).\\]\nHence, \\(m(cA) = cm(A)\\).\nTo show the case \\(c&lt;0\\), we first show that \\[ m(-A)=m(A).\\] Let \\(\\{I_i\\}_{i=1}^{\\infty}\\) be a collection of half-open intervals covering \\(A\\), where \\[ I_i=(a_i,b_i].\\] Then \\[-A\\subset \\bigcup_{i=1}^{\\infty}[-b_i,-a_i).\\] These reflected intervals are not of the form \\((a,b]\\). Given \\(\\epsilon&gt;0\\), define \\[J_i=\\left(-b_i-\\frac{\\epsilon}{2^i},-a_i\\right].\\] Then \\(\\left(-b_i-\\epsilon/2^i,-a_i\\right] \\subset J_i\\), and hence \\[ -A\\subset\\bigcup_{i=1}^{\\infty}J_i.\\] Moreover, \\[ l(J_i) = b_i-a_i+\\frac{\\epsilon}{2^i}=l(I_i)+\\frac{\\epsilon}{2^i}.\\] Therefore, \\[\\begin{align*}\nm(-A) &\\leq \\sum_{i=1}^{\\infty}l(J_i)\\\\\n&=\\sum_{i=1}^{\\infty}l(I_i)+\\sum_{i=1}^{\\infty}\\frac{\\epsilon}{2^i}\\\\\n&=\\sum_{i=1}^{\\infty}l(I_i)+\\epsilon.\n\\end{align*}\\] Taking the infimum over all half-open interval covers \\({I_i}\\) of \\(A\\), we obtain \\[m(-A)\\leq m(A)+\\epsilon.\\] Since \\(\\epsilon&gt;0\\) is arbitrary, \\(m(-A)\\leq m(A).\\)\nApplying the same inequality to the set \\(-A\\), we get \\[ m(A)=m(-(-A))\\leq m(-A).\\] Thus, \\(m(-A)=m(A).\\)\nNow let \\(c&lt;0\\). Since \\[ cA= \\vert c \\vert(-A),\\] the positive case gives \\[ m(cA) = m\\big(\\vert c \\vert (-A)\\big) =|c|m(-A) =|c|m(A).\\]",
+    "crumbs": [
+      "Home",
+      "Chapter 4",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Exercise 4.5</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-4/exercise-4-6.html",
+    "href": "chapter-4/exercise-4-6.html",
+    "title": "Exercise 4.6",
+    "section": "",
+    "text": "Solution",
+    "crumbs": [
+      "Home",
+      "Chapter 4",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Exercise 4.6</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-4/exercise-4-6.html#solution",
+    "href": "chapter-4/exercise-4-6.html#solution",
+    "title": "Exercise 4.6",
+    "section": "",
+    "text": "By Exercise 2.9(1), we can denote that \\[ B = \\limsup_n A_n = \\bigcap_{i=1}^{\\infty} \\bigcup_{n=i}^{\\infty} A_n.\\] Since the collection of Lebesgue measurable sets is closed under countable uninons and intersection, \\(B\\) is Lebesgue measurable.\nLet \\[ B_i = \\bigcup_{n=i}^{\\infty} A_n.\\] Then \\(B_i \\downarrow B\\) and each \\(B_i\\) is Lebesgue measurable. Since \\(m(B_1) \\leq m([0,1])=1\\) and \\(B\\) is Lebesgue measurable, \\[\\lim_{i \\to \\infty} m(B_i) = m(\\lim_{i \\to \\infty} B_i) = m(B).\\] Since \\[m(B_i) = m\\left(\\bigcup_{n=i}^{\\infty} A_n \\right) \\geq m(A_i) &gt; \\delta\\] for each \\(i\\), we have \\[m(B) = \\lim_{i \\to \\infty} m(B_i) \\geq \\delta.\\]\nSince \\(\\sum_{n=1}^{\\infty} m(A_n) &lt; \\infty\\), we have \\[ \\lim_{i \\to \\infty} \\sum_{n=i}^{\\infty} m(A_n) = 0.\\] For each \\(n\\), we have \\[m(B) \\leq m(B_n) = m\\left(\\bigcup_{n=i}^{\\infty}A_n\\right) \\leq \\sum_{n=i}^{\\infty} m(A_n).\\] Taking the limit as \\(i \\to \\infty\\), we obtain \\[m(B)=0.\\]\nLet \\[A_n = \\left[0, \\frac{1}{n} \\right].\\] Then, \\[\\sum_{n=1}^{\\infty}m(A_n) = \\sum_{n=1}^{\\infty} \\frac{1}{n} = \\infty.\\] However, since \\[B = \\bigcap_{i=1}^{\\infty} \\bigcup_{n=i}^{\\infty} \\left[0, \\frac{1}{n} \\right] = \\bigcap_{i=1}^{\\infty} \\left[0, \\frac{1}{i} \\right] = \\{0\\},\\] we have \\[m(B) = 0.\\]",
+    "crumbs": [
+      "Home",
+      "Chapter 4",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Exercise 4.6</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-4/exercise-4-7.html",
+    "href": "chapter-4/exercise-4-7.html",
+    "title": "Exercise 4.7",
+    "section": "",
+    "text": "Solution\nDefine \\[E=(0,\\epsilon)\\cup\\bigl(\\mathbb Q\\cap(\\epsilon,1)\\bigr).\\] Then \\(E\\subset[0,1]\\), and \\(E\\) is measurable.\nSince \\[\\overline{(0,\\epsilon)}=[0,\\epsilon]\\] and \\(\\mathbb Q\\cap(\\epsilon,1)\\) is dense in \\((\\epsilon,1)\\), \\[\\overline{\\mathbb Q\\cap(\\epsilon,1)}=[\\epsilon,1].\\] Therefore, \\[\\overline E=[0,1].\\]\nMoreover, \\[m\\bigl(\\mathbb Q\\cap(\\epsilon,1)\\bigr)=0,\\] so \\[m(E) = m((0,\\epsilon)) + m\\bigl(\\mathbb Q\\cap(\\epsilon,1)\\bigr) = \\epsilon.\\]",
+    "crumbs": [
+      "Home",
+      "Chapter 4",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Exercise 4.7</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-4/exercise-4-8.html",
+    "href": "chapter-4/exercise-4-8.html",
+    "title": "Exercise 4.8",
+    "section": "",
+    "text": "Solution\nClaim. There exists countable subset \\(A \\subset F\\) such that \\(\\bar{A}=F\\).\nProof. If \\(F = \\emptyset\\), then let \\(A=\\emptyset\\). Suppose, therefore, that \\(F \\neq \\emptyset\\).\nFor each pair \\(p,q\\in\\mathbb Q\\) with \\(p&lt;q\\) and \\[ (p,q)\\cap F\\neq\\varnothing,\\] choose one point \\[ a_{p,q}\\in(p,q)\\cap F.\\]\nLet \\[A=\\{a_{p,q} : p,q\\in\\mathbb Q,\\ p&lt;q,\\ (p,q)\\cap F\\neq\\varnothing \\}.\\]\nSince \\(\\mathbb Q^2\\) is countable, \\(A\\) is also countable. And by construction, \\(A \\subset F\\). Moreover, since \\(F\\) is closed, \\[ \\overline A\\subset F.\\]\nTo prove the reverse inclusion, let \\(x\\in F\\) and let \\(\\epsilon&gt;0\\). By the density of \\(\\mathbb Q\\) in \\(\\mathbb R\\), we can choose \\(p,q\\in\\mathbb Q\\) such that \\[x-\\epsilon&lt;p&lt;x&lt;q&lt;x+\\epsilon.\\]\nSince \\((p,q) \\cap F \\neq \\emptyset\\), this intersection is nonempty. Hence there exists. Hence, there exists \\[a_{p,q} \\in A\\]. It follows that \\[ \\vert x - a_{p,q}\\vert &lt; \\epsilon.\\] Thus every neighborhood of \\(x\\) intersects \\(A\\), so \\[ x\\in\\overline A.\\] Therefore, \\(F\\subset\\overline A.\\)\nHence, \\(\\overline A=F.\\) \\(\\blacksquare\\)\nWe now construct the desired measure.\nIf \\(F=\\varnothing\\), define \\[\\nu(B)=0\\] for every Borel set \\(B\\subset[0,1]\\). Then \\(\\nu\\) is a finite measure whose support is \\(\\varnothing\\).\nNow suppose that \\(F\\neq\\varnothing\\). Since \\(A\\) is countable, we may write \\[ A=\\{a_1,a_2,\\ldots\\} \\] if \\(A\\) is infinite, or \\[ A=\\{a_1,\\ldots,a_N\\} \\] if \\(A\\) is finite.\nAssign to each \\(a_i\\) a positive weight \\(w_i\\) such that \\[\\sum_i w_i&lt;\\infty.\\] For example, if \\(A\\) is infinite, take \\[w_i=\\frac1{2^i},\\] and if \\(A\\) has \\(N\\) elements, take \\[w_i=\\frac{1}{N}.\\]\nDefine, for every Borel set \\(B\\subset[0,1]\\), \\[\\nu(B) = \\sum_{\\{i:a_i \\in  B \\}} w_i.\\]\nThus \\(\\nu\\) is a measure, and \\[\\nu([0,1])=\\sum_i w_i&lt;\\infty.\\] Hence \\(\\nu\\) is finite. Moreover, since \\(A\\subset F\\), \\[\\nu(F^c)=0.\\]\nIt remains to show that \\(F\\) is the smallest closed set with this property. Let \\(G\\subset[0,1]\\) be closed and suppose that \\[\\nu(G^c)=0.\\] Since every \\(w_i\\) is positive, no point \\(a_i\\) can belong to \\(G^c\\). Hence \\[ A\\subset G. \\] Since \\(G\\) is closed, \\[ F=\\overline A\\subset G. \\]\nTherefore, \\(F\\) is the smallest closed set \\(G\\) such that \\[\\nu(G^c)=0.\\] Thus the support of \\(\\nu\\) is \\(F\\).",
+    "crumbs": [
+      "Home",
+      "Chapter 4",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Exercise 4.8</span>"
     ]
   }
 ]
