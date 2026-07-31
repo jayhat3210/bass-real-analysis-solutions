@@ -449,18 +449,6 @@
     ]
   },
   {
-    "objectID": "chapter-4/exercise-4-2.html#solution",
-    "href": "chapter-4/exercise-4-2.html#solution",
-    "title": "Exercise 4.2",
-    "section": "Solution",
-    "text": "Solution\nSuppose that\n\\[\nA_n \\uparrow A.\n\\]\nThen\n\\[\n\\mu(A)\n=\n\\lim_{n\\to\\infty}\\mu(A_n).\n\\]\nHence the result follows.",
-    "crumbs": [
-      "Home",
-      "Chapter 4",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Exercise 4.2</span>"
-    ]
-  },
-  {
     "objectID": "chapter-4/exercise-4-3.html",
     "href": "chapter-4/exercise-4-3.html",
     "title": "Exercise 4.3",
@@ -562,18 +550,6 @@
     "title": "Exercise 4.8",
     "section": "",
     "text": "Solution\nClaim. There exists countable subset \\(A \\subset F\\) such that \\(\\bar{A}=F\\).\nProof. If \\(F = \\emptyset\\), then let \\(A=\\emptyset\\). Suppose, therefore, that \\(F \\neq \\emptyset\\).\nFor each pair \\(p,q\\in\\mathbb Q\\) with \\(p&lt;q\\) and \\[ (p,q)\\cap F\\neq\\varnothing,\\] choose one point \\[ a_{p,q}\\in(p,q)\\cap F.\\]\nLet \\[A=\\{a_{p,q} : p,q\\in\\mathbb Q,\\ p&lt;q,\\ (p,q)\\cap F\\neq\\varnothing \\}.\\]\nSince \\(\\mathbb Q^2\\) is countable, \\(A\\) is also countable. And by construction, \\(A \\subset F\\). Moreover, since \\(F\\) is closed, \\[ \\overline A\\subset F.\\]\nTo prove the reverse inclusion, let \\(x\\in F\\) and let \\(\\epsilon&gt;0\\). By the density of \\(\\mathbb Q\\) in \\(\\mathbb R\\), we can choose \\(p,q\\in\\mathbb Q\\) such that \\[x-\\epsilon&lt;p&lt;x&lt;q&lt;x+\\epsilon.\\]\nSince \\((p,q) \\cap F \\neq \\emptyset\\), this intersection is nonempty. Hence there exists. Hence, there exists \\[a_{p,q} \\in A\\]. It follows that \\[ \\vert x - a_{p,q}\\vert &lt; \\epsilon.\\] Thus every neighborhood of \\(x\\) intersects \\(A\\), so \\[ x\\in\\overline A.\\] Therefore, \\(F\\subset\\overline A.\\)\nHence, \\(\\overline A=F.\\) \\(\\blacksquare\\)\nWe now construct the desired measure.\nIf \\(F=\\varnothing\\), define \\[\\nu(B)=0\\] for every Borel set \\(B\\subset[0,1]\\). Then \\(\\nu\\) is a finite measure whose support is \\(\\varnothing\\).\nNow suppose that \\(F\\neq\\varnothing\\). Since \\(A\\) is countable, we may write \\[ A=\\{a_1,a_2,\\ldots\\} \\] if \\(A\\) is infinite, or \\[ A=\\{a_1,\\ldots,a_N\\} \\] if \\(A\\) is finite.\nAssign to each \\(a_i\\) a positive weight \\(w_i\\) such that \\[\\sum_i w_i&lt;\\infty.\\] For example, if \\(A\\) is infinite, take \\[w_i=\\frac1{2^i},\\] and if \\(A\\) has \\(N\\) elements, take \\[w_i=\\frac{1}{N}.\\]\nDefine, for every Borel set \\(B\\subset[0,1]\\), \\[\\nu(B) = \\sum_{\\{i:a_i \\in  B \\}} w_i.\\]\nThus \\(\\nu\\) is a measure, and \\[\\nu([0,1])=\\sum_i w_i&lt;\\infty.\\] Hence \\(\\nu\\) is finite. Moreover, since \\(A\\subset F\\), \\[\\nu(F^c)=0.\\]\nIt remains to show that \\(F\\) is the smallest closed set with this property. Let \\(G\\subset[0,1]\\) be closed and suppose that \\[\\nu(G^c)=0.\\] Since every \\(w_i\\) is positive, no point \\(a_i\\) can belong to \\(G^c\\). Hence \\[ A\\subset G. \\] Since \\(G\\) is closed, \\[ F=\\overline A\\subset G. \\]\nTherefore, \\(F\\) is the smallest closed set \\(G\\) such that \\[\\nu(G^c)=0.\\] Thus the support of \\(\\nu\\) is \\(F\\).",
-    "crumbs": [
-      "Home",
-      "Chapter 4",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Exercise 4.8</span>"
-    ]
-  },
-  {
-    "objectID": "chapter-4/exercise-4-8.html#solution",
-    "href": "chapter-4/exercise-4-8.html#solution",
-    "title": "Exercise 4.8",
-    "section": "",
-    "text": "Suppose that \\(A\\) is finite. Let \\(A = \\{ a_1, a_2, \\cdots, a_n \\}.\\) For \\(B \\in \\mathcal B \\cap [0,1]\\), let \\[\\nu(B) = \\sum_{i:a_i \\in A \\cap B} \\frac{1}{n}.\\] Then \\(\\nu(B)\\leq 1\\) for any \\(B \\in \\mathcal B\\cap [0,1]\\). Morover, since \\(F\\) is the smallest closed set containing \\(A\\), we have \\(A \\cap F^C = \\emptyset\\). Thus. \\[\\nu(F^c) = 0.\\]\nSuppose that \\(A\\) is infinite. Since \\(A\\) is countable, let $ A = { a_1, a_2, }.$ For \\(B \\in \\mathcal B \\cap [0,1]\\), let \\[\\nu(B) = \\sum_{i:a_i \\in A \\cap B} \\frac{1}{2^i}.\\] Then \\(\\nu(B)\\leq 1\\) for any \\(B \\in \\mathcal B\\cap [0,1]\\). Morover, since \\(F\\) is the smallest closed set containing \\(A\\), we have \\(A \\cap F^C = \\emptyset\\). Thus. \\[\\nu(F^c) = 0.\\]",
     "crumbs": [
       "Home",
       "Chapter 4",
